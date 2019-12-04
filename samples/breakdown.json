@@ -1,0 +1,58 @@
+{
+  "breakdownExport": {
+    "author": "Jane Smith",
+    "created": "2019-10-11T00:12:06.000Z",
+    "description": "This is a description of the schedule",
+    "name": "My schedule name",
+    "schedColor": "Blue",
+    "schedDate": "2019-10-07T07:00:00.000Z",
+    "scriptColor": "Yellow",
+    "scriptDate": "2019-10-01T07:00:00.000Z",
+    "source": "Name of site",
+    "version": "1.0.0",
+
+    "breakdowns": [
+      {
+        "_id": "5d9fc8d2c0efae0017a32f02",
+        "comments": "This scene must be shot at night",
+        "created": "2019-10-11T00:12:02.000Z",
+        "desc": "George finds Zuzu's petals in his pocket",
+        "dn": "5d9fc8d0c0efae0017a32e39",
+        "ie": "5d9fc8cfc0efae0017a32e31",
+        "location": "5d9fc8cfc0efae0017a32e42",
+        "pages": 0.25,
+        "scene": "89",
+        "scriptDay": "D10",
+        "scriptPage": "112",
+        "sequence": "5d9fc8cfc0efae0017a32e47",
+        "set": "5d9fc8cfc0efae0017a32de8",
+        "time": 5700000,
+        "unit": "5d9fc8cfc0efae0017a32e62"
+      }
+    ],
+    "categories": [
+      {
+        "_id": "5d9fc8cfc0efae0017a32d6a",
+        "catId": 100,
+        "created": "2019-10-11T00:11:59.000Z",
+        "elements": ["5d9fc8cfc0efae0017a32d46"],
+        "name": "Cast"
+      }
+    ],
+    "elements": [
+      {
+        "_id": "5d9fc8cfc0efae0017a32d46",
+        "breakdowns": ["5d9fc8d2c0efae0017a32f02"],
+        "created": "2019-10-11T00:11:59.000Z",
+        "doodDropAllow": true,
+        "doodDropDays": 10,
+        "doodHoldAllow": false,
+        "doodInclude": true,
+        "elementId": "1",
+        "elementIdLock": false,
+        "linkedElements": [], 
+        "name": "GEORGE"
+      }
+    ]
+  }
+}
