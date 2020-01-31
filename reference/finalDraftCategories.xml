@@ -1,0 +1,38 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	<FinalDraft DocumentType="Script" Template="No" Version="4">
+		<TagData>
+			<TagCategories>
+				<TagCategory Color="#FF008A00D800" Id="8e5e75c2-713b-47df-a75f-f12648b98ded" Name="Synopsis" Number="1" Style="Bold"/>
+				<TagCategory Color="#00003600B700" Id="01fc9642-84ff-4366-b37c-a3068dee57e8" Name="Cast Members" Number="2" Style="Bold"/>
+				<TagCategory Color="#000095002900" Id="028a4e2b-b507-4d09-88ab-90e3edae9071" Name="Background Actors" Number="3" Style="Bold"/>
+				<TagCategory Color="#E20017003200" Id="0377dbe6-77a3-41af-bda8-86eb2468fdbf" Name="Stunts" Number="4" Style="Bold"/>
+				<TagCategory Color="#0000B800C800" Id="04721a56-f54b-49c8-80ad-d53887d6b851" Name="Vehicles" Number="5" Style="Bold"/>
+				<TagCategory Color="#B80075004D00" Id="05c556eb-6bc1-4a3a-b09f-f8b5ba1b6afa" Name="Props" Number="6" Style="Bold"/>
+				<TagCategory Color="#0000CF00FF00" Id="47b02ff1-5161-4137-b736-f36eebba7643" Name="Camera" Number="7" Style="Bold"/>
+				<TagCategory Color="#8700B700BB00" Id="069e18b8-2109-4f3d-94e7-d802027a60a8" Name="Special Effects" Number="8" Style="Bold"/>
+				<TagCategory Color="#FF007D002200" Id="0726fa85-1e65-4ab8-87de-bf21d09b01f0" Name="Wardrobe" Number="9" Style="Bold"/>
+				<TagCategory Color="#FF003F00E600" Id="08ae1eef-32ce-415f-9a9b-0982d2453ec4" Name="Makeup/Hair" Number="10" Style="Bold"/>
+				<TagCategory Color="#B900C5003200" Id="09cb0d1c-ce01-4f22-bb64-b5f2e6c491c6" Name="Animals" Number="11" Style="Bold"/>
+				<TagCategory Color="#E900B7003C00" Id="0ae40617-cc7c-48e6-ae2b-5aaecc09986f" Name="Animal Wrangler" Number="12" Style="Bold"/>
+				<TagCategory Color="#00008B009200" Id="0b0b44c9-aa4b-4c40-88b1-d94472ad7a26" Name="Music" Number="13" Style="Bold"/>
+				<TagCategory Color="#AF0026009300" Id="0ce7d308-096d-4603-8fe8-349f72cd89ff" Name="Sound" Number="14" Style="Bold"/>
+				<TagCategory Color="#7A008100FF00" Id="4a84b619-62f9-4c04-8e46-bf2cd0b7f582" Name="Art Department" Number="15" Style="Bold"/>
+				<TagCategory Color="#0000EE005E00" Id="0debb71b-5743-4c53-80cc-e17e841ce645" Name="Set Dressing" Number="16" Style="Bold"/>
+				<TagCategory Color="#0000C4007F00" Id="0e7a8fc5-5441-4bad-a9bf-5ddd3fe51c69" Name="Greenery" Number="17" Style="Bold"/>
+				<TagCategory Color="#990033000000" Id="109d0eaa-0334-4823-ac0c-b44d3f209dc4" Name="Security" Number="18"/>
+				<TagCategory Color="#FF001A002100" Id="0ff5cda4-4d43-4cfe-940f-91380c46fdad" Name="Special Equipment" Number="19" Style="Bold"/>
+				<TagCategory Color="#0000CC00FF00" Id="1179a4b1-70ee-4011-b4a2-809a0af09e92" Name="Additional Labor" Number="20"/>
+				<TagCategory Color="#99000000FF00" Id="12ab0932-e3b9-4b4a-bcd0-3da1b4e61d5e" Name="Visual Effects" Number="21"/>
+				<TagCategory Color="#3300CC006600" Id="135cc9d1-c4d5-4d00-83d9-571f584ea9cd" Name="Mechanical Effects" Number="22"/>
+				<TagCategory Color="#000099009900" Id="148267ae-50ae-4746-8202-659fb7447b55" Name="Miscellaneous" Number="23"/>
+				<TagCategory Color="#000000006600" Id="15b6f4fd-4e74-4ad8-9971-b239d88c2997" Name="Notes" Number="24"/>
+				<TagCategory Color="#FF007E007900" Id="63c140da-ef2b-491a-b416-b46f461abb89" Name="Script Day" Number="25" Style="Bold"/>
+				<TagCategory Color="#ED00E6000000" Id="849f1ebf-5507-4f33-bff6-3a5b4d73be14" Name="Unit" Number="26" Style="Bold"/>
+				<TagCategory Color="#7300FC00D600" Id="70877d87-30ef-45b6-be46-c6fa94b83a71" Name="Sequence" Number="27" Style="Bold"/>
+				<TagCategory Color="#7300FD00FF00" Id="c5e89e4d-f83e-4c28-950c-92a63f1b5f26" Name="Location" Number="28" Style="Bold"/>
+				<TagCategory Color="#D7008300FF00" Id="216f33fd-fc42-4269-be01-b05b18f815a0" Name="Comments" Number="29" Style="Bold"/>
+			</TagCategories>
+		</TagData>
+	</FinalDraft>
+</xml>
