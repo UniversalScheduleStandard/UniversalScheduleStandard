@@ -1,19 +1,20 @@
 {
-  "breakdownExport": {
+  "scheduleExport": {
     "author": "Jane Smith",
     "created": "2019-10-11T00:12:06.000Z",
     "description": "This is a description of the schedule",
     "name": "My schedule name",
+    "project": "It's A Wonderful Life",
     "schedColor": "Blue",
     "schedDate": "2019-10-07T07:00:00.000Z",
     "scriptColor": "Yellow",
     "scriptDate": "2019-10-01T07:00:00.000Z",
-    "source": "Name of site",
+    "source": "Name of originating site",
     "version": "1.0.0",
 
     "breakdowns": [
       {
-        "_id": "5d9fc8d2c0efae0017a32f02",
+        "_id": "5cfe7d2510c4330017ab5ed1",
         "comments": "This scene must be shot at night",
         "created": "2019-10-11T00:12:02.000Z",
         "desc": "George finds Zuzu's petals in his pocket",
@@ -27,7 +28,20 @@
         "sequence": "5d9fc8cfc0efae0017a32e47",
         "set": "5d9fc8cfc0efae0017a32de8",
         "time": 5700000,
+        "type": "scene",
         "unit": "5d9fc8cfc0efae0017a32e62"
+      },
+      {
+        "_id": "5cfe7d2510c4330017ab5ed3",
+        "created": "2019-10-11T00:12:02.000Z",
+        "date": "2020-10-21T00:00:00.000Z",
+        "type": "day"
+      },
+      {
+        "_id": "5cfe7d2510c4330017ab5ed5",
+        "created": "2019-10-11T00:12:02.000Z",
+        "desc": "A Banner Description",
+        "type": "banner"
       }
     ],
     "categories": [
