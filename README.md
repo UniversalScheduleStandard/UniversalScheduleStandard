@@ -1,4 +1,4 @@
-# breakdownExport..
+# breakdownExport
 A proposal for a standardized format for exporting [script breakdowns](https://en.wikipedia.org/wiki/Script_breakdown) in the entertainment industry.
 
 Two standards are necessary to facilitate this goal:
