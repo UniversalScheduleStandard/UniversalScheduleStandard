@@ -1,4 +1,4 @@
-# entertainmentIndustryScheduleExport
+# entertainmentIndustryScheduleFormat
 A proposal for a standardized format for exporting [schedules](https://en.wikipedia.org/wiki/Shooting_schedule) or [script breakdowns](https://en.wikipedia.org/wiki/Script_breakdown) in the entertainment industry.
 
 Two standards are necessary to facilitate this goal:
