@@ -10,7 +10,7 @@ Two standards are necessary to facilitate this goal:
 See the files in the [/samples](https://github.com/thinkcrew/entertainmentIndustryScheduleFormat/tree/master/samples) folder for example files.
 
 ## **📚 Table of Contents**
-- 1️⃣ [Breakdown & Schedule Standard](#breakdown-schedule-standard)
+- 1️⃣ [Breakdown & Schedule Standard](#1%EF%B8%8F⃣-breakdown--schedule-standard-breakdown-schedule-standard)
     - [Data Overivew](#data-overview)
     - [Structure and Format](#structure-and-format)
         - [ID Values](#id-values)
