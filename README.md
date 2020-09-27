@@ -11,7 +11,7 @@ See the files in the [/samples](https://github.com/thinkcrew/entertainmentIndust
 
 ## **📚 Table of Contents**
 - 1️⃣ [Breakdown & Schedule Standard](#1%EF%B8%8F⃣-breakdown--schedule-standard)
-    - [Data Overivew](#data-overview)
+    - [Data Overview](#data-overview)
     - [Structure and Format](#structure-and-format)
         - [ID Values](#id-values)
         - [Date Format](#date-format)
@@ -123,7 +123,7 @@ The breakdown objects contain information about a scene (or scenes) in a script.
   "created": string | ISO Date,
   "description": string | description of scene,
   "elements": array of ID string values,
-  "pages": number | decimal value of page eigths,
+  "pages": number | decimal value of page eighths,
   "scene": string | scene number,
   "scriptPage": string | page number scene starts on,
   "time": number | millisecond duration to shoot scene,
@@ -135,7 +135,7 @@ Some scheduling software includes [scene categories](#scene-categories) as part 
 
 The `elements` array contains element IDs that represent all of the elements in the breakdown. 
 
-The `time` key refers to the the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be '5700000' if the scene were estmated to take 1h 35m to shoot. (95m * 12 * 1000)
+The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be '5700000' if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
 
 The `type` key has one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be `null`. 'Banner' types should store their text in the `description` value. 
 
@@ -184,7 +184,7 @@ Element objects are constructed like this:
 ```
 The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear on the day out of days. 
 
-The `elementId` key is traditionally used to assign a 'board ID' to an element. This is primarly used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
+The `elementId` key is traditionally used to assign a 'board ID' to an element. This is primarily  used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
 
 The `linkedElements` array is made up of element IDs and represent all of the elements that are linked to the element. Linking elements is used in some software to ensure that when a particular element is added to a breakdown, a number of other elements are automatically added as well. Examples commonly include actors and props they are always seen with. A doctor and their stethoscope, for example. 
 
@@ -196,7 +196,7 @@ If representing a schedule, the EIBF object must also contain `stripboards` & `c
 
 #### **Stripboard Objects**
 
-A stripboard represents a particlar scenario for the show - an order of shooting and potentially a separate set of shooting dates. There can many stripboards in a schedule. 
+A stripboard represents a particular scenario for the show - an order of shooting and potentially a separate set of shooting dates. There can many stripboards in a schedule. 
 
 The stripboard objects are constructed like this:
 
@@ -221,7 +221,7 @@ The `boards` array is made up of board objects, which are constructed like this:
 }
 ```
 
-The `name`s of the boards is not the same as the `name` key in the stripboard objects. The stripboard objects `name` is for the user to name their stripboard. The board objects `name` is for intneral use and  should be simple reflections of its intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc, at your discretion.
+The `name`s of the boards is not the same as the `name` key in the stripboard objects. The stripboard objects `name` is for the user to name their stripboard. The board objects `name` is for internal use and  should be simple reflections of its intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc, at your discretion.
 
 The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array.
 
@@ -240,7 +240,7 @@ Multiple calendars may be included in the array, representing different scenario
 }
 ```
 
-Each calendar object may contain a number of events. The `events` array is made up of event objects, which are contructed as follows:
+Each calendar object may contain a number of events. The `events` array is made up of event objects, which are constructed as follows:
 
 ```
 {
@@ -266,7 +266,7 @@ The `type` key is used to further refine the `effect` key and utilizes a set of 
 | dayOff   | 'holiday', 'dayOff'                        |
 | event    | 'fitting', 'rehearsal', 'travel', 'custom' |
 
-Adherance to the set of above types is extremely important as the addition of values outside of this list could adversely affect both the day strips as well as the day out of days.
+Adherence to the set of above types is extremely important as the addition of values outside of this list could adversely affect both the day strips as well as the day out of days.
 
 The `name` of the event can be any string and is optional, used primarily for 'custom' events.
 
