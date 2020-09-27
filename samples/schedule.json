@@ -1,71 +1,266 @@
 {
-  "scheduleExport": {
+  "entertainmentIndustryBreakdownFormat": {
+    "id": "5d9fc8cfc0efae0017a32a11",
     "author": "Jane Smith",
-    "created": "2019-10-11T00:12:06.000Z",
+    "created": "2020-10-11T00:12:06.000Z",
     "description": "This is a description of the schedule",
     "name": "My schedule name",
     "project": "It's A Wonderful Life",
     "schedColor": "Blue",
-    "schedDate": "2019-10-07T07:00:00.000Z",
+    "schedDate": "2020-10-07T07:00:00.000Z",
     "scriptColor": "Yellow",
-    "scriptDate": "2019-10-01T07:00:00.000Z",
+    "scriptDate": "2020-10-01T07:00:00.000Z",
     "source": "Name of originating site",
-    "version": "1.0.0",
+    "version": "0.1.0",
 
     "breakdowns": [
       {
-        "_id": "5cfe7d2510c4330017ab5ed1",
-        "comments": "This scene must be shot at night",
-        "created": "2019-10-11T00:12:02.000Z",
-        "desc": "George finds Zuzu's petals in his pocket",
-        "dn": "5d9fc8d0c0efae0017a32e39",
-        "ie": "5d9fc8cfc0efae0017a32e31",
-        "location": "5d9fc8cfc0efae0017a32e42",
-        "pages": 0.25,
-        "scene": "89",
-        "scriptDay": "D10",
-        "scriptPage": "112",
-        "sequence": "5d9fc8cfc0efae0017a32e47",
-        "set": "5d9fc8cfc0efae0017a32de8",
-        "time": 5700000,
-        "type": "scene",
-        "unit": "5d9fc8cfc0efae0017a32e62"
-      },
-      {
-        "_id": "5cfe7d2510c4330017ab5ed3",
-        "created": "2019-10-11T00:12:02.000Z",
-        "date": "2020-10-21T00:00:00.000Z",
-        "type": "day"
-      },
-      {
-        "_id": "5cfe7d2510c4330017ab5ed5",
-        "created": "2019-10-11T00:12:02.000Z",
-        "desc": "A Banner Description",
+        "id": "5cfe7d2510c4330017ab5ed5",
+        "comments":  null,
+        "created": "2020-10-11T00:12:02.000Z",
+        "description": "A Text Banner",
+        "elements": [],
+        "pages":  null,
+        "scene":  null,
+        "scriptPage":  null,
+        "time": null,
         "type": "banner"
+      },
+      {
+        "id": "5cfe7d2510c4330017ab5ed1",
+        "comments": "This scene must be shot at night",
+        "created": "2020-10-11T00:12:02.000Z",
+        "description": "George finds Zuzu's petals in his pocket",
+        "elements": ["5d9fc8cfc0efae0017a32e31", "5d9fc8cfc0efae0017a32de8", "5d9fc8d0c0efae0017a32e39", "5d9fc8cfc0efae0017a32d46", "5d9fc8cfc0efae0017a3201a", "5d9fc8cfc0efae0017a32dfc"],
+        "pages": 0.25,
+        "scene": "89PT1",
+        "scriptPage": "112",
+        "time": 5700000,
+        "type": "scene"
+      },
+      {
+        "id": "5cfe7d2510c4330017ab5ed3",
+        "comments":  null,
+        "created": "2020-10-11T00:12:02.000Z",
+        "description": null,
+        "elements": [],
+        "pages":  null,
+        "scene":  null,
+        "scriptPage":  null,
+        "time": null,
+        "type": "day"
       }
     ],
+
+    "calendars": [
+      {
+        "id" : "5d01230c987033001725c908",
+        "events" : [ 
+            {
+              "id" : "5dcee721d3ebb20017bbeb6a",
+              "type" : "start",
+              "date" : "2020-06-20T08:00:00.000Z"
+            },
+            {
+              "id" : "5dcee6dfd3ebb20017bbeb52",
+              "type" : "holiday",
+              "date" : "2020-07-04T08:00:00.000Z"
+            }, 
+            {
+              "id" : "5dcee6fcd3ebb20017bbeb5e",
+              "type" : "dayOff",
+              "date" : "2020-07-15T08:00:00.000Z"
+            },
+            {
+              "id" : "5d3b5c6d35bc890017e4eacb",
+              "type" : "travel",
+              "date" : "2020-06-15T08:00:00.000Z"
+            }, 
+            {
+              "id" : "5d3b5c7f35bc890017e4eacc",
+              "type" : "fitting",
+              "date" : "2020-06-16T08:00:00.000Z"
+            }, 
+            {
+              "id" : "5d3b5c9635bc890017e4ead1",
+              "type" : "rehearsal",
+              "date" : "2020-06-17T08:00:00.000Z"
+            }
+        ],
+        "daysOff" : [0, 6],
+        "name" : "Name of this calendar"
+      }
+    ],
+
     "categories": [
       {
-        "_id": "5d9fc8cfc0efae0017a32d6a",
+        "id": "5d9fc8cfc0efae0017a32d6a",
+        "catId": 0,
+        "created": "2020-10-11T00:11:59.000Z",
+        "elements": ["5d9fc8cfc0efae0017a32de8"],
+        "name": "Set"
+      },
+      {
+        "id": "5d9fc8cfc0efae0017a32e12",
+        "catId": 1,
+        "created": "2020-10-11T00:11:59.000Z",
+        "elements": ["5d9fc8cfc0efae0017a32e31"],
+        "name": "INT/EXT"
+      },
+      {
+        "id": "5d9fc8cfc0efae0017a32aab",
+        "catId": 2,
+        "created": "2020-10-11T00:11:59.000Z",
+        "elements": ["5d9fc8d0c0efae0017a32e39"],
+        "name": "Day/Night"
+      },
+      {
+        "id": "5d9fc8cfc0efae0017a32d35",
         "catId": 100,
-        "created": "2019-10-11T00:11:59.000Z",
-        "elements": ["5d9fc8cfc0efae0017a32d46"],
-        "name": "Cast"
+        "created": "2020-10-11T00:11:59.000Z",
+        "elements": ["5d9fc8cfc0efae0017a32d46", "5d9fc8cfc0efae0017a32dfc"],
+        "name": "Cast Members"
+      },
+      {
+        "id": "5d9fc8cfc0efae0017a32e16",
+        "catId": 104,
+        "created": "2020-10-11T00:11:59.000Z",
+        "elements": ["5d9fc8cfc0efae0017a3201a"],
+        "name": "Props"
       }
     ],
+
     "elements": [
       {
-        "_id": "5d9fc8cfc0efae0017a32d46",
-        "breakdowns": ["5d9fc8d2c0efae0017a32f02"],
-        "created": "2019-10-11T00:11:59.000Z",
+        "id": "5d9fc8cfc0efae0017a32e31",
+        "created": "2020-10-11T00:11:59.000Z",
+        "doodDropAllow": true,
+        "doodDropDays": 10,
+        "doodHoldAllow": false,
+        "doodInclude": true,
+        "elementId": "",
+        "elementIdLock": false,
+        "linkedElements": [], 
+        "name": "EXT"
+      }, 
+      {
+        "id": "5d9fc8cfc0efae0017a32de8",
+        "created": "2020-10-11T00:11:59.000Z",
+        "doodDropAllow": true,
+        "doodDropDays": 10,
+        "doodHoldAllow": false,
+        "doodInclude": true,
+        "elementId": "",
+        "elementIdLock": false,
+        "linkedElements": [], 
+        "name": "BEDFORD FALLS BRIDGE"
+      }, 
+      {
+        "id": "5d9fc8d0c0efae0017a32e39",
+        "created": "2020-10-11T00:11:59.000Z",
+        "doodDropAllow": true,
+        "doodDropDays": 10,
+        "doodHoldAllow": false,
+        "doodInclude": true,
+        "elementId": "",
+        "elementIdLock": false,
+        "linkedElements": [], 
+        "name": "NIGHT"
+      }, 
+      {
+        "id": "5d9fc8cfc0efae0017a32d46",
+        "created": "2020-10-11T00:11:59.000Z",
         "doodDropAllow": true,
         "doodDropDays": 10,
         "doodHoldAllow": false,
         "doodInclude": true,
         "elementId": "1",
+        "elementIdLock": true,
+        "linkedElements": ["5d9fc8cfc0efae0017a3201a"], 
+        "name": "GEORGE",
+        "events": [
+          {
+            "id" : "5d3cb8c31044290017d1d6ea",
+            "name" : "dayOff",
+            "date" : "2020-07-10T07:00:00.000Z"
+          },
+          {
+            "id" : "5d3cb8c31044290017d1d6ea",
+            "name" : "travel",
+            "date" : "2020-06-13T07:00:00.000Z"
+          }, 
+          {
+            "id" : "5d3cb8c31044290017d1d6e9",
+            "name" : "rehearsal",
+            "date" : "2020-06-14T07:00:00.000Z"
+          }, 
+          {
+            "id" : "5d3cb8c31044290017d1d6e8",
+            "name" : "fitting",
+            "date" : "2020-06-14T07:00:00.000Z"
+          }
+        ]
+      }, 
+      {
+        "id": "5d9fc8cfc0efae0017a3201a",
+        "created": "2020-10-11T00:11:59.000Z",
+        "doodDropAllow": true,
+        "doodDropDays": 10,
+        "doodHoldAllow": false,
+        "doodInclude": true,
+        "elementId": "",
         "elementIdLock": false,
         "linkedElements": [], 
-        "name": "GEORGE"
+        "name": "Zuzu's Petals"
+      },
+      {
+        "id": "5d9fc8cfc0efae0017a32dfc",
+        "created": "2020-10-11T00:11:59.000Z",
+        "doodDropAllow": true,
+        "doodDropDays": 10,
+        "doodHoldAllow": false,
+        "doodInclude": true,
+        "elementId": "3",
+        "elementIdLock": false,
+        "linkedElements": [], 
+        "name": "CLARENCE"
+      }
+    ],
+
+    "stripboards": [
+      {
+        "id" : "5cff4bcb10c4330017ab6afd",
+        "boards" : [
+          {
+            "id": "5cff4bcb10c4330017ab6e12",
+            "name": "stripboard",
+            "breakdownIds": ["5cfe7d2510c4330017ab5ed1"]
+          }, 
+          {
+            "id": "5cff4bcb10c4330017ab6fab",
+            "name": "boneyard",
+            "breakdownIds": ["5cfe7d2510c4330017ab5ed5", "5cfe7d2510c4330017ab5ed3"]
+          }
+        ],
+        "calendar" : "5d01230c987033001725c908",
+        "name" : "Script Order"
+      },
+      {
+        "id" : "5cff4bcb10c4330017ab6eea",
+        "boards" : [
+          {
+            "id": "5cff4bcb10c4330017ab6da1",
+            "name": "stripboard",
+            "breakdownIds": ["5cfe7d2510c4330017ab5ed5", "5cfe7d2510c4330017ab5ed1", "5cfe7d2510c4330017ab5ed3"]
+          }, 
+          {
+            "id": "5cff4bcb10c4330017ab6cab",
+            "name": "boneyard",
+            "breakdownIds": []
+          }
+        ],
+        "calendar" : "5d01230c987033001725c908",
+        "name" : "The name of this stripboard"
       }
     ]
   }

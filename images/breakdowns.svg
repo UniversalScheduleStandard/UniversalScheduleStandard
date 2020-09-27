@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 218 200" style="enable-background:new 0 0 218 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:16px;}
+	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st5{font-size:9.0659px;}
+</style>
+<rect x="-0.5" y="0.5" class="st0" width="217" height="198"/>
+<rect x="29.5" y="30.5" class="st1" width="171" height="153"/>
+<rect x="23.5" y="25.5" class="st1" width="171" height="153"/>
+<rect x="17.5" y="20.5" class="st1" width="171" height="153"/>
+<text transform="matrix(1 0 0 1 63 44)" class="st2 st3">Breakdowns</text>
+<text transform="matrix(1 0 0 1 36 82)" class="st2 st3">Category</text>
+<path class="st4" d="M89.6,160.5H43.5c-6.6,0-12-5.4-12-12v-75c0-6.6,5.4-12,12-12h46.1c6.6,0,12,5.4,12,12v75
+	C101.6,155.1,96.2,160.5,89.6,160.5z"/>
+<g>
+	<text transform="matrix(1 0 0 1 44.151 111.994)" class="st2 st5">Elem</text>
+	<polygon class="st4" points="61.6,94.6 44.7,94.6 36.3,109.2 44.7,123.8 61.6,123.8 70,109.2 	"/>
+</g>
+<text transform="matrix(1 0 0 1 111 82)" class="st2 st3">Category</text>
+<path class="st4" d="M164.6,160.5h-46.1c-6.6,0-12-5.4-12-12v-75c0-6.6,5.4-12,12-12h46.1c6.6,0,12,5.4,12,12v75
+	C176.6,155.1,171.2,160.5,164.6,160.5z"/>
+<g>
+	<text transform="matrix(1 0 0 1 68.4844 137.3273)" class="st2 st5">Elem</text>
+	<polygon class="st4" points="85.9,119.9 69.1,119.9 60.6,134.5 69.1,149.1 85.9,149.1 94.4,134.5 	"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 119.8177 112.6606)" class="st2 st5">Elem</text>
+	<polygon class="st4" points="137.3,95.2 120.4,95.2 112,109.8 120.4,124.5 137.3,124.5 145.7,109.8 	"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 144.151 137.994)" class="st2 st5">Elem</text>
+	<polygon class="st4" points="161.6,120.6 144.7,120.6 136.3,135.2 144.7,149.8 161.6,149.8 170,135.2 	"/>
+</g>
+</svg>
