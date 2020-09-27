@@ -58,31 +58,37 @@
         "events" : [ 
             {
               "id" : "5dcee721d3ebb20017bbeb6a",
-              "type" : "start",
+              "effect" : "start",
+              "type" : null,
               "date" : "2020-06-20T08:00:00.000Z"
             },
             {
               "id" : "5dcee6dfd3ebb20017bbeb52",
+              "effect" : "dayOff",
               "type" : "holiday",
               "date" : "2020-07-04T08:00:00.000Z"
             }, 
             {
               "id" : "5dcee6fcd3ebb20017bbeb5e",
+              "effect" : "dayOff",
               "type" : "dayOff",
               "date" : "2020-07-15T08:00:00.000Z"
             },
             {
               "id" : "5d3b5c6d35bc890017e4eacb",
+              "effect" : "event",
               "type" : "travel",
               "date" : "2020-06-15T08:00:00.000Z"
             }, 
             {
               "id" : "5d3b5c7f35bc890017e4eacc",
+              "effect" : "event",
               "type" : "fitting",
               "date" : "2020-06-16T08:00:00.000Z"
             }, 
             {
               "id" : "5d3b5c9635bc890017e4ead1",
+              "effect" : "event",
               "type" : "rehearsal",
               "date" : "2020-06-17T08:00:00.000Z"
             }
@@ -181,21 +187,25 @@
         "events": [
           {
             "id" : "5d3cb8c31044290017d1d6ea",
+            "effect" : "dayOff",
             "name" : "dayOff",
             "date" : "2020-07-10T07:00:00.000Z"
           },
           {
             "id" : "5d3cb8c31044290017d1d6ea",
+            "effect" : "event",
             "name" : "travel",
             "date" : "2020-06-13T07:00:00.000Z"
           }, 
           {
             "id" : "5d3cb8c31044290017d1d6e9",
+            "effect" : "event",
             "name" : "rehearsal",
             "date" : "2020-06-14T07:00:00.000Z"
           }, 
           {
             "id" : "5d3cb8c31044290017d1d6e8",
+            "effect" : "event",
             "name" : "fitting",
             "date" : "2020-06-14T07:00:00.000Z"
           }
@@ -220,7 +230,7 @@
         "doodDropDays": 10,
         "doodHoldAllow": false,
         "doodInclude": true,
-        "elementId": "3",
+        "elementId": "2",
         "elementIdLock": false,
         "linkedElements": [], 
         "name": "CLARENCE"
