@@ -32,13 +32,13 @@ See the files in the [/samples](https://github.com/thinkcrew/entertainmentIndust
     - [Maintaining the Intent](#maintaining-the-intent)
     - [Extending the Category Types Standard](#extending-the-category-types-standard)
 
-## **1️⃣ Breakdown & Schedule Standard** {#breakdown-schedule-standard}
+## **1️⃣ Breakdown & Schedule Standard**
 
 The central purpose of this standard is to allow for the storage and transport of script breakdown information and schedules between individuals and platforms. In order to do this, it is first necessary to understand the types of data we'll be dealing with and how those different types relate to each other. 
 
 Also, it is important to differentiate this format from a backup of any particular software system. This standard does not attempt to back up user settings, preferences, state or any other data outside of the breakdown and schedule. Nor does this standard attempt to backup the contents of the script, except for the data that is directly used in a breakdown. 
 
-### Data Overview {#data-overview}
+### Data Overview
 
 Breakdown documents are created for every scene (or scenes) and each breakdown contains elements, which are categorized. For example, if an umbrella appears in the scene it will be added to a breakdown for that scene. When that element is first created it is assigned to a category so that all similar elements may be found more easily.
 
@@ -52,7 +52,7 @@ When creating a schedule out of these breakdowns, all of the breakdown IDs are a
 
 In a schedule breakdown objects are one of three types: 'scene', 'day' or 'banner'.
 
-### Structure and Format {#structure-and-format}
+### Structure and Format
 
 The Entertainment Industry Breakdown Format (EIBF) standard conforms to the [JSON](https://www.json.org/json-en.html) standard and is essentially a structured JSON store of relational data. 
 
@@ -84,23 +84,23 @@ The complete EIBF object is constructed as:
 }
 ```
 
-#### **ID Values** {#id-values}
+#### **ID Values**
 Throughout the EIBF object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into software, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
 
 It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like `"5d9fc8cfc0efae0017a3201a"`.
 
-#### **Date Format** {#date-format}
+#### **Date Format**
  Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format `"2020-06-24T08:00:00.000Z"`
 
-#### **Include All Keys** {#include-all-keys}
+#### **Include All Keys**
 It is considered best practice to include all keys in the object, even if unused. Skipping the inclusion of keys could throw errors in third party parsers. 
 
-#### **Maintaining Data Types** {#maintaining-data-types}
+#### **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (ie using a string where an array is expected) will likely throw an error during parsing. 
 
 If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc) or `null`.
 
-### Header Information {#header-information}
+### Header Information
 
 The header keys describe the overall EIBF object's contents. Please see the [/samples](https://github.com/thinkcrew/entertainmentIndustryScheduleFormat/tree/master/samples) folder for example values.
 
@@ -108,11 +108,11 @@ The header keys are `id`, `author`, `created`, `description`, `name`, `project`,
 
 The `version` refers to the EIBF version, not the version of the schedule. This is used to differentiate different versions of the standard over time.
 
-### Breakdowns {#breakdowns}
+### Breakdowns
 
 All EIBF objects must contain arrays of `breakdowns`, `categories` and `elements` objects. These three types of object arrays will make up the breakdown information.
 
-#### **Breakdown Objects** {#breakdown-objects}
+#### **Breakdown Objects**
 
 The breakdown objects contain information about a scene (or scenes) in a script. 
 
@@ -141,7 +141,7 @@ The `type` key has one of three values: 'scene', 'day' or 'banner'. 'Day' types 
 
 Note that all `type`s can store values as needed, depending on your preference. If you'd like to have 'day' types store the total pages for that day in the `pages` value, feel free. Likewise, 'banner's can store as much information as a 'scene' type. 
 
-#### **Category Objects** {#category-objects}
+#### **Category Objects**
 
 A category represents a group of similar elements. 'Cast Members', 'Props' and 'Wardrobe' are all different categories. All elements must be listed in exactly one category.
 
@@ -161,7 +161,7 @@ The `elements` array is made up of element IDs and represent all of the elements
 
 Categories may be `name`d anything, but should follow the original intent of the category, as described in the [Category Types Standard](#category-types-standard).
 
-#### **Element Objects** {#element-objects}
+#### **Element Objects**
 
 An element represents one particular person or item that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all potentially elements in those respective categories. 
 
@@ -190,11 +190,11 @@ The `linkedElements` array is made up of element IDs and represent all of the el
 
 For information about `events` objects, see the [Calendar Objects](#calendar-objects) section. 
 
-### Adding Schedules {#adding-schedules}
+### Adding Schedules
 
 If representing a schedule, the EIBF object must also contain `stripboards` & `calendars` arrays. If these keys are not present, their arrays have no length, or are `null` then the EIBF object is considered to be just a breakdown. 
 
-#### **Stripboard Objects** {#stripboard-objects}
+#### **Stripboard Objects**
 
 A stripboard represents a particlar scenario for the show - an order of shooting and potentially a separate set of shooting dates. There can many stripboards in a schedule. 
 
@@ -225,7 +225,7 @@ The `name`s of the boards is not the same as the `name` key in the stripboard ob
 
 The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array.
 
-#### **Calendar Objects** {#calendar-objects}
+#### **Calendar Objects**
 
 Calendar objects represent an overall calendar for the show and would traditionally include a start date, days of the week when there's no filming (weekends), any holidays, days off or unique events such as travel.
 
@@ -284,7 +284,7 @@ The `daysOff` array contains a variable amount of integers representing the days
 
 To represent not filming on Sunday and Saturday, the `daysOff` array would be [ 0, 6 ]. No values over 6 should be used, nor should negative numbers. Duplicates should be avoided. The order of the numbers in the array is not important.
 
-### Extending the Breakdown & Schedule Standard {#extending-the-breakdown-schedule-standard}
+### Extending the Breakdown & Schedule Standard
 
 Removing, renaming or altering the structure of the existing key/value pairs in the EIBF object is not allowed. However you may add your own keys to the object. If you need to add keys, please adhere to the following rules. 
 
@@ -298,7 +298,7 @@ All custom keys must:
 If you feel that your custom key is useful to the overall standard, you may submit a pull request and your ideas will be considered for inclusion in the official standard.
 
 ---
-## **2️⃣ Category Types Standard** {#category-types-standard}
+## **2️⃣ Category Types Standard**
 
 Categories have been previously considered to be unique to a project and are subject to the tastes of each individual. For example, one person might refer to 'Cast Members' as 'Cast', 'Actors' or 'Talent'. 'Background Performers' might be 'Background', 'Extras' or just 'BG'. When that individual attempts to share their data, this practice can become problematic if the names of the categories are not standardized. 
 
@@ -306,7 +306,7 @@ This standard assigns identification numbers to each category type. This allows 
 
 Additionally, categories come in two flavors:
 
-### Scene Categories {#scene-categories}
+### Scene Categories
 
 Scene categories refer to the entire scene as a whole. These include 'Set', 'Day/Night', 'INT/EXT', 'Unit', 'Sequence', etc. 
 
@@ -320,7 +320,7 @@ Here is a full list of the scene categories with their corresponding ID numbers:
     "id": 5, "name": "Sequence"
     "id": 6, "name": "Location"
 
-### Action Categories {#action-categories}
+### Action Categories
 
 Action categories contain elements found in the content of a scene, such as 'Cast Members', 'Props', 'Wardrobe', etc.
 
@@ -354,11 +354,11 @@ Here's a full list of the action categories with their corresponding ID numbers:
     
 The `name`s of the categories are merely the commonly used versions and are used here simply to communicate the intent of the category. 
 
-### Maintaining the Intent {#maintaining-the-intent}
+### Maintaining the Intent
 
 The most important part of the category standard is that all of the categories must retain their original intent. Renaming 'Cast Members' to 'Actors' is entirely allowable. But repurposing 'Cast Members' to 'Wagons' and filling it with elements such as 'Horse and Buggy' is not allowed. Maintaining the intent of the category allows for universal transfer of category data between individuals and platforms. 
 
-### Extending the Category Types Standard {#extending-the-category-types-standard}
+### Extending the Category Types Standard
 
 Note that the ID numbers for scene and action categories have a wide gap between them. The scene category IDs are numbered '0'-'6' and the action categories begin at '100'. This has been done to allow for future extensions of these standardized categories. 
 
