@@ -25,8 +25,8 @@ See the files in the [/samples](https://github.com/thinkcrew/entertainmentIndust
     - [Adding Schedules](#adding-schedules)
         - [Stripboard Objects](#stripboard-objects)
         - [Calendar Objects](#calendar-objects)
-    - [Extending the Breakdown & Schedule Standard](#extending-the-breakdown-schedule-standard)
-- 2️⃣ [Category Types Standard](#category-types-standard)
+    - [Extending the Breakdown & Schedule Standard](#extending-the-breakdown--schedule-standard)
+- 2️⃣ [Category Types Standard](#2%EF%B8%8F⃣-category-types-standard)
     - [Scene Categories](#scene-categories)
     - [Action Categories](#action-categories)
     - [Maintaining the Intent](#maintaining-the-intent)
@@ -58,7 +58,7 @@ The Entertainment Industry Breakdown Format (EIBF) standard conforms to the [JSO
 
 The complete EIBF object is constructed as:
 
-```json
+```
 {
   "entertainmentIndustryBreakdownFormat": {
     "id": string | ID value,
@@ -116,7 +116,7 @@ All EIBF objects must contain arrays of `breakdowns`, `categories` and `elements
 
 The breakdown objects contain information about a scene (or scenes) in a script. 
 
-```json
+```
 {
   "id": string | ID value,
   "comments": string,
@@ -145,7 +145,7 @@ Note that all `type`s can store values as needed, depending on your preference. 
 
 A category represents a group of similar elements. 'Cast Members', 'Props' and 'Wardrobe' are all different categories. All elements must be listed in exactly one category.
 
-```json
+```
 {
   "id": string | ID value,
   "catId": number | integer ID of corresponding category,
@@ -167,7 +167,7 @@ An element represents one particular person or item that will be needed to film 
 
 Element objects are constructed like this:
 
-```json
+```
 {
   "id": string | ID value,
   "created": string | ISO Date,
@@ -200,7 +200,7 @@ A stripboard represents a particlar scenario for the show - an order of shooting
 
 The stripboard objects are constructed like this:
 
-```json
+```
 {
   "id" : string | ID value,
   "boards" : array of board objects,
@@ -213,7 +213,7 @@ Each stripboard object can contain multiple distinct `boards` inside of them. Th
 
 The `boards` array is made up of board objects, which are constructed like this:
 
-```json
+```
 {
   "id": string | ID value,
   "name": string | name of board,
@@ -231,7 +231,7 @@ Calendar objects represent an overall calendar for the show and would traditiona
 
 Multiple calendars may be included in the array, representing different scenarios for the show.
 
-```json
+```
 {
   "id" : string | ID value,
   "events" : array of events objects,
@@ -242,7 +242,7 @@ Multiple calendars may be included in the array, representing different scenario
 
 Each calendar object may contain a number of events. The `events` array is made up of event objects, which are contructed as follows:
 
-```json
+```
 {
   "id" : string | ID value,
   "effect" : string | one of 'start|dayOff|event',
