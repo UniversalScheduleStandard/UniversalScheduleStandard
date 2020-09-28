@@ -286,4 +286,4 @@ All custom keys must:
 - Not interfere with or alter the existing structure of the USS object
 - Add values to the object that aren't already included in this standard (ie don't just add values to the object under your own custom name when a key already exists for that purpose)
 
-If you feel that your custom key is useful to the overall standard, you may submit a [pull request](../pulls) and your ideas will be considered for inclusion in the official standard.
+If you feel that your custom key is useful to the overall standard, you may submit a [pull request](https://github.com/thinkcrew/UniversalScheduleStandard/pulls) and your ideas will be considered for inclusion in the official standard.
