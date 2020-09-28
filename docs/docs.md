@@ -1,4 +1,10 @@
-# Universal Schedule Standard Documentation
+# **Universal Schedule Standard Documentation**
+
+The central purpose of this standard is to allow for the storage and transport of schedules and script breakdown information between individuals and platforms. In order to do this, it is first necessary to understand the types of data we'll be dealing with and how those different types relate to each other. 
+
+Also, it is important to differentiate this format from a backup of any particular software system. This standard does not attempt to back up user settings, preferences, state or any other data outside of the breakdown and schedule. Nor does this standard attempt to backup the contents of the script, except for the data that is directly used in a breakdown. 
+
+Before beginning to read the details of the standard you may find it helpful to review the [sample file](../samples/schedule.uss) in the [/samples](../samples/) folder. It will help familiarize you with the structure of the data object. 
 
 ## Table of Contents
 - [Data Overview](#data-overview)
@@ -7,6 +13,7 @@
     - [Date Format](#date-format)
     - [Include All Keys](#include-all-keys)
     - [Maintaining Data Types](#maintaining-data-types)
+    - [Saving Files](#saving-files)
 - [Header Information](#header-information)
 - [Breakdowns](#breakdowns)
     - [Breakdown Objects](#breakdown-objects)
@@ -19,11 +26,7 @@
 
 # Data Overview
 
-The central purpose of this standard is to allow for the storage and transport of script breakdown information and schedules between individuals and platforms. In order to do this, it is first necessary to understand the types of data we'll be dealing with and how those different types relate to each other. 
-
-Also, it is important to differentiate this format from a backup of any particular software system. This standard does not attempt to back up user settings, preferences, state or any other data outside of the breakdown and schedule. Nor does this standard attempt to backup the contents of the script, except for the data that is directly used in a breakdown. 
-
-Breakdown documents are created for every scene (or scenes) and each breakdown contains elements, which are categorized. For example, if an umbrella appears in the scene it will be added to a breakdown for that scene. When that element is first created it is assigned to a category so that all similar elements may be found more easily.
+Breakdown documents are created for every scene (or sometimes groups of scenes) and each breakdown contains elements, which are categorized. For example, if an umbrella appears in the scene it will be added to a breakdown for that scene. When that element is first created it is assigned to the props category so that all similar elements may be found more easily.
 
 <img src="../images/breakdowns.svg" alt="alt text" width="200" height="200">
 
@@ -37,13 +40,13 @@ In a schedule breakdown objects are one of three types: 'scene', 'day' or 'banne
 
 # Structure and Format
 
-The Entertainment Industry Breakdown Format (EIBF) standard conforms to the [JSON](https://www.json.org/json-en.html) standard and is essentially a structured JSON store of relational data. 
+The Universal Schedule Standard (USS) conforms to the [JSON](https://www.json.org/json-en.html) standard and is essentially a structured JSON store of relational data. 
 
-The complete EIBF object is constructed as:
+The complete USS object is constructed as:
 
 ```
 {
-  "entertainmentIndustryBreakdownFormat": {
+  "universalScheduleStandard": {
     "id": string | ID value,
     "author": string | name of individual creator,
     "created": string | ISO Date,
@@ -55,7 +58,7 @@ The complete EIBF object is constructed as:
     "scriptColor": string | name of the script color,
     "scriptDate": string | ISO Date,
     "source": string | name of originating site,
-    "version": string | EIBF version number,
+    "version": string | USS version number,
 
     "breakdowns": array of breakdown objects,
     "calendars": array of calendar objects | required only for schedules,
@@ -68,7 +71,7 @@ The complete EIBF object is constructed as:
 ```
 
 ## **ID Values**
-Throughout the EIBF object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into software, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
+Throughout the USS object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into software, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
 
 It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like `"5d9fc8cfc0efae0017a3201a"`.
 
@@ -83,17 +86,20 @@ Please maintain the correct data type for each key. The use of incorrect data ty
 
 If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc) or `null`.
 
+## **Saving Files**
+When saving files to a hard drive, use the file extension '.uss', which is the acronym of Universal Schedule Standard. 
+
 # Header Information
 
-The header keys describe the overall EIBF object's contents. Please see the [/samples](https://github.com/thinkcrew/entertainmentIndustryScheduleFormat/tree/master/samples) folder for example values.
+The header keys describe the overall USS object's contents. Please see the [/samples](../samples) folder for example values.
 
 The header keys are `id`, `author`, `created`, `description`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `source`, and `version`. All keys are required and their value may be `null` if no information is available.
 
-The `version` refers to the EIBF version, not the version of the schedule. This is used to differentiate different versions of the standard over time.
+The `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the standard over time.
 
 # Breakdowns
 
-All EIBF objects must contain arrays of `breakdowns`, `categories` and `elements` objects. These three types of object arrays will make up the breakdown information.
+All USS objects must contain arrays of `breakdowns`, `categories` and `elements` objects. These three types of object arrays will make up the breakdown information.
 
 ## **Breakdown Objects**
 
@@ -126,7 +132,9 @@ Note that all `type`s can store values as needed, depending on your preference. 
 
 ## **Category Objects**
 
-A category represents a group of similar elements. 'Cast Members', 'Props' and 'Wardrobe' are all different categories. All elements must be listed in exactly one category.
+A category represents a group of similar elements. 'Cast Members', 'Props' and 'Wardrobe' are all examples of categories. All elements must be listed in exactly one category.
+
+Category objects are constructed like this:
 
 ```
 {
@@ -138,15 +146,15 @@ A category represents a group of similar elements. 'Cast Members', 'Props' and '
 }
 ```
 
-The `catId` refers to the category ID number listed in the [Category Types Standard](#category-types-standard). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that section.
+The `catId` refers to the category ID number listed in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
 
 The `elements` array is made up of element IDs and represent all of the elements that are in that category. 
 
-Categories may be `name`d anything, but should follow the original intent of the category, as described in the [Category Types Standard](#category-types-standard).
+Categories may be `name`d anything, but should follow the original intent of the category, as described in the Category Identification Standard.
 
 ## **Element Objects**
 
-An element represents one particular person or item that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all potentially elements in those respective categories. 
+An element represents one particular person or item that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all examples of elements in those respective categories. 
 
 Element objects are constructed like this:
 
@@ -165,7 +173,7 @@ Element objects are constructed like this:
   "events": array of calendar event objects
 }
 ```
-The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear on the day out of days. 
+The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear in the day out of days. 
 
 The `elementId` key is traditionally used to assign a 'board ID' to an element. This is primarily  used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
 
@@ -175,7 +183,7 @@ For information about `events` objects, see the [Calendar Objects](#calendar-obj
 
 # Schedules
 
-If representing a schedule, the EIBF object must also contain `stripboards` & `calendars` arrays. If these keys are not present, their arrays have no length, or are `null` then the EIBF object is considered to be just a breakdown. 
+If representing a schedule, the USS object must also contain `stripboards` & `calendars` arrays. If these keys are not present, their arrays have no length, or are `null` then the USS object is considered to be just a breakdown. 
 
 ## **Stripboard Objects**
 
@@ -269,13 +277,13 @@ To represent not filming on Sunday and Saturday, the `daysOff` array would be [ 
 
 # Extending the Standard
 
-Removing, renaming or altering the structure of the existing key/value pairs in the EIBF object is not allowed. However you may add your own keys to the object. If you need to add keys, please adhere to the following rules. 
+Removing, renaming or altering the structure of the existing key/value pairs in the USS object is not allowed. However you may add your own custom keys to the object. If you need to add keys, please adhere to the following rules. 
 
 All custom keys must:
 
 - Adhere to the JSON standard
 - Begin with an underscore (ie `_keyName`)
-- Not interfere with or alter the existing structure of the EIBF object
+- Not interfere with or alter the existing structure of the USS object
 - Add values to the object that aren't already included in this standard (ie don't just add values to the object under your own custom name when a key already exists for that purpose)
 
-If you feel that your custom key is useful to the overall standard, you may submit a pull request and your ideas will be considered for inclusion in the official standard.
+If you feel that your custom key is useful to the overall standard, you may submit a [pull request](../pulls) and your ideas will be considered for inclusion in the official standard.
