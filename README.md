@@ -6,19 +6,14 @@
 
 ---
 
-<!-- <p align="center" style="margin-top: 16px">
-  <a href="https://github.com/ArmynC/ArminC-AutoExec/commits/master">
-  <img src="https://img.shields.io/github/last-commit/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-        alt="GitHub last commit">
-  <a href="https://github.com/ArmynC/ArminC-AutoExec/issues">
-  <img src="https://img.shields.io/github/issues-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-        alt="GitHub issues">
-  <a href="https://github.com/ArmynC/ArminC-AutoExec/pulls">
-  <img src="https://img.shields.io/github/issues-pr-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-        alt="GitHub pull requests">
-</p>
-<p align="center">:star: Star us on GitHub!</p>
- -->
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/thinkcrew/UniversalScheduleStandard)
+![GitHub issues](https://img.shields.io/github/issues/thinkcrew/UniversalScheduleStandard)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/thinkcrew/UniversalScheduleStandard)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/thinkcrew/UniversalScheduleStandard?color=yellow)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/thinkcrew/UniversalScheduleStandard?color=yellow)
+![GitHub Repo stars](https://img.shields.io/github/stars/thinkcrew/UniversalScheduleStandard?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/thinkcrew/UniversalScheduleStandard?style=social)
+
 # The Problem
 
 <img src="images/no_communication.png" alt="No Communication" width="300" height="211" align="right"/>
