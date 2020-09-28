@@ -16,12 +16,12 @@
   <a href="https://github.com/ArmynC/ArminC-AutoExec/pulls">
   <img src="https://img.shields.io/github/issues-pr-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
         alt="GitHub pull requests">
-</p> -->
+</p>
 <p align="center">:star: Star us on GitHub!</p>
-
+ -->
 # The Problem
 
-<img src="images/no_communication.png" alt="No Communication" width="300" height="211" style="float: right"/>
+<img src="images/no_communication.png" alt="No Communication" width="300" height="211" align="right"/>
 
 Production schedules are indispensible documents in the entertainment industry, containing the core information that is consumed both during prep and on set. 
 
@@ -33,7 +33,7 @@ Additionally, unnecessary resources are placed on promoting file formats, which 
 
 # The Solution - **Universal Schedule Standard**
 
-<img src="images/communication.png" alt="Communication" width="300" height="211" style="float: right"/>
+<img src="images/communication.png" alt="Communication" width="300" height="211" align="right"/>
 
 The **Universal Schedule Standard** is a proposal for one common method to store and transport schedule and breakdown data across all existing and future platforms. 
 
