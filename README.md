@@ -58,6 +58,14 @@ The standard proposed here has been carefully crafted to serve all sectors of th
 - Is extensible if you'd like to store additional data
 - Works interchangably as a file and as data in an API call
 
+# Feeback & Participation in the Proposal 🎉
+
+Any creator can participate in the finalization of this proposed standard. Please post [pull requests](https://github.com/thinkcrew/UniversalScheduleStandard/pulls) or [issues](https://github.com/thinkcrew/UniversalScheduleStandard/issues) with update ideas, discussion or suggestions. 
+
+This proposal is intended to foster the communication of ideas and ultimately result in the completion of a universal standard that can be used by any creator in the industry. 
+
+As these are early days, it is not recommended that you implement this standard yet. After we've gotten some feedback we'll have a better idea of when implementation will be advised. 
+
 # Details
 
 This proposed standard has been designed as a conscise way to store as much schedule and breakdown data as possible in a format that is both human and machine readable.
@@ -100,14 +108,6 @@ See the [sample file](/samples/schedule.uss) in the [/samples](samples/) folder 
 # Documentation
 
 For detailed instructions about the structure and format of the standard object, please read the [detailed documentation](docs/docs.md) found in the [/docs](docs/) folder. 
-
-# Feeback & Participation in the Proposal 🎉
-
-Any creator can participate in the finalization of this proposed standard. Please post [pull requests](https://github.com/thinkcrew/UniversalScheduleStandard/pulls) or [issues](https://github.com/thinkcrew/UniversalScheduleStandard/issues) with update ideas, discussion or suggestions. 
-
-This proposal is intended to foster the communication of ideas and ultimately result in the completion of a universal standard that can be used by any creator in the industry. 
-
-As these are early days, it is not recommended that you implement this standard yet. After we've gotten some feedback we'll have a better idea of when implementation will be advised. 
 
 <!-- # Collaborators
 
