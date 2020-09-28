@@ -103,7 +103,7 @@ For detailed instructions about the structure and format of the standard object,
 
 # Feeback & Participation in the Proposal 🎉
 
-Any creator can participate in the finalization of this proposed standard. Please post [pull requests](pulls) or [issues](issues) with update ideas, discussion or suggestions. 
+Any creator can participate in the finalization of this proposed standard. Please post [pull requests](/pulls) or [issues](/issues) with update ideas, discussion or suggestions. 
 
 This proposal is intended to foster the communication of ideas and ultimately result in the completion of a universal standard that can be used by any creator in the industry. 
 
