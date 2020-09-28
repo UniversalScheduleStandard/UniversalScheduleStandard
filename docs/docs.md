@@ -2,7 +2,7 @@
 
 The central purpose of this standard is to allow for the storage and transport of schedules and script breakdown information between individuals and platforms. In order to do this, it is first necessary to understand the types of data we'll be dealing with and how those different types relate to each other. 
 
-Also, it is important to differentiate this format from a backup of any particular software system. This standard does not attempt to back up user settings, preferences, state or any other data outside of the breakdown and schedule. Nor does this standard attempt to backup the contents of the script, except for the data that is directly used in a breakdown. 
+Also, it is important to differentiate this format from a backup of any particular software system. This standard does not attempt to back up user settings, preferences, state or any other data outside of the schedule and breakdown. Nor does this standard attempt to backup the contents of the script, except for the data that is directly used in a breakdown. 
 
 Before beginning to read the details of the standard you may find it helpful to review the [sample file](../samples/schedule.uss) in the [/samples](../samples/) folder. It will help familiarize you with the structure of the data object. 
 
@@ -79,15 +79,15 @@ It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mon
  Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format `"2020-06-24T08:00:00.000Z"`
 
 ## **Include All Keys**
-It is considered best practice to include all keys in the object, even if unused. Skipping the inclusion of keys could throw errors in third party parsers. 
+It is considered best practice to include all keys in the object, even if unused. Skipping keys could throw errors in third party parsers. 
+
+If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc) or `null`.
 
 ## **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (ie using a string where an array is expected) will likely throw an error during parsing. 
 
-If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc) or `null`.
-
 ## **Saving Files**
-When saving files to a hard drive, use the file extension '.uss', which is the acronym of Universal Schedule Standard. 
+When saving files to a hard drive, use the file extension '.uss', which is an acronym of Universal Schedule Standard. 
 
 # Header Information
 
@@ -120,7 +120,7 @@ The breakdown objects contain information about a scene (or scenes) in a script.
 }
 ```
 
-Some scheduling software includes [scene categories](#scene-categories) as part of the breakdown itself. Examples of these keys are `Unit`, `Location` and `Script Day`. These are not included as keys in the object directly, but can be inferred by the inclusion of elements that are in those categories. For instance, the inclusion of an element with the `name`: 'D12', which is in the `Script Day` category, will mean that this breakdown is for a scene that takes place on D12 in the script.
+Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the object directly, but can be inferred by the inclusion of elements that are in those categories. For instance, the inclusion of an element with the `name`: 'D12', which is in the Script Day category, will mean that this breakdown is for a scene that takes place on D12 in the script.
 
 The `elements` array contains element IDs that represent all of the elements in the breakdown. 
 
@@ -179,7 +179,7 @@ The `elementId` key is traditionally used to assign a 'board ID' to an element. 
 
 The `linkedElements` array is made up of element IDs and represent all of the elements that are linked to the element. Linking elements is used in some software to ensure that when a particular element is added to a breakdown, a number of other elements are automatically added as well. Examples commonly include actors and props they are always seen with. A doctor and their stethoscope, for example. 
 
-For information about `events` objects, see the [Calendar Objects](#calendar-objects) section. 
+`Events` refers to specicific calendar events for this element. If an individual actor has a fitting or cannot work on a particular day, events will be created for them to reflect this. For more information about `events` objects, see the [Calendar Objects](#calendar-objects) section. 
 
 # Schedules
 

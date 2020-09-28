@@ -45,17 +45,17 @@ And perhaps most importantly, end users will gain confidence in the entire secto
 
 # Features
 
-The standard proposed here has been carefully crafted to serve all sectors of the entertainment industry. Easily allowing for:
+The standard proposed here has been carefully crafted to serve all sectors of the entertainment industry. It allows for:
 
 - Transport - use it to easily move entire schedules or breakdowns between applications or services
 - Storage - provides a common format for legacy data
-- Future Proofing - stores data in a simple text format that will be easily readable by any system in the future
+- Future Proofing - stores data in a simple text format that will be readable by any system in the future
 - Flexibility - the schedule and breakdown data are stored separately, allowing for the storage of just breakdown data without a schedule, if desired
 - Storage of Metadata - includes important additional data such as calendars, multiple stripboards, individual settings for elements, etc.
 - Conforms to the [Universal Category Identification](https://github.com/thinkcrew/UniversalCategoryIdentification) standard so that all breakdown categories are easily parsed
 - Open standard - no licensing fees - free to use
 - Not reliant on any third party resources or services
-- Is easily extensible if you'd like to store additional data
+- Is extensible if you'd like to store additional data
 - Works interchangably as a file and as data in an API call
 
 # Details
