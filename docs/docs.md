@@ -179,7 +179,7 @@ The `elementId` key is traditionally used to assign a 'board ID' to an element. 
 
 The `linkedElements` array is made up of element IDs and represent all of the elements that are linked to the element. Linking elements is used in some software to ensure that when a particular element is added to a breakdown, a number of other elements are automatically added as well. Examples commonly include actors and props they are always seen with. A doctor and their stethoscope, for example. 
 
-`Events` refers to specicific calendar events for this element. If an individual actor has a fitting or cannot work on a particular day, events will be created for them to reflect this. For more information about `events` objects, see the [Calendar Objects](#calendar-objects) section. 
+`Events` refers to specific calendar events for this element. If an individual actor has a fitting or cannot work on a particular day, events will be created for them to reflect this. For more information about `events` objects, see the [Calendar Objects](#calendar-objects) section. 
 
 # Schedules
 
