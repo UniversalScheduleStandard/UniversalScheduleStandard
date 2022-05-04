@@ -53,7 +53,7 @@ The standard proposed here has been carefully crafted to serve all sectors of th
 - Is extensible if you'd like to store additional data
 - Works interchangably as a file and as data in an API call
 
-# Feeback & Participation in the Proposal 🎉
+# Final Feeback & Participation in the Proposal ⏰
 
 This standard proposal is in its final approval stages. This is the **LAST CALL** for any final notes or refinements to the standard. 
 
@@ -78,14 +78,17 @@ Here is an example of the entire standard object:
     "author": "Jane Smith",
     "created": "2020-10-07T00:12:06.000Z",
     "description": "This is a description of the schedule",
+    "episode": "101",
+    "episodeName": "The title of this series episode",
     "name": "My schedule name",
     "project": "It's A Wonderful Life",
     "schedColor": "Blue",
     "schedDate": "2020-10-07T07:00:00.000Z",
     "scriptColor": "Yellow",
     "scriptDate": "2020-10-01T07:00:00.000Z",
+    "season": "The identifier for this series season",
     "source": "Name of originating site",
-    "version": "0.1.0",
+    "version": "0.9.0",
 
     "breakdowns": [],
     "calendars": [],
