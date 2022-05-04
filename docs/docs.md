@@ -73,7 +73,6 @@ The complete USS object is constructed as:
     "categories": array of category objects,
     "elements": array of element objects,
     "stripboards": array of stripboard objects | required only for schedules
-    }
   }
 }
 ```
