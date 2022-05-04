@@ -90,16 +90,16 @@ If you are not using a particular key, you may give it a value of either it's em
 ## **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (ie using a string where an array is expected) will likely throw an error during parsing. 
 
-## **Saving Files**
-When saving files to a hard drive, use the file extension '.uss', which is an acronym of Universal Schedule Standard. 
+## **File Extension**
+When saving files use the file extension '.uss', which is an acronym of Universal Schedule Standard. 
 
 # Header Information
 
-The header keys describe the overall USS object's contents. Please see the [/samples](../samples) folder for example values.
+The header keys describe the overall USS object's contents. Please see the [/samples](../samples) folder for examples.
 
-The header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required and their value may be `null` if no information is available or if the key doesn't apply to the schedule (i.e., feature films don't have `episode`s, `episodeName`s or `season`s)
+The header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required but their value may be `null` if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
 
-The `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard over time.
+Please note that the `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard as it evolves.
 
 # Breakdowns
 
@@ -197,7 +197,7 @@ The `linkedElements` array is made up of element IDs and represent all of the el
 
 # Schedules
 
-If representing a schedule, the USS object must also contain `stripboards` & `calendars` arrays. If these keys are not present, their arrays have no length, or are `null` then the USS object is considered to be just a breakdown. 
+If representing a schedule, the USS object must also contain `stripboards` & `calendars` arrays. If both of these keys are not present, their arrays have no length, or are `null` then the USS object is considered to be just a breakdown. 
 
 ## **Stripboard Objects**
 
@@ -221,14 +221,14 @@ The `boards` array is made up of board objects, which are constructed like this:
 ```
 {
   "id": string | ID value,
-  "name": string | name of board,
+  "name": string | name value of board,
   "breakdownIds": array of breakdown ID string values
 }
 ```
 
 The `name`s of the boards is not the same as the `name` key in the stripboard objects. The stripboard objects `name` is for the user to name their stripboard. The board objects `name` is for internal use and should be simple reflections of its intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc, at your discretion.
 
-The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array.
+The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array. `Breakdown` objects that are not referenced in a `boards.breakdownIds` array will be ignored. 
 
 ## **Calendar Objects**
 
@@ -252,7 +252,7 @@ Each calendar object may contain a number of events. The `events` array is made 
   "id" : string | ID value,
   "effect" : string | one of 'start|dayOff|event',
   "type" : string | one of (see value list below),
-  "name" : string | name of the event | optional,
+  "name" : string | name of the event | optional, can be used with custom events,
   "date" : string | ISO Date
 }
 ```
@@ -275,7 +275,7 @@ Adherence to the set of above types is extremely important as the addition of va
 
 The `name` of the event can be any string and is optional, used primarily for 'custom' events.
 
-The `daysOff` array contains a variable amount of integers representing the days of the week when there will not be filming. The days of the week are represented by the following values:
+The `daysOff` array contains a variable amount of integers representing the days of the week when no filming will occur. The days of the week are represented by the following values:
 
 | Day       | Value |
 | :---      | :---: |
