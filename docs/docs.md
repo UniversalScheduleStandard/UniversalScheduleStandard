@@ -49,15 +49,16 @@ The complete USS object is constructed as:
   "universalScheduleStandard": {
     "id": string | ID value,
     "author": string | name of individual creator,
-    "created": string | ISO Date,
+    "company": string | name of the company for which the schedule was created,
+    "created": string | ISO Date of the creation date of the schedule,
     "description": string | description of file,
     "name": string | name of the schedule,
     "project": string | name of the project,
-    "schedColor": string | name of the schedule color,
-    "schedDate": string | ISO Date,
-    "scriptColor": string | name of the script color,
-    "scriptDate": string | ISO Date,
-    "source": string | name of originating site,
+    "schedColor": string | name of the schedule revision color,
+    "schedDate": string | ISO Date of the revision date of the schedule,
+    "scriptColor": string | name of the script revision color,
+    "scriptDate": string | ISO Date of the revision date of the script,
+    "source": string | name of originating app or site,
     "version": string | USS version number,
 
     "breakdowns": array of breakdown objects,
@@ -71,7 +72,7 @@ The complete USS object is constructed as:
 ```
 
 ## **ID Values**
-Throughout the USS object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into software, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
+Throughout the USS object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into a third party app, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
 
 It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like `"5d9fc8cfc0efae0017a3201a"`.
 
@@ -120,19 +121,29 @@ The breakdown objects contain information about a scene (or scenes) in a script.
 }
 ```
 
+The `elements` array contains element IDs that represent all of the elements in the breakdown. 
+
 Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the object directly, but can be inferred by the inclusion of elements that are in those categories. For instance, the inclusion of an element with the `name`: 'D12', which is in the Script Day category, will mean that this breakdown is for a scene that takes place on D12 in the script.
 
-The `elements` array contains element IDs that represent all of the elements in the breakdown. 
+The INT/EXT, Day/Night and Set properties of the breakdown are merely added as elements to that breakdown. For the slugline "EXT. BEDFORD FALLS BRIDGE - NIGHT" you would add three id's to the `elements` array of that breakdown that correspond to these element objects:
+
+```
+{ "id": "5d9fc8cfc0efae0017a32e31", ..., "name": "EXT" },
+{ "id": "5d9fc8cfc0efae0017a32de8", ..., "name": "BEDFORD FALLS BRIDGE" },
+{ "id": "5d9fc8d0c0efae0017a32e39", ..., "name": "NIGHT" },
+```
+
+Presumably you would also include those element's id's in the `elements` array of corresponding `categories`. You can look at the sample files for examples of how to structure this. 
 
 The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be '5700000' if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
 
 The `type` key has one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be `null`. 'Banner' types should store their text in the `description` value. 
 
-Note that all `type`s can store values as needed, depending on your preference. If you'd like to have 'day' types store the total pages for that day in the `pages` value, feel free. Likewise, 'banner's can store as much information as a 'scene' type. 
+Note that all `type`s can store values as needed, depending on your preference. If you'd like to have 'day' types store the total pages for that day in the `pages` value, feel free. Likewise, 'banner's can store as much information as a 'scene' type. The shooting date of a particular 'day' strip is inferred from a stripboard's related calendar. 
 
 ## **Category Objects**
 
-A category represents a group of similar elements. 'Cast Members', 'Props' and 'Wardrobe' are all examples of categories. All elements must be listed in exactly one category.
+A category represents a group of similar elements. 'Cast Members', 'Props' and 'Wardrobe' are all examples of categories. All elements must be listed in exactly one category. Elements that are not referred to in a category will be ignored. Elements that exist in more than one category will only have the first instance recognized. 
 
 Category objects are constructed like this:
 
@@ -140,7 +151,7 @@ Category objects are constructed like this:
 {
   "id": string | ID value,
   "catId": number | integer ID of corresponding category,
-  "created": string | ISO Date,
+  "created": string | ISO Date of the creation date of this category,
   "elements": array of ID string values,
   "name": string | name of this category
 }
@@ -154,14 +165,14 @@ Categories may be `name`d anything, but should follow the original intent of the
 
 ## **Element Objects**
 
-An element represents one particular person or item that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all examples of elements in those respective categories. 
+An element represents one particular person, animal or item that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all examples of elements in those respective categories. 
 
 Element objects are constructed like this:
 
 ```
 {
   "id": string | ID value,
-  "created": string | ISO Date,
+  "created": string | ISO Date of the creation date of this element,
   "doodDropAllow": boolean | allow drop days on dood?,
   "doodDropDays": number | integer of days between drop & pickup,
   "doodHoldAllow": boolean | allow hold days on dood?,
@@ -175,7 +186,7 @@ Element objects are constructed like this:
 ```
 The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear in the day out of days. 
 
-The `elementId` key is traditionally used to assign a 'board ID' to an element. This is primarily  used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
+The `elementId` key is traditionally used to assign a 'board ID' to an element. This is primarily used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
 
 The `linkedElements` array is made up of element IDs and represent all of the elements that are linked to the element. Linking elements is used in some software to ensure that when a particular element is added to a breakdown, a number of other elements are automatically added as well. Examples commonly include actors and props they are always seen with. A doctor and their stethoscope, for example. 
 
@@ -212,7 +223,7 @@ The `boards` array is made up of board objects, which are constructed like this:
 }
 ```
 
-The `name`s of the boards is not the same as the `name` key in the stripboard objects. The stripboard objects `name` is for the user to name their stripboard. The board objects `name` is for internal use and  should be simple reflections of its intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc, at your discretion.
+The `name`s of the boards is not the same as the `name` key in the stripboard objects. The stripboard objects `name` is for the user to name their stripboard. The board objects `name` is for internal use and should be simple reflections of its intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc, at your discretion.
 
 The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array.
 

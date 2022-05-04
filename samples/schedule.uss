@@ -2,22 +2,23 @@
   "universalScheduleStandard": {
     "id": "5d9fc8cfc0efae0017a32a11",
     "author": "Jane Smith",
-    "created": "2020-10-11T00:12:06.000Z",
+    "company": "Name of company the schedule was created for",
+    "created": "2022-06-11T00:12:06.000Z",
     "description": "This is a description of the schedule",
     "name": "My schedule name",
     "project": "It's A Wonderful Life",
     "schedColor": "Blue",
-    "schedDate": "2020-10-07T07:00:00.000Z",
+    "schedDate": "2022-06-07T07:00:00.000Z",
     "scriptColor": "Yellow",
-    "scriptDate": "2020-10-01T07:00:00.000Z",
-    "source": "Name of originating site",
-    "version": "0.1.0",
+    "scriptDate": "2022-06-01T07:00:00.000Z",
+    "source": "Name of originating site or app",
+    "version": "0.9.0",
 
     "breakdowns": [
       {
         "id": "5cfe7d2510c4330017ab5ed5",
         "comments":  null,
-        "created": "2020-10-11T00:12:02.000Z",
+        "created": "2022-06-11T00:12:02.000Z",
         "description": "A Text Banner",
         "elements": [],
         "pages":  null,
@@ -29,7 +30,7 @@
       {
         "id": "5cfe7d2510c4330017ab5ed1",
         "comments": "This scene must be shot at night",
-        "created": "2020-10-11T00:12:02.000Z",
+        "created": "2022-06-11T00:12:02.000Z",
         "description": "George finds Zuzu's petals in his pocket",
         "elements": ["5d9fc8cfc0efae0017a32e31", "5d9fc8cfc0efae0017a32de8", "5d9fc8d0c0efae0017a32e39", "5d9fc8cfc0efae0017a32d46", "5d9fc8cfc0efae0017a3201a", "5d9fc8cfc0efae0017a32dfc"],
         "pages": 0.25,
@@ -41,7 +42,7 @@
       {
         "id": "5cfe7d2510c4330017ab5ed3",
         "comments":  null,
-        "created": "2020-10-11T00:12:02.000Z",
+        "created": "2022-06-11T00:12:02.000Z",
         "description": null,
         "elements": [],
         "pages":  null,
@@ -60,37 +61,37 @@
               "id" : "5dcee721d3ebb20017bbeb6a",
               "effect" : "start",
               "type" : null,
-              "date" : "2020-06-20T08:00:00.000Z"
+              "date" : "2022-06-20T08:00:00.000Z"
             },
             {
               "id" : "5dcee6dfd3ebb20017bbeb52",
               "effect" : "dayOff",
               "type" : "holiday",
-              "date" : "2020-07-04T08:00:00.000Z"
+              "date" : "2022-07-04T08:00:00.000Z"
             }, 
             {
               "id" : "5dcee6fcd3ebb20017bbeb5e",
               "effect" : "dayOff",
               "type" : "dayOff",
-              "date" : "2020-07-15T08:00:00.000Z"
+              "date" : "2022-07-15T08:00:00.000Z"
             },
             {
               "id" : "5d3b5c6d35bc890017e4eacb",
               "effect" : "event",
               "type" : "travel",
-              "date" : "2020-06-15T08:00:00.000Z"
+              "date" : "2022-06-15T08:00:00.000Z"
             }, 
             {
               "id" : "5d3b5c7f35bc890017e4eacc",
               "effect" : "event",
               "type" : "fitting",
-              "date" : "2020-06-16T08:00:00.000Z"
+              "date" : "2022-06-16T08:00:00.000Z"
             }, 
             {
               "id" : "5d3b5c9635bc890017e4ead1",
               "effect" : "event",
               "type" : "rehearsal",
-              "date" : "2020-06-17T08:00:00.000Z"
+              "date" : "2022-06-17T08:00:00.000Z"
             }
         ],
         "daysOff" : [0, 6],
@@ -102,35 +103,35 @@
       {
         "id": "5d9fc8cfc0efae0017a32d6a",
         "catId": 0,
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "elements": ["5d9fc8cfc0efae0017a32de8"],
         "name": "Set"
       },
       {
         "id": "5d9fc8cfc0efae0017a32e12",
         "catId": 1,
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "elements": ["5d9fc8cfc0efae0017a32e31"],
         "name": "INT/EXT"
       },
       {
         "id": "5d9fc8cfc0efae0017a32aab",
         "catId": 2,
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "elements": ["5d9fc8d0c0efae0017a32e39"],
         "name": "Day/Night"
       },
       {
         "id": "5d9fc8cfc0efae0017a32d35",
         "catId": 100,
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "elements": ["5d9fc8cfc0efae0017a32d46", "5d9fc8cfc0efae0017a32dfc"],
         "name": "Cast Members"
       },
       {
         "id": "5d9fc8cfc0efae0017a32e16",
         "catId": 104,
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "elements": ["5d9fc8cfc0efae0017a3201a"],
         "name": "Props"
       }
@@ -139,7 +140,7 @@
     "elements": [
       {
         "id": "5d9fc8cfc0efae0017a32e31",
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "doodDropAllow": true,
         "doodDropDays": 10,
         "doodHoldAllow": false,
@@ -151,7 +152,7 @@
       }, 
       {
         "id": "5d9fc8cfc0efae0017a32de8",
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "doodDropAllow": true,
         "doodDropDays": 10,
         "doodHoldAllow": false,
@@ -163,7 +164,7 @@
       }, 
       {
         "id": "5d9fc8d0c0efae0017a32e39",
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "doodDropAllow": true,
         "doodDropDays": 10,
         "doodHoldAllow": false,
@@ -175,7 +176,7 @@
       }, 
       {
         "id": "5d9fc8cfc0efae0017a32d46",
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "doodDropAllow": true,
         "doodDropDays": 10,
         "doodHoldAllow": false,
@@ -189,31 +190,31 @@
             "id" : "5d3cb8c31044290017d1d6ea",
             "effect" : "dayOff",
             "name" : "dayOff",
-            "date" : "2020-07-10T07:00:00.000Z"
+            "date" : "2022-07-10T07:00:00.000Z"
           },
           {
             "id" : "5d3cb8c31044290017d1d6ea",
             "effect" : "event",
             "name" : "travel",
-            "date" : "2020-06-13T07:00:00.000Z"
+            "date" : "2022-06-13T07:00:00.000Z"
           }, 
           {
             "id" : "5d3cb8c31044290017d1d6e9",
             "effect" : "event",
             "name" : "rehearsal",
-            "date" : "2020-06-14T07:00:00.000Z"
+            "date" : "2022-06-14T07:00:00.000Z"
           }, 
           {
             "id" : "5d3cb8c31044290017d1d6e8",
             "effect" : "event",
             "name" : "fitting",
-            "date" : "2020-06-14T07:00:00.000Z"
+            "date" : "2022-06-14T07:00:00.000Z"
           }
         ]
       }, 
       {
         "id": "5d9fc8cfc0efae0017a3201a",
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "doodDropAllow": true,
         "doodDropDays": 10,
         "doodHoldAllow": false,
@@ -225,7 +226,7 @@
       },
       {
         "id": "5d9fc8cfc0efae0017a32dfc",
-        "created": "2020-10-11T00:11:59.000Z",
+        "created": "2022-06-11T00:11:59.000Z",
         "doodDropAllow": true,
         "doodDropDays": 10,
         "doodHoldAllow": false,
