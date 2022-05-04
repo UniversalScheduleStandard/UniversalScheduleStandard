@@ -85,7 +85,7 @@ It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mon
 ## **Include All Keys**
 It is considered best practice to include all keys in the object, even if unused. Skipping keys could throw errors in third party parsers. 
 
-If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc) or you may use `null`, if applicable.
+If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc) or you may use 'null', if applicable.
 
 ## **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (ie using a string where an array is expected) will likely throw an error during parsing. 
@@ -97,13 +97,13 @@ When saving files use the file extension '.uss', which is an acronym of Universa
 
 The header keys describe the overall USS object's contents. Please see the [/samples](../samples) folder for examples.
 
-The header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required but their value may be `null` if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
+The header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required but their value may be 'null' if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
 
 Please note that the `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard as it evolves.
 
 # Breakdowns
 
-All USS objects must contain arrays of `breakdowns`, `categories` and `elements` objects. These three types of object arrays will make up the breakdown information.
+All USS objects must contain arrays of [breakdowns](#breakdown-objects), [categories](#category-objects) and [elements](#element-objects) objects. These three types of object arrays will make up the breakdown information.
 
 ## **Breakdown Objects**
 
@@ -134,7 +134,7 @@ The INT/EXT, Day/Night and Set properties of the breakdown are merely added as e
 {..., elements: ["5d9fc8cfc0efae0017a32e31", "5d9fc8cfc0efae0017a32de8", "5d9fc8d0c0efae0017a32e39"], ...}
 ```
 
-...that correspond to these element objects:
+...that correspond to these [element objects](#element-objects):
 
 ```
 { "id": "5d9fc8cfc0efae0017a32e31", ..., "name": "EXT" },
@@ -146,7 +146,7 @@ Presumably you would also include those element's id's in the `elements` array o
 
 The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be '5700000' if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
 
-The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be `null`. 'Banner' types should store their text in the `description` value. 
+The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be 'null'. 'Banner' types should store their text in the `description` value. 
 
 Note that all `type`s can store values as needed, depending on your preference. If you'd like to have 'day' types store the total pages for that day in the `pages` value, feel free. Likewise, 'banner's can store as much information as a 'scene' type. The shooting date of a particular 'day' strip is inferred from a stripboard's related calendar. 
 
@@ -190,7 +190,7 @@ Element objects are constructed like this:
   "elementIdLock": boolean | lock element ID number?,
   "linkedElements": array of element object ID string values, 
   "name": string | name of element,
-  "events": array of calendar event objects
+  "events": array of event objects
 }
 ```
 
@@ -200,11 +200,11 @@ The `elementId` key is traditionally used to assign a 'board ID' to an element. 
 
 The `linkedElements` array is made up of element IDs and represent all of the elements that are linked to the element. Linking elements is used in some software to ensure that when a particular element is added to a breakdown, a number of other elements are automatically added as well. Examples commonly include actors and props they are always seen with. A doctor and their stethoscope, for example. 
 
-`Events` refers to specific calendar events for this element. If an individual actor has a fitting or cannot work on a particular day, events will be created for them to reflect this. For more information about `events` objects, see the [Calendar Objects](#calendar-objects) section. 
+`Events` refers to specific calendar events for this element. If an individual actor has a fitting or cannot work on a particular day, events will be created for them to reflect this. For more information about events objects, see the [calendar objects](#calendar-objects) section. 
 
 # Schedules
 
-If representing a schedule, the USS object must also contain `stripboards` & `calendars` arrays. If both of these keys are not present, their arrays have no length, or are `null` then the USS object is considered to be just a breakdown. 
+If representing a schedule, the USS object must also contain `stripboards` & `calendars` arrays. If both of these keys are not present, their arrays have no length, or are 'null' then the USS object is considered to be just a breakdown. 
 
 ## **Stripboard Objects**
 
@@ -223,64 +223,42 @@ The stripboard objects are constructed like this:
 
 Each stripboard object can contain multiple distinct `boards` inside of them. The most common example of this is a stripboard and a boneyard. Both are unique boards and should contain unique values. Some scheduling software may also allow for additional boards representing different units, etc. Using an array to store multiple boards should provide enough flexibility to cover many types of platforms.
 
-The `boards` array is made up of board objects, which are constructed like this:
+The `name` is the name of this stripboard. For example, it could be "First Draft" or "Revised White 6/20/22"
+
+The `boards` array contains individual boards for this stripboard. For example, a stripboard may contain [board objects](#board-objects) that represent the stripboard itself and a boneyard. 
+
+## **Board Objects**
+
+The [stripboard objects](#stripboard-objects) `boards` array is made up of board objects, which are constructed like this:
 
 ```
 {
   "id": string | ID value,
   "name": string | name value of board,
-  "breakdownIds": array of breakdown object ID string values
+  "breakdownIds": ordered array of breakdown object ID string values
 }
 ```
 
-The `name`s of the boards is not the same as the `name` key in the stripboard objects. The stripboard objects `name` is for the user to name their stripboard. The board objects `name` is for internal use and should be simple reflections of its intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc, at your discretion.
+The board object `name` is not the same as the `name` key in the [stripboard objects](#stripboard-objects). The board objects `name` should be simple reflections of the individual board's intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc, at your discretion.
 
-The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array. `Breakdown` objects that are not referenced in a `boards.breakdownIds` array will be ignored. 
+The order of the `breakdownIds` is the order of the breakdowns in this stripboard, so ensure that you are storing this ordered array of IDs correctly. 
+
+The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array. [Breakdown objects](#breakdown-objects) that are not referenced in a `boards.breakdownIds` array will be ignored. 
 
 ## **Calendar Objects**
 
 Calendar objects represent an overall calendar for the show and would traditionally include a start date, days of the week when there's no filming (weekends), any holidays, days off or unique events such as travel.
 
-Multiple calendars may be included in the array, representing different scenarios for the show.
+Multiple calendars may be included in the array, representing different scenarios for the show. Calendar objects are constructed as follows:
 
 ```
 {
   "id" : string | ID value,
-  "events" : array of events objects,
   "daysOff" : array of integers representing days of week,
+  "events" : array of events objects,
   "name" : string | name of calendar,
 }
 ```
-
-Each calendar object may contain a number of events. The `events` array is made up of event objects, which are constructed as follows:
-
-```
-{
-  "id" : string | ID value,
-  "effect" : string | one of 'start|dayOff|event',
-  "type" : string | one of (see value list below),
-  "name" : string | name of the event | optional, can be used with custom events,
-  "date" : string | ISO Date
-}
-```
-
-Events can have multiple `effect`s on a schedule. 
-
-- The 'start' effect determines the date of the first day strip on your board. Affects the day strips and the dood.
-- The 'dayOff' effect determines dates to skip on the board. Affects the day strips and the dood.
-- The 'event' effect is for individual calendar events such as fittings, rehearsals, travel, etc. Affects only the dood. 
-
-The `type` key is used to further refine the `effect` key and utilizes a set of hierarchical values:
-
-| Effect   | Type                                       |
-| :---     | :---                                       |
-| start    | `null`                                     |
-| dayOff   | 'holiday', 'dayOff'                        |
-| event    | 'fitting', 'rehearsal', 'travel', 'custom' |
-
-Adherence to the set of above types is extremely important as the addition of values outside of this list could adversely affect both the day strips as well as the day out of days.
-
-The `name` of the event can be any string and is optional, used primarily for 'custom' events.
 
 The `daysOff` array contains a variable amount of integers representing the days of the week when no filming will occur. The days of the week are represented by the following values:
 
@@ -294,7 +272,50 @@ The `daysOff` array contains a variable amount of integers representing the days
 | Friday    |   5   |
 | Saturday  |   6   |
 
-To represent not filming on Sunday and Saturday, the `daysOff` array would be [ 0, 6 ]. No values over 6 should be used, nor should negative numbers. Duplicates should be avoided. The order of the numbers in the array is not important.
+To represent not filming on Sunday and Saturday, the `daysOff` array would be [ 0, 6 ]. No values over 6 should be used, nor should negative numbers. Duplicates should be avoided. The order of the array is not important.
+
+The `name` is simply the name the user gave to this calendar. It could be "Start in January", or "Push Two Weeks".
+
+Each calendar object may contain a number of events. The `events` array is made up of [event objects](#event-objects).
+
+## **Event Objects**
+
+Event objects are used in both [calendar objects](#calendar-objects) and [element objects](#element-objects). They are constructed as follows:
+
+```
+{
+  "id" : string | ID value,
+  "date" : string | ISO Date for this event,
+  "type" : string | one of 'start|dayOff|event',
+  "name" : string | name of the event, see [name](#name) below
+}
+```
+
+The `date` key is a standard ISO Date and represents the date of this particular event.
+
+### Type
+
+The `type` key sets the general type of the event and is limited to the below values:
+
+| Value          | Description                                                                 |
+| :---           | :---                                                                        |
+| 'start'        | this event object will represent the date of the first day strip on a board |
+| 'dayOff'       | this event object will represent an individual date to skip on a board      |
+| 'event'        | denotes a variable type of event, such as rehearsals, travel, etc           |
+
+It's important to draw a distinction between the `daysOff` array in the [calendar object](#calendar-objects) and the potential value of 'dayOff' in the `type` key of the event object. The `daysOff` array is denoting the days of the week that the prodution will not be filming (a weekend, for example). The 'dayOff' value is noting that an individual date will be a day off for the show (June 3, 2022, for example). The 'dayOff' value would be used for things like turnaround days. 
+
+### Name
+
+The `name` can be set to 'null' when the `type` is 'start'. Otherwise, the `name` represents the indivdual name of the `type` value. Here is a list of potential values, based on the preceeding value of the `type` key.
+
+| Type Value     | Name Value                                                                                      |
+| :---           | :---                                                                                            |
+| 'start'        | null                                                                                            |
+| 'dayOff'       | best practice is one of 'holiday|dayOff', can use custom values here, as needed                 |
+| 'event'        | best practice is one of 'fitting|rehearsal|travel|photo', can use custom values here, as needed |
+
+Adherence to the best practice suggested values above is technically optional, but strong consideration should be given to working within these naming conventions where possible. This will increase the chances that third party parsers will be able to correctly identify your events. 
 
 # Extending the Standard
 

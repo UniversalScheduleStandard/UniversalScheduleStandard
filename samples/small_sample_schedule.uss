@@ -62,14 +62,14 @@
         "events" : [ 
             {
               "id" : "5dcee721d3ebb20017bbeb6a",
-              "effect" : "start",
-              "type" : null,
+              "type" : "start",
+              "name" : null,
               "date" : "2022-06-20T08:00:00.000Z"
             },
             {
               "id" : "5d3b5c6d35bc890017e4eacb",
-              "effect" : "event",
-              "type" : "travel",
+              "type" : "event",
+              "name" : "travel",
               "date" : "2022-06-15T08:00:00.000Z"
             }
         ],
@@ -167,15 +167,15 @@
         "events": [
           {
             "id" : "5d3cb8c31044290017d1d6ea",
-            "effect" : "dayOff",
-            "name" : "dayOff",
-            "date" : "2022-07-10T07:00:00.000Z"
+            "type" : "event",
+            "name" : "travel",
+            "date" : "2022-06-06T07:00:00.000Z"
           },
           {
             "id" : "5d3cb8c31044290017d1d6ea",
-            "effect" : "event",
-            "name" : "travel",
-            "date" : "2022-06-13T07:00:00.000Z"
+            "type" : "event",
+            "name" : "rehearsal",
+            "date" : "2022-06-07T07:00:00.000Z"
           }
         ]
       }, 
