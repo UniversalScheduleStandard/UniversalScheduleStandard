@@ -47,7 +47,7 @@ The standard proposed here has been carefully crafted to serve all sectors of th
 - Future Proofing - stores data in a simple text format that will be readable by any system in the future
 - Flexibility - the schedule and breakdown data are stored separately, allowing for the storage of just breakdown data without a schedule, if desired
 - Storage of Metadata - includes important additional data such as calendars, multiple stripboards, individual settings for elements, etc.
-- Conforms to the [Universal Category Identification](https://github.com/thinkcrew/UniversalCategoryIdentification) standard so that all breakdown categories are easily parsed
+- Conforms to the [Universal Category Identification](https://github.com/thinkcrew/UniversalCategoryIdentification) standard so that all breakdown categories are easily identified and parsed
 - Open standard - no licensing fees - free to use
 - Not reliant on any third party resources or services
 - Is extensible if you'd like to store additional data
@@ -55,11 +55,13 @@ The standard proposed here has been carefully crafted to serve all sectors of th
 
 # Feeback & Participation in the Proposal 🎉
 
+This standard proposal is in its final approval stages. This is the **LAST CALL** for any final notes or refinements to the standard. 
+
 Any creator can participate in the finalization of this proposed standard. Please post [pull requests](https://github.com/thinkcrew/UniversalScheduleStandard/pulls) or [issues](https://github.com/thinkcrew/UniversalScheduleStandard/issues) with update ideas, discussion or suggestions. 
 
 This proposal is intended to foster the communication of ideas and ultimately result in the completion of a universal standard that can be used by any creator in the industry. 
 
-As these are early days, it is not recommended that you implement this standard yet. After we've gotten some feedback we'll have a better idea of when implementation will be advised. 
+We still suggest that you refrain from using the standard in production until the proposal is locked. 
 
 # Details
 
@@ -84,12 +86,12 @@ Here is an example of the entire standard object:
     "scriptDate": "2020-10-01T07:00:00.000Z",
     "source": "Name of originating site",
     "version": "0.1.0",
+
     "breakdowns": [],
     "calendars": [],
     "categories": [],
     "elements": [],
     "stripboards": []
-    }
   }
 }
 ```
@@ -98,7 +100,7 @@ The last five items in this object are where the schedule and breakdown data are
 
 # Examples
 
-See the [sample file](/samples/schedule.uss) in the [/samples](samples/) folder for a full example. To keep the sample file as readable as possible, it only contains one scene and a few elements. A full schedule would of course contain more data.
+See the [small sample file](/samples/small_sample_schedule.uss) in the [/samples](samples/) folder for a brief example. To keep the sample file as readable as possible, it only contains one scene and a few elements. A full schedule would of course contain more data.
 
 # Documentation
 

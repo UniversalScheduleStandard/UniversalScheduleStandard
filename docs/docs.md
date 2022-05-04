@@ -51,13 +51,16 @@ The complete USS object is constructed as:
     "author": string | name of individual creator,
     "company": string | name of the company for which the schedule was created,
     "created": string | ISO Date of the creation date of the schedule,
+    "episode": string | the episode number
+    "episodeName": string | the name of the episode
     "description": string | description of file,
     "name": string | name of the schedule,
-    "project": string | name of the project,
+    "project": string | name of the project, spot or series,
     "schedColor": string | name of the schedule revision color,
     "schedDate": string | ISO Date of the revision date of the schedule,
     "scriptColor": string | name of the script revision color,
     "scriptDate": string | ISO Date of the revision date of the script,
+    "season": string | the episodic season
     "source": string | name of originating app or site,
     "version": string | USS version number,
 
@@ -94,9 +97,9 @@ When saving files to a hard drive, use the file extension '.uss', which is an ac
 
 The header keys describe the overall USS object's contents. Please see the [/samples](../samples) folder for example values.
 
-The header keys are `id`, `author`, `created`, `description`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `source`, and `version`. All keys are required and their value may be `null` if no information is available.
+The header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required and their value may be `null` if no information is available or if the key doesn't apply to the schedule (feature films don't have `episode`s)
 
-The `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the standard over time.
+The `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard over time.
 
 # Breakdowns
 

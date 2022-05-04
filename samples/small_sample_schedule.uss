@@ -1,17 +1,20 @@
 {
   "universalScheduleStandard": {
     "id": "5d9fc8cfc0efae0017a32a11",
-    "author": "Jane Smith",
-    "company": "Name of company the schedule was created for",
-    "created": "2022-06-11T00:12:06.000Z",
-    "description": "This is a description of the schedule",
-    "name": "My schedule name",
+    "author": "Michael R. Williams",
+    "company": "RKO Pictures",
+    "created": "2022-05-04T00:12:06.000Z",
+    "description": "This is a small example file that illustrates the structure without containing too much data",
+    "episode": null,
+    "episodeName": null,
+    "name": "Small Sample Schedule",
     "project": "It's A Wonderful Life",
     "schedColor": "Blue",
-    "schedDate": "2022-06-07T07:00:00.000Z",
-    "scriptColor": "Yellow",
-    "scriptDate": "2022-06-01T07:00:00.000Z",
-    "source": "Name of originating site or app",
+    "schedDate": "2022-03-07T07:00:00.000Z",
+    "scriptColor": "Pink",
+    "scriptDate": "2022-03-06T07:00:00.000Z",
+    "season": null,
+    "source": "Think Crew",
     "version": "0.9.0",
 
     "breakdowns": [
@@ -19,7 +22,7 @@
         "id": "5cfe7d2510c4330017ab5ed5",
         "comments":  null,
         "created": "2022-06-11T00:12:02.000Z",
-        "description": "A Text Banner",
+        "description": "It's A Wonderful Life Production Schedule",
         "elements": [],
         "pages":  null,
         "scene":  null,
@@ -64,38 +67,14 @@
               "date" : "2022-06-20T08:00:00.000Z"
             },
             {
-              "id" : "5dcee6dfd3ebb20017bbeb52",
-              "effect" : "dayOff",
-              "type" : "holiday",
-              "date" : "2022-07-04T08:00:00.000Z"
-            }, 
-            {
-              "id" : "5dcee6fcd3ebb20017bbeb5e",
-              "effect" : "dayOff",
-              "type" : "dayOff",
-              "date" : "2022-07-15T08:00:00.000Z"
-            },
-            {
               "id" : "5d3b5c6d35bc890017e4eacb",
               "effect" : "event",
               "type" : "travel",
               "date" : "2022-06-15T08:00:00.000Z"
-            }, 
-            {
-              "id" : "5d3b5c7f35bc890017e4eacc",
-              "effect" : "event",
-              "type" : "fitting",
-              "date" : "2022-06-16T08:00:00.000Z"
-            }, 
-            {
-              "id" : "5d3b5c9635bc890017e4ead1",
-              "effect" : "event",
-              "type" : "rehearsal",
-              "date" : "2022-06-17T08:00:00.000Z"
             }
         ],
         "daysOff" : [0, 6],
-        "name" : "Name of this calendar"
+        "name" : "Start on 6/20"
       }
     ],
 
@@ -197,18 +176,6 @@
             "effect" : "event",
             "name" : "travel",
             "date" : "2022-06-13T07:00:00.000Z"
-          }, 
-          {
-            "id" : "5d3cb8c31044290017d1d6e9",
-            "effect" : "event",
-            "name" : "rehearsal",
-            "date" : "2022-06-14T07:00:00.000Z"
-          }, 
-          {
-            "id" : "5d3cb8c31044290017d1d6e8",
-            "effect" : "event",
-            "name" : "fitting",
-            "date" : "2022-06-14T07:00:00.000Z"
           }
         ]
       }, 
@@ -271,7 +238,7 @@
           }
         ],
         "calendar" : "5d01230c987033001725c908",
-        "name" : "The name of this stripboard"
+        "name" : "First Pass"
       }
     ]
   }
