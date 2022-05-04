@@ -55,12 +55,12 @@ The complete USS object is constructed as:
     "episodeName": string | the name of the series episode
     "description": string | description of file,
     "name": string | name of the schedule,
-    "project": string | name of the project, spot or series,
+    "project": string | name of the feature, short, spot or series,
     "schedColor": string | name of the schedule revision color,
     "schedDate": string | ISO Date of the revision date of the schedule,
     "scriptColor": string | name of the script revision color,
     "scriptDate": string | ISO Date of the revision date of the script,
-    "season": string | the episodic series season
+    "season": string | the episodic series season number or identifier
     "source": string | name of originating app or site,
     "version": string | USS version number,
 
@@ -85,7 +85,7 @@ It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mon
 ## **Include All Keys**
 It is considered best practice to include all keys in the object, even if unused. Skipping keys could throw errors in third party parsers. 
 
-If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc) or `null`.
+If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc) or you may use `null`, if applicable.
 
 ## **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (ie using a string where an array is expected) will likely throw an error during parsing. 
@@ -142,11 +142,11 @@ The INT/EXT, Day/Night and Set properties of the breakdown are merely added as e
 { "id": "5d9fc8d0c0efae0017a32e39", ..., "name": "NIGHT" },
 ```
 
-Presumably you would also include those element's id's in the `elements` array of corresponding `categories`. You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
+Presumably you would also include those element's id's in the `elements` array of corresponding categories. You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
 
 The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be '5700000' if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
 
-The `type` key has one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be `null`. 'Banner' types should store their text in the `description` value. 
+The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be `null`. 'Banner' types should store their text in the `description` value. 
 
 Note that all `type`s can store values as needed, depending on your preference. If you'd like to have 'day' types store the total pages for that day in the `pages` value, feel free. Likewise, 'banner's can store as much information as a 'scene' type. The shooting date of a particular 'day' strip is inferred from a stripboard's related calendar. 
 
@@ -159,14 +159,14 @@ Category objects are constructed like this:
 ```
 {
   "id": string | ID value,
-  "catId": number | integer ID of corresponding category,
+  "ucid": number | corresponding universal category ID number,
   "created": string | ISO Date of the creation date of this category,
-  "elements": array of ID string values,
+  "elements": array of element object ID string values,
   "name": string | name of this category
 }
 ```
 
-The `catId` refers to the category ID number listed in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
+The `ucid` refers to the category ID number listed in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
 
 The `elements` array is made up of element IDs and represent all of the elements that are in that category. 
 
@@ -188,11 +188,12 @@ Element objects are constructed like this:
   "doodInclude": boolean | include this element on dood?,
   "elementId": string | board ID of element,
   "elementIdLock": boolean | lock element ID number?,
-  "linkedElements": array of ID string values, 
+  "linkedElements": array of element object ID string values, 
   "name": string | name of element,
   "events": array of calendar event objects
 }
 ```
+
 The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear in the day out of days. 
 
 The `elementId` key is traditionally used to assign a 'board ID' to an element. This is primarily used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
@@ -215,7 +216,7 @@ The stripboard objects are constructed like this:
 {
   "id" : string | ID value,
   "boards" : array of board objects,
-  "calendar" : string | calendar ID value,
+  "calendar" : string | calendar object ID string value,
   "name" : string | name of stripboard
 }
 ```
@@ -228,7 +229,7 @@ The `boards` array is made up of board objects, which are constructed like this:
 {
   "id": string | ID value,
   "name": string | name value of board,
-  "breakdownIds": array of breakdown ID string values
+  "breakdownIds": array of breakdown object ID string values
 }
 ```
 
