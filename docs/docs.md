@@ -77,10 +77,10 @@ The complete USS object is constructed as:
 ## **ID Values**
 Throughout the USS object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into a third party app, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
 
-It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like `"5d9fc8cfc0efae0017a3201a"`.
+It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like `"6246e86c606cfc0016ed0a91"`.
 
 ## **Date Format**
- Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format `"2020-06-24T08:00:00.000Z"`
+ Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format `"2022-06-24T08:00:00.000Z"`
 
 ## **Include All Keys**
 It is considered best practice to include all keys in the object, even if unused. Skipping keys could throw errors in third party parsers. 
@@ -128,7 +128,13 @@ The `elements` array contains element IDs that represent all of the elements in 
 
 Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the object directly, but can be inferred by the inclusion of elements that are in those categories. For instance, the inclusion of an element with the `name`: 'D12', which is in the Script Day category, will mean that this breakdown is for a scene that takes place on D12 in the script.
 
-The INT/EXT, Day/Night and Set properties of the breakdown are merely added as elements to that breakdown. For the slugline "EXT. BEDFORD FALLS BRIDGE - NIGHT" you would add three id's to the `elements` array of that breakdown that correspond to these element objects:
+The INT/EXT, Day/Night and Set properties of the breakdown are merely added as elements to that breakdown. For the slugline "EXT. BEDFORD FALLS BRIDGE - NIGHT" you would add three id's to the `elements` array of that breakdown object, such as:
+
+```
+{..., elements: ["5d9fc8cfc0efae0017a32e31", "5d9fc8cfc0efae0017a32de8", "5d9fc8d0c0efae0017a32e39"], ...}
+```
+
+...that correspond to these element objects:
 
 ```
 { "id": "5d9fc8cfc0efae0017a32e31", ..., "name": "EXT" },
