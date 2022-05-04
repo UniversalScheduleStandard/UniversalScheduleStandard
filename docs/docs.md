@@ -309,11 +309,11 @@ It's important to draw a distinction between the `daysOff` array in the [calenda
 
 The `name` can be set to 'null' when the `type` is 'start'. Otherwise, the `name` represents the indivdual name of the `type` value. Here is a list of potential values, based on the preceeding value of the `type` key.
 
-| Type Value     | Name Value                                                                                      |
-| :---           | :---                                                                                            |
-| 'start'        | null                                                                                            |
-| 'dayOff'       | best practice is one of 'holiday|dayOff', can use custom values here, as needed                 |
-| 'event'        | best practice is one of 'fitting|rehearsal|travel|photo', can use custom values here, as needed |
+| Type Value     | Name Value                                                                                         |
+| :---           | :---                                                                                               |
+| 'start'        | null                                                                                               |
+| 'dayOff'       | best practice is one of 'holiday\|dayOff', can use custom values here, as needed                   |
+| 'event'        | best practice is one of 'fitting\|rehearsal\|travel\|photo', can use custom values here, as needed |
 
 Adherence to the best practice suggested values above is technically optional, but strong consideration should be given to working within these naming conventions where possible. This will increase the chances that third party parsers will be able to correctly identify your events. 
 
