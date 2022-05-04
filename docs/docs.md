@@ -83,24 +83,24 @@ Throughout the USS object, each sub-object contains its own unique ID value. Uni
 It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like `"6246e86c606cfc0016ed0a91"`.
 
 ## **Date Format**
-Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format `"2022-06-24T08:00:00.000Z"`
+Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format "2022-06-24T08:00:00.000Z"
 
 ## **Include All Keys**
 It is considered best practice to include all keys in all objects, even if unused. Skipping keys could throw errors in third party parsers. 
 
-If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc.) or you may use 'null', where applicable.
+If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc.) or you may use *null*, where applicable.
 
 ## **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (i.e., using a number where a string is expected) will likely throw an error during parsing. 
 
 ## **File Extension**
-When saving files use the file extension '.uss', which is an acronym of Universal Schedule Standard. 
+When saving files please use the file extension '.uss', which is an acronym of Universal Schedule Standard. 
 
 # Header Information
 
 The header keys describe the overall USS object's contents. Please see the [/samples](../samples) folder for examples.
 
-The header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required but their value may be 'null' if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
+The header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required but their value may be *null* if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
 
 Please note that the `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard as it evolves.
 
@@ -151,7 +151,7 @@ Some scheduling software includes categories as part of the breakdown itself. Ex
 
 The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be '5700000' if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
 
-The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be 'null'. 'Banner' types should store their text in the `description` value. 
+The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be *null*. 'Banner' types should store their text in the `description` value. 
 
 Note that all `type`s can store values if needed. If you'd like to have 'day' types store `elements`, feel free. Likewise, 'banner's can store as much information as a 'scene' type. Any breakdown object can store the full amount of information, regardless of its `type`.
 
@@ -211,7 +211,7 @@ Events refers to specific calendar events for this element. If an individual act
 
 # Schedules
 
-If representing a schedule, the USS object must also contain `stripboards` & `calendars` arrays. If both of these keys are not present, their arrays have no length, or are 'null' then the USS object is considered to be just a breakdown. 
+If representing a schedule, the USS object must also contain `stripboards` & `calendars` arrays. If both of these keys are not present, their arrays have no length, or are *null* then the USS object is considered to be just a breakdown. 
 
 ## **Stripboard Objects**
 
@@ -312,11 +312,11 @@ It's important to draw a distinction between the `daysOff` array in the [calenda
 
 ### Name
 
-The `name` represents the individual name of the `type` value. Note that when the `type` is 'start', `name` can be set to 'null'. Here is a list of potential values, based on the preceding value of the `type` key.
+The `name` represents the individual name of the `type` value. Note that when the `type` is 'start', `name` can be set to *null*. Here is a list of potential values, based on the preceding value of the `type` key.
 
 | Type Value     | Name Value                                                                                         |
 | :---           | :---                                                                                               |
-| 'start'        | null                                                                                               |
+| 'start'        | *null*                                                                                             |
 | 'dayOff'       | best practice is one of 'holiday\|dayOff', can use custom values here, as needed                   |
 | 'event'        | best practice is one of 'fitting\|rehearsal\|travel\|photo', can use custom values here, as needed |
 
