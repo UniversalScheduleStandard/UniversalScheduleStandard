@@ -133,7 +133,7 @@ The INT/EXT, Day/Night and Set properties of the breakdown are merely added as e
 { "id": "5d9fc8d0c0efae0017a32e39", ..., "name": "NIGHT" },
 ```
 
-Presumably you would also include those element's id's in the `elements` array of corresponding `categories`. You can look at the sample files for examples of how to structure this. 
+Presumably you would also include those element's id's in the `elements` array of corresponding `categories`. You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
 
 The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be '5700000' if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
 
