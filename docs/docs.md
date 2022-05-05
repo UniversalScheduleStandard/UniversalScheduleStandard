@@ -10,6 +10,8 @@ Before beginning to read the details of the standard you may find it helpful to 
 - [Data Overview](#data-overview)
 - [Structure and Format](#structure-and-format)
     - [ID Values](#id-values)
+    - [Strings](#strings)
+    - [Numbers](#numbers)
     - [Date Format](#date-format)
     - [Include All Keys](#include-all-keys)
     - [Maintaining Data Types](#maintaining-data-types)
@@ -50,7 +52,7 @@ Stripboard objects also reference one [calendar object](#calendar-objects). This
 
 <img src="../images/structure_schedules.png" alt="structure image" width="80%">
 
-Now that we have an understanding of the general structure of the data, let's take a look at how to contruct it.
+Now that we have an understanding of the general structure of the data, let's take a look at how to construct it.
 
 # Structure and Format
 
@@ -87,6 +89,8 @@ The complete USS object is constructed as:
   }
 }
 ```
+
+Please see the [/samples](../samples) folder for examples.
 
 ## **ID Values**
 Throughout the USS object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into a third party app, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
