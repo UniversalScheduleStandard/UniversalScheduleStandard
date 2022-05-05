@@ -40,7 +40,7 @@ When creating a schedule out of these breakdowns, all of the breakdown IDs are a
 
 <img src="../images/structure.svg" alt="alt text" width="466" height="200">
 
-In a schedule breakdown objects are one of three types: 'scene', 'day' or 'banner'.
+In a schedule, [breakdown objects](#breakdown-objects) are one of three `types`: 'scene', 'day' or 'banner'.
 
 # Structure and Format
 
