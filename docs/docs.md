@@ -54,7 +54,7 @@ Now that we have an understanding of the general structure of the data, let's ta
 
 # Structure and Format
 
-The Universal Schedule Standard (USS) conforms to the [JSON](https://www.json.org/json-en.html) standard and is essentially a structured JSON store of relational data. 
+The Universal Schedule Standard (USS) conforms to the [JSON](https://www.json.org/json-en.html) standard using [UTF-8](https://www.utf8.com/) and is essentially a structured JSON store of relational data. 
 
 The complete USS object is constructed as:
 
@@ -91,6 +91,12 @@ The complete USS object is constructed as:
 Throughout the USS object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into a third party app, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
 
 It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like "6246e86c606cfc0016ed0a91".
+
+## **Strings**
+All strings should be stored in plain text. Rich text is not supported in the standard. Note that some key/value pairs may seem like they would take a number instead of a string. Please store values only in their described format. Vaues like scene numbers or page numbers may initially seem like numbers until you consider that both commonly contain letters. 
+
+## **Numbers**
+Numbers can be stored as integers or floats, as required. They should not be stored as strings. 
 
 ## **Date Format**
 Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format "2022-06-24T08:00:00.000Z"
@@ -137,7 +143,7 @@ The breakdown objects contain information about a scene (or scenes) in a script.
 }
 ```
 
-The `elements` array contains element IDs that represent all of the elements in the breakdown. 
+The `elements` array contains element ID strings that represent all of the elements in that breakdown. 
 
 The `pages` number is a decimal representation of the physical length of a breakdown (i.e., script scene) in eighths of pages. For example, if a breakdown represents 1/8 of of a script page, its `pages` value would be 0.125. A 5/8 page scene would be 0.625, and so on. 
 
@@ -159,7 +165,7 @@ You would also include those element's id's in the `elements` array of correspon
 
 Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the breakdown object directly, but can be inferred by the inclusion of elements that are in those categories, as in the above slugline example.
 
-The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
+The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 60 * 1000)
 
 The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be *null*. 'Banner' types should store their text in the `description` value. 
 
@@ -185,13 +191,13 @@ Category objects are constructed like this:
 
 The `elements` array is made up of element IDs and represent all of the elements that are in that category. This array is ordered, so remember that the order of each element object `id` will be the order those elements appear in their categories, once imported. 
 
-Categories may be `name`d anything, but should follow the original intent of the category, as described in the Category Identification Standard.
+Category `name` may be any string value, but should follow the original intent of the category, as described in the Category Identification Standard.
 
 The `ucid` refers to the corresponding category ID number in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
 
 ## **Element Objects**
 
-An element represents a particular person, animal or item that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all examples of elements in those respective categories. 
+An element represents a particular person or thing that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all examples of elements in those respective categories. 
 
 Element objects are constructed like this:
 
@@ -213,7 +219,7 @@ Element objects are constructed like this:
 
 The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear in the [day out of days](https://en.wikipedia.org/wiki/Day_out_of_days_(filmmaking)). 
 
-The `elementId` stores a traditional element 'board ID'. This is primarily used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
+The `elementId` stores an additional identifier for an element, traditionally referred to as a 'board ID'. This is primarily used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
 
 The `linkedElements` array is made up of element IDs and represent all of the elements that are linked to the element. Linking elements is used in some software to ensure that when a particular element is added to a breakdown, a number of other elements are automatically added as well. Examples commonly include actors and props they are always seen with. A doctor and their stethoscope, for example. 
 
@@ -225,7 +231,7 @@ If representing a schedule, the USS object must also contain `stripboards` & `ca
 
 ## **Stripboard Objects**
 
-A stripboard, sometimes referred to as a [production board](https://en.wikipedia.org/wiki/Production_board), represents a particular scenario for the show - an order of shooting and potentially a separate set of shooting dates. There can many stripboards in a schedule. 
+A stripboard, sometimes referred to as a [production board](https://en.wikipedia.org/wiki/Production_board), represents a particular scenario for the show - the order in which the breakdown information will be shot. There can many stripboards in a schedule. 
 
 The stripboard objects are constructed like this:
 
@@ -240,7 +246,7 @@ The stripboard objects are constructed like this:
 
 The `name` is the name of this stripboard. For example, it could be "First Draft" or "Revised White 6/20/22".
 
-Each stripboard object can contain multiple distinct `boards` inside of them. The most common examples of this are a stripboard and a boneyard. Both are unique boards and should contain unique values. Some scheduling software may also allow for additional boards representing different units, etc. Using an array to store multiple boards should provide enough flexibility to cover many types of platforms. Each of these boards are represented by [board objects](#board-objects).
+Each stripboard object can contain multiple distinct `boards` inside of them. The most common examples of this are a stripboard and a boneyard. Both are unique boards and should contain unique values. Some scheduling software may also allow for additional boards representing different units, etc. Each of these boards are represented by [board objects](#board-objects).
 
 ### **Board Objects**
 
@@ -256,13 +262,13 @@ The [stripboard objects](#stripboard-objects) `boards` array is made up of board
 
 The board object `name` is not the same as the `name` key in the [stripboard objects](#stripboard-objects). The board objects `name` should merely describe the individual board's intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc., at your discretion.
 
-The order of the `breakdownIds` is the order of the breakdowns in this stripboard, so ensure that you are storing this ordered array of IDs correctly. 
+The order of the `breakdownIds` is the order of the breakdowns in this stripboard, so ensure that you are storing the IDs in the intended order. 
 
 The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array. [Breakdown objects](#breakdown-objects) that are not referenced in a `boards.breakdownIds` array will be ignored. 
 
 ## **Calendar Objects**
 
-Calendar objects represent an overall calendar for the show and would traditionally include a start date, days of the week when there's no filming (weekends), any holidays, days off or unique events such as travel.
+Calendar objects represent an overall calendar for the show and would traditionally include a start date, days of the week when there's no filming (weekends), and any unique events such as holidays, company travel, rehearsal days, etc.
 
 Multiple calendars may be included in the `calendars` array, representing different scenarios for the show. Calendar objects are constructed as follows:
 
