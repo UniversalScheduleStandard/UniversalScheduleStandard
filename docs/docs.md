@@ -32,7 +32,7 @@ Before beginning to read the details of the standard you may find it helpful to 
 
 Breakdown documents are created for every scene (or sometimes groups of scenes) and each breakdown contains elements, which are categorized. For example, if an umbrella appears in the scene it will be added to a breakdown for that scene. When that element is first created it is assigned to the props category so that all similar elements may be found more easily.
 
-<img src="../images/breakdowns.svg" alt="alt text" width="200" height="200">
+<img src="../images/breakdowns.png" alt="breakdowns image" width="1654" height="484">
 
 Each [breakdown object](#breakdown-objects) in this scenario just has a `type` of 'scene'.
 
