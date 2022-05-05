@@ -177,11 +177,11 @@ The `elements` array is made up of element IDs and represent all of the elements
 
 Categories may be `name`d anything, but should follow the original intent of the category, as described in the Category Identification Standard.
 
-The `ucid` refers to the category ID number listed in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
+The `ucid` refers to the corresponding category ID number in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
 
 ## **Element Objects**
 
-An element represents one particular person, animal or item that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all examples of elements in those respective categories. 
+An element represents a particular person, animal or item that will be needed to film a particular scene. While 'Cast Members', 'Props' and 'Wardrobe' are all different categories, 'George', 'Umbrella', 'Tuxedo' are all examples of elements in those respective categories. 
 
 Element objects are constructed like this:
 
@@ -201,9 +201,9 @@ Element objects are constructed like this:
 }
 ```
 
-The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear in the day out of days. 
+The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear in the [day out of days](https://en.wikipedia.org/wiki/Day_out_of_days_(filmmaking)). 
 
-The `elementId` key is traditionally used to assign a 'board ID' to an element. This is primarily used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
+The `elementId` stores a traditional element 'board ID'. This is primarily used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
 
 The `linkedElements` array is made up of element IDs and represent all of the elements that are linked to the element. Linking elements is used in some software to ensure that when a particular element is added to a breakdown, a number of other elements are automatically added as well. Examples commonly include actors and props they are always seen with. A doctor and their stethoscope, for example. 
 
@@ -215,7 +215,7 @@ If representing a schedule, the USS object must also contain `stripboards` & `ca
 
 ## **Stripboard Objects**
 
-A stripboard represents a particular scenario for the show - an order of shooting and potentially a separate set of shooting dates. There can many stripboards in a schedule. 
+A stripboard, sometimes referred to as a [production board](https://en.wikipedia.org/wiki/Production_board), represents a particular scenario for the show - an order of shooting and potentially a separate set of shooting dates. There can many stripboards in a schedule. 
 
 The stripboard objects are constructed like this:
 
