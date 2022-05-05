@@ -232,7 +232,7 @@ If representing a schedule, the USS object must also contain arrays of [stripboa
 
 ## **Stripboard Objects**
 
-A stripboard, sometimes referred to as a [production board](https://en.wikipedia.org/wiki/Production_board), represents a particular scenario for the show - the order in which the breakdown information will be shot. There can many stripboards in a schedule. 
+A stripboard, sometimes referred to as a [production board](https://en.wikipedia.org/wiki/Production_board), represents a particular scenario for the show - the order in which the breakdown information will be shot. There can be many stripboards in a schedule. 
 
 The stripboard objects are constructed like this:
 
