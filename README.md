@@ -79,22 +79,22 @@ Here is an example of the entire standard object:
     "created": "2020-10-07T00:12:06.000Z",
     "description": "This is a description of the schedule",
     "episode": "101",
-    "episodeName": "The title of this series episode",
+    "episodeName": "Pilot",
     "name": "My schedule name",
     "project": "It's A Wonderful Life",
     "schedColor": "Blue",
     "schedDate": "2020-10-07T07:00:00.000Z",
     "scriptColor": "Yellow",
     "scriptDate": "2020-10-01T07:00:00.000Z",
-    "season": "The identifier for this series season",
-    "source": "Name of originating site",
+    "season": "S03",
+    "source": "Name of originating site or app",
     "version": "0.9.0",
 
     "breakdowns": [],
-    "calendars": [],
     "categories": [],
     "elements": [],
-    "stripboards": []
+    "stripboards": [],
+    "calendars": []
   }
 }
 ```
