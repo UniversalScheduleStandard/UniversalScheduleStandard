@@ -34,7 +34,7 @@ Breakdown documents are created for every scene (or sometimes groups of scenes) 
 
 <img src="../images/breakdowns.svg" alt="alt text" width="200" height="200">
 
-Each breakdown object in this scenario just has a data type of 'scene'.
+Each [breakdown object](#breakdown-objects) in this scenario just has a `type` of 'scene'.
 
 When creating a schedule out of these breakdowns, all of the breakdown IDs are added to a stripboard, as an ordered list. Additional breakdown types are created to represent banners and day breaks and added to the stripboard. A calendar is applied to each stripboard so that the day breaks can properly reflect shoot dates and days off.
 
