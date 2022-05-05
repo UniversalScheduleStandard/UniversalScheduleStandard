@@ -103,12 +103,10 @@ Numbers can be stored as integers or floats, as required. They should not be sto
 Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format "2022-06-24T08:00:00.000Z"
 
 ## **Include All Keys**
-It is considered best practice to include all keys in all objects, even if unused. Skipping keys could throw errors in third party parsers. 
-
-If you are not using a particular key, you may give it a value of either it's empty data type (ie "" for strings, [] for arrays, etc.) or you may use *null*, where applicable.
+It is considered best practice to include all keys in all objects, even if unused. Skipping keys could throw errors in third party parsers. If you are not using a particular key, you need to set its value to *null*.
 
 ## **Maintaining Data Types**
-Please maintain the correct data type for each key. The use of incorrect data types (i.e., using a number where a string is expected) will likely throw an error during parsing. 
+Please maintain the correct data type for each key. The use of incorrect data types (i.e., using a number where a string is expected) will throw an error during parsing. 
 
 ## **File Extension**
 When saving files please use the file extension '.uss', which is an acronym of Universal Schedule Standard. 
@@ -121,7 +119,7 @@ The primary header keys are `id`, `author`, `created`, `description`, `episode`,
 
 Please note that the `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard as it evolves.
 
-Other keys include the `breakdowns`, `categories`, `elements`, `stripboards` and `calendars` keys. Their values are arrays that store their related objects, described below.
+The remaining keys are `breakdowns`, `categories`, `elements`, `stripboards` and `calendars`. Their values are arrays that store their related objects, described below.
 
 # Breakdowns
 
