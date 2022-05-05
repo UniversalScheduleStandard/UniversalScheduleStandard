@@ -228,7 +228,7 @@ Events refers to specific calendar events for this element. If an individual act
 
 # Schedules
 
-If representing a schedule, the USS object must also contain `stripboards` & `calendars` arrays. If both of these keys are not present, their arrays have no length, or are *null* then the USS object is considered to be just a breakdown. 
+If representing a schedule, the USS object must also contain arrays of [stripboard objects](#stripboard-objects) and [calendar objects](#calendar-objects). If both the `stripboards` and `calendars` keys are not present, their arrays have no length, or are *null* then the USS object is considered to be just a breakdown. 
 
 ## **Stripboard Objects**
 
