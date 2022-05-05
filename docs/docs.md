@@ -81,9 +81,9 @@ The complete USS object is constructed as:
     "breakdowns": array of breakdown objects,
     "categories": array of category objects,
     "elements": array of element objects,
-    
-    "stripboards": array of stripboard objects | required only for schedules
-    "calendars": array of calendar objects | required only for schedules,
+
+    "stripboards": array of stripboard objects | required only for schedules,
+    "calendars": array of calendar objects | required only for schedules
   }
 }
 ```
@@ -117,9 +117,11 @@ When saving files please use the file extension '.uss', which is an acronym of U
 
 The header keys describe the overall USS object's contents. Please see the [/samples](../samples) folder for examples.
 
-The header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required but their value may be *null* if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
+The primary header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required but their value may be *null* if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
 
 Please note that the `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard as it evolves.
+
+Other keys include the `breakdowns`, `categories`, `elements`, `stripboards` and `calendars` keys. Their values are arrays that store their related objects, described below.
 
 # Breakdowns
 
