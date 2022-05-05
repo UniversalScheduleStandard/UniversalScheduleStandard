@@ -164,7 +164,7 @@ The INT/EXT, Day/Night and Set properties of the breakdown are merely added as e
 { "id": "5d9fc8d0c0efae0017a32e39", ..., "name": "NIGHT" },
 ```
 
-You would also include those element's id's in the `elements` array of corresponding `categories`. You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
+You would also include those element's id's in the `elements` array of corresponding [category objects](#category-objects). You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
 
 Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the breakdown object directly, but can be inferred by the inclusion of elements that are in those categories, as in the above slugline example.
 
