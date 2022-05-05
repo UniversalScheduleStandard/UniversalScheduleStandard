@@ -38,7 +38,7 @@ When breaking down the information contained in a script, the information from e
 
 Each breakdown is represented by a [breakdown object](#breakdown-objects), categories by [category objects](#category-objects) and elements by [element objects](#element-objects). The arrays that contain those objects are all root keys in the parent [universalScheduleStandard object](#structure-and-format). These three arrays of objects are required in every valid USS file. They represent the breakdown of the script. 
 
-<img src="../images/breakdowns.png" alt="breakdowns image" width="70%">
+<img src="../images/breakdowns2.png" alt="breakdowns image" width="70%">
 
 ### Breakdowns + Schedules
 
