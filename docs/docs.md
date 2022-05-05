@@ -30,13 +30,19 @@ Before beginning to read the details of the standard you may find it helpful to 
 
 # Data Overview
 
+The Universal Schedule Standard can store breakdown or breakdown+schedule data. Breakdown data is required in a valid USS object. Optionally, you can also add schedule data to that breakdown information. 
+
+### Breakdowns
+
 When breaking down the information contained in a script, the information from each scene will be entered into a breakdown sheet. That information will include a description of the scene and all of the elements needed when shooting the scene. Those elements include the cast members, props, wardrobe, special equipment, etc. So that the crew departments can keep track of the elements they'll be in charge of, the elements are grouped into categories. Sometimes, multiple scenes may be described in one breakdown sheet, if needed.
 
-Each breakdown is represented by a [breakdown object](#breakdown-objects), categories by [category objects](#category-objects) and elements by [element objects](#element-objects). The arrays that contain those objects are all root keys in the parent universalScheduleStandard object. These three arrays of objects are required in every valid USS file. They represent the breakdown of the script. 
+Each breakdown is represented by a [breakdown object](#breakdown-objects), categories by [category objects](#category-objects) and elements by [element objects](#element-objects). The arrays that contain those objects are all root keys in the parent [universalScheduleStandard object](#structure-and-format). These three arrays of objects are required in every valid USS file. They represent the breakdown of the script. 
 
 <img src="../images/breakdowns.png" alt="breakdowns image" width="70%">
 
-With all of the breakdown information available in the file, you may optionally also include schedule data that represents the order in which you plan to shoot the breakdown material. To do this, you will need to add stripboards and calendars to the universalScheduleStandard object. The object must also contain all of the breakdown, cateogry and element data described above.
+### Breakdowns + Schedules
+
+With all of the breakdown information available in the file, you may optionally also include schedule data that represents the order in which you plan to shoot the breakdown material. To do this, you will need to add stripboards and calendars to the [universalScheduleStandard object](#structure-and-format). The object must also contain all of the breakdown, cateogry and element data described above.
 
 The stripboards are represented by [stripboard objects](#stripboard-objects). Each stripboard contains an array of child [board objects](#board-objects), which in turn contain ordered arrays of breakdown object IDs. Cumulatively each stripboard's board objects contain references to all of the breakdown objects contained in the schedule. Multiple stripboards may exist in a schedule, representing different arrangements of the breakdowns and thus different scenarios for the shoot.
 
