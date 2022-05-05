@@ -42,7 +42,7 @@ Each breakdown is represented by a [breakdown object](#breakdown-objects), categ
 
 ### Breakdowns + Schedules
 
-With all of the breakdown information available in the file, you may optionally also include schedule data that represents the order in which you plan to shoot the breakdown material. To do this, you will need to add stripboards and calendars to the [universalScheduleStandard object](#structure-and-format). The object must also contain all of the breakdown, cateogry and element data described above.
+With all of the breakdown information available in the file, you may optionally also include schedule data that represents the order in which you plan to shoot the breakdown material. To do this, you will need to add [stripboard objects](#stripboard-objects) and [calendar objects](#calendar-objects) to the root USS object. The USS object must also contain all of the breakdown, cateogry and element data described above.
 
 Individual schedule scenarios are represented by [stripboard objects](#stripboard-objects). Each stripboard object contains an array of child [board objects](#board-objects), which in turn contain ordered arrays of breakdown object IDs. There are traditionally no less than two board objects and they are commonly named 'stripboard' and 'boneyard'. Other boards can be added too for things like additional units. Cumulatively each stripboard's board objects contain references to all of the breakdown objects contained in the schedule. Multiple stripboards may exist in a schedule, representing different arrangements of the breakdowns and thus different scenarios for the shoot.
 
