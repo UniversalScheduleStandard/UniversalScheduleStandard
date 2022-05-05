@@ -166,18 +166,18 @@ Category objects are constructed like this:
 ```
 {
   "id": string | ID value,
-  "ucid": number | corresponding universal category ID number,
   "created": string | ISO Date of the creation date of this category,
   "elements": ordered array of element object ID string values,
   "name": string | name of this category
+  "ucid": number | corresponding universal category ID number,
 }
 ```
-
-The `ucid` refers to the category ID number listed in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
 
 The `elements` array is made up of element IDs and represent all of the elements that are in that category. This array is ordered, so remember that the order of each element object `id` will be the order those elements appear in their categories, once imported. 
 
 Categories may be `name`d anything, but should follow the original intent of the category, as described in the Category Identification Standard.
+
+The `ucid` refers to the category ID number listed in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
 
 ## **Element Objects**
 
