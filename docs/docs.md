@@ -32,13 +32,13 @@ Before beginning to read the details of the standard you may find it helpful to 
 
 Breakdown documents are created for every scene (or sometimes groups of scenes) and each breakdown contains elements, which are categorized. For example, if an umbrella appears in the scene it will be added to a breakdown for that scene. When that element is first created it is assigned to the props category so that all similar elements may be found more easily.
 
-<img src="../images/breakdowns.png" alt="breakdowns image" width="50%">
+<img src="../images/breakdowns.png" alt="breakdowns image" width="70%">
 
 Each [breakdown object](#breakdown-objects) in this scenario just has a `type` of 'scene'.
 
 When creating a schedule out of these breakdowns, all of the breakdown IDs are added to a stripboard, as an ordered list. Additional breakdown types are created to represent banners and day breaks and added to the stripboard. A calendar is applied to each stripboard so that the day breaks can properly reflect shoot dates and days off.
 
-<img src="../images/structure.png" alt="structure image" width="50%">
+<img src="../images/structure.png" alt="structure image" width="70%">
 
 In a schedule, [breakdown objects](#breakdown-objects) are one of three `types`: 'scene', 'day' or 'banner'.
 
