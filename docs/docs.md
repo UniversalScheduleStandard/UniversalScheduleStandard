@@ -38,7 +38,7 @@ When breaking down the information contained in a script, the information from e
 
 Each breakdown is represented by a [breakdown object](#breakdown-objects), categories by [category objects](#category-objects) and elements by [element objects](#element-objects). The arrays that contain those objects are all root keys in the parent [universalScheduleStandard object](#structure-and-format). These three arrays of objects are required in every valid USS file. They represent the breakdown of the script. 
 
-<img src="../images/breakdowns2.png" alt="breakdowns image" width="60%">
+<img src="../images/structure_breakdowns.png" alt="breakdowns image" width="60%">
 
 ### Breakdowns + Schedules
 
@@ -48,7 +48,7 @@ Individual schedule scenarios are represented by [stripboard objects](#stripboar
 
 Stripboard objects also reference one [calendar object](#calendar-objects). This calendar contains all of the date information about a particular scenario. Each date related piece of information is held in an array of [event objects](#event-objects). Each event object represents one type of event on the show. It could be a holiday, a company travel day, a rehearsal day, etc. These events will be used to reflect company days off and notable events in the final schedule. 
 
-<img src="../images/structure.png" alt="structure image" width="80%">
+<img src="../images/structure_schedules.png" alt="structure image" width="80%">
 
 Now that we have an understanding of the general structure of the data, let's take a look at how to contruct it.
 
