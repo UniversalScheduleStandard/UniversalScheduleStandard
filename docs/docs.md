@@ -324,7 +324,7 @@ The `type` key sets the general type of the event and is limited to the below va
 | 'dayOff'       | this event object will represent an individual date to skip on a board      |
 | 'event'        | denotes a variable type of event, such as rehearsals, travel, etc           |
 
-It's important to draw a distinction between the `daysOff` array in the [calendar object](#calendar-objects) and the potential value of 'dayOff' in the `type` key of the event object. The `daysOff` array is denoting the days of the week that the production will not be filming (a weekend, for example). The 'dayOff' value is noting that an individual date will be a day off for the show (June 3, 2022, for example). The 'dayOff' value would be used for things like turnaround days. 
+It's important to draw a distinction between the `daysOff` array in the [calendar object](#calendar-objects) and the potential value of 'dayOff' in the `type` key of the event object. The `daysOff` array is denoting the days of the week that the production will not be filming (every Sat & Sun, for example). The 'dayOff' value is noting that an individual date will be a day off for the show (June 3, 2022, for example). The 'dayOff' value could be used for things like turnaround days. 
 
 ### Name
 
