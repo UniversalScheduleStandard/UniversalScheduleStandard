@@ -247,7 +247,7 @@ The stripboard objects are constructed like this:
 
 The `name` is the name of this stripboard. For example, it could be "First Draft" or "Revised Blue 6/24/22".
 
-Each stripboard object can contain multiple distinct `boards` inside of them. The most common examples of this are a stripboard and a boneyard. Both are unique boards and should contain unique values. Some scheduling software may also allow for additional boards representing different units, etc. Each of these boards are represented by [board objects](#board-objects).
+Each stripboard object can contain multiple distinct `boards` inside of them. The most common examples of this are a stripboard and a boneyard. Both are unique boards and should contain unique values. Some scheduling software may also allow for additional boards representing additional units, etc. Each of these boards are represented by [board objects](#board-objects).
 
 ### **Board Objects**
 
