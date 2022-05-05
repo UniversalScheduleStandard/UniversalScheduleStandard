@@ -98,7 +98,7 @@ Throughout the USS object, each sub-object contains its own unique ID value. Uni
 It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like "6246e86c606cfc0016ed0a91".
 
 ## **Strings**
-All strings should be stored as plain text. Rich text is not supported in the standard. Note that some key/value pairs may seem like they would take a number instead of a string. Please store values only in their described format. Vaues like scene numbers or page numbers may initially seem like numbers until you consider that both commonly contain letters. 
+All strings should be stored as plain text. Rich text is not supported in the standard. Note that some key/value pairs may seem like they would take a number instead of a string. Please store values only in their described format. Values like scene numbers or page numbers may initially seem like numbers until you consider that both commonly contain letters. 
 
 ## **Numbers**
 Numbers can be stored as integers or floats, as required. They should not be stored as strings. 
