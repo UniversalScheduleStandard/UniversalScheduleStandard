@@ -166,7 +166,7 @@ The INT/EXT, Day/Night and Set properties of the breakdown are merely added as e
 
 You would also include those element's id's in the `elements` array of corresponding [category objects](#category-objects). You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
 
-Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the breakdown object directly, but can be inferred by the inclusion of elements that are in those categories, as in the above slugline example.
+Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the breakdown object directly, but can be referenced by the inclusion of elements that are in those categories, as in the above slugline example.
 
 The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 60 * 1000)
 
@@ -194,7 +194,7 @@ Category objects are constructed like this:
 
 The `elements` array is made up of element IDs and represent all of the elements that are in that category. This array is ordered, so remember that the order of each element object `id` will be the order those elements appear in their categories, once imported. 
 
-Category `name` may be any string value, but should follow the original intent of the category, as described in the Category Identification Standard.
+Category `name` may be any string value, but should follow the original intent of the category, as described in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification).
 
 The `ucid` refers to the corresponding category ID number in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
 
@@ -247,13 +247,13 @@ The stripboard objects are constructed like this:
 }
 ```
 
-The `name` is the name of this stripboard. For example, it could be "First Draft" or "Revised White 6/20/22".
+The `name` is the name of this stripboard. For example, it could be "First Draft" or "Revised Blue 6/24/22".
 
 Each stripboard object can contain multiple distinct `boards` inside of them. The most common examples of this are a stripboard and a boneyard. Both are unique boards and should contain unique values. Some scheduling software may also allow for additional boards representing different units, etc. Each of these boards are represented by [board objects](#board-objects).
 
 ### **Board Objects**
 
-The [stripboard objects](#stripboard-objects) `boards` array is made up of board objects, which are constructed like this:
+The [stripboard object's](#stripboard-objects) `boards` array is made up of board objects, which are constructed like this:
 
 ```
 {
@@ -265,7 +265,7 @@ The [stripboard objects](#stripboard-objects) `boards` array is made up of board
 
 The board object `name` is not the same as the `name` key in the [stripboard objects](#stripboard-objects). The board objects `name` should merely describe the individual board's intended purpose. If you're just including a stripboard and a boneyard, it is best practice to name your boards 'stripboard' and 'boneyard'. Additional boards could be called 'second unit', etc., at your discretion.
 
-The order of the `breakdownIds` is the order of the breakdowns in this stripboard, so ensure that you are storing the IDs in the intended order. 
+Important: the order of the `breakdownIds` is the order of the breakdowns in this stripboard, so ensure that you are storing the IDs in the intended order. 
 
 The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array. [Breakdown objects](#breakdown-objects) that are not referenced in a `boards.breakdownIds` array will be ignored. 
 
