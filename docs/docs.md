@@ -38,7 +38,7 @@ Each [breakdown object](#breakdown-objects) in this scenario just has a `type` o
 
 When creating a schedule out of these breakdowns, all of the breakdown IDs are added to a stripboard, as an ordered list. Additional breakdown types are created to represent banners and day breaks and added to the stripboard. A calendar is applied to each stripboard so that the day breaks can properly reflect shoot dates and days off.
 
-<img src="../images/structure.svg" alt="alt text" width="466" height="200">
+<img src="../images/structure.png" alt="alt text">
 
 In a schedule, [breakdown objects](#breakdown-objects) are one of three `types`: 'scene', 'day' or 'banner'.
 
