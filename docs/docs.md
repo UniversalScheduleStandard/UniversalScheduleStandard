@@ -30,17 +30,21 @@ Before beginning to read the details of the standard you may find it helpful to 
 
 # Data Overview
 
-Breakdown documents are created for every scene (or sometimes groups of scenes) and each breakdown contains elements, which are categorized. For example, if an umbrella appears in the scene it will be added to a breakdown for that scene. When that element is first created it is assigned to the props category so that all similar elements may be found more easily.
+When breaking down the information contained in a script, the information from each scene will be entered into a breakdown sheet. That information will include a description of the scene and all of the elements needed when shooting the scene. Those elements include the cast members, props, wardrobe, special equipment, etc. So that the crew departments can keep track of the elements they'll be in charge of, the elements are grouped into categories. Sometimes, multiple scenes may be described in one breakdown sheet, if needed.
+
+Each breakdown is represented by a [breakdown object](#breakdown-objects), categories by [category objects](#category-objects) and elements by [element objects](#element-objects). The arrays that contain those objects are all root keys in the parent universalScheduleStandard object. These three arrays of objects are required in every valid USS file. They represent the breakdown of the script. 
 
 <img src="../images/breakdowns.png" alt="breakdowns image" width="70%">
 
-Each [breakdown object](#breakdown-objects) in this scenario just has a `type` of 'scene'.
+With all of the breakdown information available in the file, you may optionally also include schedule data that represents the order in which you plan to shoot the breakdown material. To do this, you will need to add stripboards and calendars to the universalScheduleStandard object. The object must also contain all of the breakdown, cateogry and element data described above.
 
-When creating a schedule out of these breakdowns, all of the breakdown IDs are added to a stripboard, as an ordered list. Additional breakdown types are created to represent banners and day breaks and added to the stripboard. A calendar is applied to each stripboard so that the day breaks can properly reflect shoot dates and days off.
+The stripboards are represented by [stripboard objects](#stripboard-objects). Each stripboard contains an array of child [board objects](#board-objects), which in turn contain ordered arrays of breakdown object IDs. Cumulatively each stripboard's board objects contain references to all of the breakdown objects contained in the schedule. Multiple stripboards may exist in a schedule, representing different arrangements of the breakdowns and thus different scenarios for the shoot.
+
+Stripboard objects also reference one [calendar object](#calendar-objects). This calendar contains all of the date information about a particular scenario. Each date related piece of information is held in an array of [event objects](#event-objects). Each event object represents one type of event on the show. It could be a holiday, a company travel day, a rehearsal day, etc. These events will be used to reflect company days off and notable events in the final schedule. 
 
 <img src="../images/structure.png" alt="structure image" width="70%">
 
-In a schedule, [breakdown objects](#breakdown-objects) are one of three `types`: 'scene', 'day' or 'banner'.
+Now that we have an understanding of the general structure of the data, let's take a look at how to contruct it.
 
 # Structure and Format
 
