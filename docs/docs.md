@@ -123,7 +123,7 @@ The remaining keys are `breakdowns`, `categories`, `elements`, `stripboards` and
 
 # Breakdowns
 
-All valid USS objects must contain arrays of [breakdowns](#breakdown-objects), [categories](#category-objects) and [elements](#element-objects) objects. These three types of object arrays will make up the breakdown information.
+All valid USS objects must contain arrays of [breakdown objects](#breakdown-objects), [category objects](#category-objects) and [element objects](#element-objects). These three types of object arrays will make up the breakdown information.
 
 ## **Breakdown Objects**
 
