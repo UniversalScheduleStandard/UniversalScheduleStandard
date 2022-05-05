@@ -145,17 +145,17 @@ The INT/EXT, Day/Night and Set properties of the breakdown are merely added as e
 { "id": "5d9fc8d0c0efae0017a32e39", ..., "name": "NIGHT" },
 ```
 
-Presumably you would also include those element's id's in the `elements` array of corresponding categories. You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
+You would also include those element's id's in the `elements` array of corresponding `categories`. You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
 
 Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the breakdown object directly, but can be inferred by the inclusion of elements that are in those categories, as in the above slugline example.
 
-The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be '5700000' if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
+The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 12 * 1000)
 
 The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be *null*. 'Banner' types should store their text in the `description` value. 
 
-Note that all `type`s can store values if needed. If you'd like to have 'day' types store `elements`, feel free. Likewise, 'banner's can store as much information as a 'scene' type. Any breakdown object can store the full amount of information, regardless of its `type`.
+Note that all three types can store values if needed. If you'd like to have 'day' types store `elements`, feel free. Likewise, 'banner' types can store as much information as a 'scene' type. Any breakdown object can store the full amount of information, regardless of its `type`.
 
-Note, the shooting date of a particular 'day' strip is inferred from the [stripboard object](#stripboard-objects) / [calendar object](#calendar-objects)'s / [event object](#event-objects) where the event object's `type` is set to 'start'. This inference allows flexibility as multiple stripboards and calendars can be applied to a schedule, and directly storing dates would inherently lead to errors. 
+The shooting date of a particular 'day' breakdown strip is inferred from the [stripboard object](#stripboard-objects) / [calendar object](#calendar-objects) / [event object](#event-objects) where the event object's `type` is set to 'start'. This inference allows flexibility as multiple stripboards and calendars can be applied to a schedule, and directly storing dates would inherently lead to conflicts and errors. 
 
 ## **Category Objects**
 
