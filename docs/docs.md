@@ -30,7 +30,7 @@ Before beginning to read the details of the standard you may find it helpful to 
 
 # Data Overview
 
-The Universal Schedule Standard can store breakdown or breakdown+schedule data. Breakdown data is required in a valid USS object. Optionally, you can also add schedule data to that breakdown information. 
+The Universal Schedule Standard can store breakdown or breakdown+schedule data. Breakdown data is required and optionally you can also add schedule data to that breakdown information. 
 
 ### Breakdowns
 
