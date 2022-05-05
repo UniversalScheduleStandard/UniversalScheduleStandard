@@ -103,7 +103,7 @@ Numbers can be stored as integers or floats, as required. They should not be sto
 Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format "2022-06-24T08:00:00.000Z"
 
 ## **Include All Keys**
-It is considered best practice to include all keys in all objects, even if unused. Skipping keys could throw errors in third party parsers. If you are not using a particular key, you need to set its value to *null*.
+You should include all keys in all objects, even if that key has no value. Skipping keys could throw errors in third party parsers. If you are not using a particular key, its value should be set to *null*.
 
 ## **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (i.e., using a number where a string is expected) will throw an error during parsing. 
