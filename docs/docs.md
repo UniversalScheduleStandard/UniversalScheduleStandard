@@ -80,7 +80,7 @@ The complete USS object is constructed as:
 ## **ID Values**
 Throughout the USS object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into a third party app, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
 
-It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like `"6246e86c606cfc0016ed0a91"`.
+It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like "6246e86c606cfc0016ed0a91".
 
 ## **Date Format**
 Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format "2022-06-24T08:00:00.000Z"
@@ -292,7 +292,7 @@ Event objects are used in both [calendar objects](#calendar-objects) and [elemen
   "id" : string | ID value,
   "date" : string | ISO Date for this event,
   "type" : string | one of 'start|dayOff|event',
-  "name" : string | name of the event, see [name](#name) below
+  "name" : string | name of the event, see name section below
 }
 ```
 
