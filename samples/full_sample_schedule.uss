@@ -3565,14 +3565,14 @@
       },
       { 
         "id": "5e2dd85ffb4b290017196759", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 106, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Wardrobe"        
       },
       { 
         "id": "5e2dd85ffb4b29001719675b", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 107, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Makeup/Hair"        
@@ -3600,7 +3600,7 @@
       },
       { 
         "id": "5e2dd85ffb4b290017196766", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 111, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Music"        
@@ -3635,63 +3635,63 @@
       },
       { 
         "id": "5e2dd85ffb4b290017196776", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 116, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Security"        
       },
       { 
         "id": "5e2dd85ffb4b290017196778", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 117, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Special Equipment"        
       },
       { 
         "id": "5e2dd85ffb4b29001719677a", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 118, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Additional Labor"        
       },
       { 
         "id": "5e2dd85ffb4b29001719677c", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 119, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "VFX"        
       },
       { 
         "id": "5e2dd85ffb4b29001719677e", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 120, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "MFX"        
       },
       { 
         "id": "5e2dd85ffb4b290017196780", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 121, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Notes"        
       },
       { 
         "id": "5e2dd85ffb4b290017196782", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 122, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Comments"        
       },
       { 
         "id": "5e2dd85ffb4b290017196784", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 123, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Misc"        
       },
       { 
         "id": "5e2dd85ffb4b290017196786", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 124, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Other"        
@@ -3733,7 +3733,7 @@
       },
       { 
         "id": "5e2dd860fb4b2900171967f7", 
-        "elements": [ ], 
+        "elements": [], 
         "ucid": 5, 
         "created": "2022-05-04T00:12:06.000Z",
         "name": "Sequence"        
@@ -3756,6 +3756,20 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : ["5e2dd85ffb4b290017196740"], 
+        "events": [
+          {
+            "id" : "5d3cb8c31044290017d1d6ea",
+            "type" : "event",
+            "name" : "travel",
+            "date" : "2022-06-06T07:00:00.000Z"
+          },
+          {
+            "id" : "5d3cb8c31044290017d1d6ea",
+            "type" : "event",
+            "name" : "rehearsal",
+            "date" : "2022-06-07T07:00:00.000Z"
+          }
+        ],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE"
@@ -3769,8 +3783,9 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
-        "daysOff" : [], 
+        "daysOff" : [ 5 ], 
         "name" : "MARY"
       },
       { 
@@ -3782,6 +3797,14 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : ["5d8f983d6922e70017a5416c","5e2dd85ffb4b290017196741"], 
+        "events": [
+          {
+            "id" : "5d3cb8c31044290017d1d6ea",
+            "type" : "dayOff",
+            "name" : "dayOff",
+            "date" : "2022-07-12T07:00:00.000Z"
+          }
+        ],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "POTTER"
@@ -3795,6 +3818,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "UNCLE BILLY"
@@ -3808,6 +3832,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "CLARENCE"
@@ -3821,6 +3846,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "VIOLET"
@@ -3834,6 +3860,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BERT"
@@ -3847,6 +3874,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "ERNIE"
@@ -3860,6 +3888,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "COUSIN TILLY"
@@ -3873,6 +3902,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "COUSIN EUSTACE"
@@ -3886,6 +3916,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GOWER"
@@ -3899,6 +3930,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "HARRY"
@@ -3912,6 +3944,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MARTINI"
@@ -3925,6 +3958,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "SAM"
@@ -3938,6 +3972,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "PETE"
@@ -3951,6 +3986,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "JANIE"
@@ -3964,6 +4000,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "TOMMY"
@@ -3977,6 +4014,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "ZUZU"
@@ -3990,6 +4028,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "ANNIE"
@@ -4003,6 +4042,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MRS. BAILEY"
@@ -4016,6 +4056,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "NICK"
@@ -4029,6 +4070,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BAILEY"
@@ -4042,6 +4084,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "CARTER"
@@ -4055,6 +4098,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "CHARLIE"
@@ -4068,6 +4112,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "DR. CAMPBELL"
@@ -4081,6 +4126,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MRS. HATCH"
@@ -4094,6 +4140,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "OWNER"
@@ -4107,6 +4154,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "TOM"
@@ -4120,6 +4168,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MA BAILEY"
@@ -4133,6 +4182,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "POP"
@@ -4146,6 +4196,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BOUNCER"
@@ -4159,6 +4210,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "ED"
@@ -4172,6 +4224,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "FREDDIE"
@@ -4185,6 +4238,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "JANE"
@@ -4198,6 +4252,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "JOE"
@@ -4211,6 +4266,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MARIA"
@@ -4224,6 +4280,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MARTY"
@@ -4237,6 +4294,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MICKEY"
@@ -4250,6 +4308,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MOTHER"
@@ -4263,6 +4322,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MR. CARTER"
@@ -4276,6 +4336,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MRS. DAVIS"
@@ -4289,6 +4350,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MRS. THOMPSON"
@@ -4302,6 +4364,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "PARTRIDGE"
@@ -4315,6 +4378,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "PRINCIPAL"
@@ -4328,6 +4392,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "RANDALL"
@@ -4341,6 +4406,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "REINEMAN"
@@ -4354,6 +4420,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "RUTH"
@@ -4367,6 +4434,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "SCHULTZ"
@@ -4380,6 +4448,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "SHERIFF"
@@ -4393,6 +4462,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "TELLER"
@@ -4406,6 +4476,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "TOLLKEEPER"
@@ -4419,6 +4490,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "WELCH"
@@ -4432,6 +4504,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "DRIVER"
@@ -4445,6 +4518,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "ANOTHER MAN"
@@ -4458,6 +4532,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "LAWYER"
@@ -4471,6 +4546,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "PASSERBY"
@@ -4484,6 +4560,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BOY"
@@ -4497,6 +4574,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "COP"
@@ -4510,6 +4588,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "CUSTOMER"
@@ -4523,6 +4602,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "WOMAN"
@@ -4536,6 +4616,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "10 Boys"
@@ -4549,6 +4630,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "25 Pedestrians"
@@ -4562,6 +4644,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "30 Bank Crowd"
@@ -4575,6 +4658,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "4 Martini Kids"
@@ -4588,6 +4672,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Potter's Goon"
@@ -4601,6 +4686,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Potter's Secretary"
@@ -4614,6 +4700,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Mary's Baby Boy"
@@ -4627,6 +4714,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Nurse"
@@ -4640,6 +4728,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Toddler"
@@ -4653,6 +4742,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "20 Draftees"
@@ -4666,6 +4756,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "5 Other Women"
@@ -4679,6 +4770,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "3 Army Officers"
@@ -4692,6 +4784,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "5 Draft Board Officers"
@@ -4705,6 +4798,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "10 Crowd"
@@ -4718,6 +4812,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Man"
@@ -4731,6 +4826,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "3 Children"
@@ -4744,6 +4840,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "30 Churchgoers"
@@ -4757,6 +4854,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "5 Bank Patrons"
@@ -4770,6 +4868,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "15 Martini's Patrons"
@@ -4783,6 +4882,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "10 Nick's Bar Patrons"
@@ -4796,6 +4896,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "20 Blue Moon Patrons"
@@ -4809,6 +4910,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Boy's fall in water"
@@ -4822,6 +4924,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Clarence falls into water"
@@ -4835,6 +4938,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "George dives into water"
@@ -4848,6 +4952,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "George tries to save Clarence"
@@ -4861,6 +4966,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "George and Clarence fall into snow"
@@ -4874,6 +4980,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "George punches Bert"
@@ -4887,6 +4994,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Ernie's Cab"
@@ -4900,6 +5008,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Uncle Billy's Car"
@@ -4913,6 +5022,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "5 Parked Cars"
@@ -4926,6 +5036,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Carriage"
@@ -4939,6 +5050,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "George's Car"
@@ -4952,6 +5064,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Moving Truck"
@@ -4965,6 +5078,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Sam's Car"
@@ -4978,6 +5092,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Train"
@@ -4991,6 +5106,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Truck"
@@ -5004,6 +5120,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Bert's Police Car"
@@ -5017,6 +5134,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "5 Sleds"
@@ -5030,6 +5148,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Zuzu's Petals"
@@ -5043,6 +5162,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Potter's Wheelchair"
@@ -5056,6 +5176,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "George's Briefcase"
@@ -5069,6 +5190,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "George's Hat"
@@ -5082,6 +5204,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Martini's Furniture"
@@ -5095,6 +5218,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Bread"
@@ -5108,6 +5232,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Salt"
@@ -5121,6 +5246,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Wallpaper"
@@ -5134,6 +5260,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Bannister Knob"
@@ -5147,6 +5274,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Newspapers"
@@ -5160,6 +5288,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Wheelbarrow"
@@ -5173,6 +5302,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Junk"
@@ -5186,6 +5316,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Old Tires"
@@ -5199,6 +5330,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Wreath"
@@ -5212,6 +5344,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Uncle Billy's Newspaper"
@@ -5225,6 +5358,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Bank Deposit"
@@ -5238,6 +5372,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Rain towers"
@@ -5251,6 +5386,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Smoke"
@@ -5264,6 +5400,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Flashes"
@@ -5277,6 +5414,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Snow"
@@ -5290,6 +5428,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Fire in fireplace"
@@ -5303,6 +5442,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "2 Horses"
@@ -5316,6 +5456,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Horse Wrangler"
@@ -5329,6 +5470,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "300mm Lens"
@@ -5342,6 +5484,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Playback"
@@ -5355,6 +5498,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "1910 Street Signs"
@@ -5368,6 +5512,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Picture of George & moon"
@@ -5381,6 +5526,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Waste Paper Basket"
@@ -5394,6 +5540,7 @@
         "isDrop" : false, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Gravestones"
@@ -5407,6 +5554,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Shrubs"
@@ -5420,6 +5568,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BAILEY HOME"
@@ -5433,6 +5582,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BAILEY HOME - FRONT PORCH"
@@ -5446,6 +5596,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BAILEY HOME - DINING ROOM"
@@ -5459,6 +5610,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BAILEY PARK"
@@ -5472,6 +5624,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BAILEY PARK - STREET"
@@ -5485,6 +5638,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BANK"
@@ -5498,6 +5652,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BANK - POTTER'S OFFICE"
@@ -5511,6 +5666,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BANK - WINDOW"
@@ -5524,6 +5680,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BATTLEFIELD"
@@ -5537,6 +5694,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BEDFORD FALLS"
@@ -5550,6 +5708,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BEDFORD FALLS - EMPORIUM"
@@ -5563,6 +5722,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BEDFORD FALLS - MAIN STREET"
@@ -5576,6 +5736,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BEDFORD FALLS - SIDEWALK"
@@ -5589,6 +5750,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BEDFORD FALLS - SLUM STREET"
@@ -5602,6 +5764,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BEDFORD FALLS - STREET"
@@ -5615,6 +5778,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BEDFORD FALLS - THEATRE"
@@ -5628,6 +5792,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BLUE MOON"
@@ -5641,6 +5806,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BRIDGE"
@@ -5654,6 +5820,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BRIDGE - RAILING"
@@ -5667,6 +5834,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BRIDGE - TOLL HOUSE"
@@ -5680,6 +5848,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BUILDING & LOAN - BAILEY'S OFFICE"
@@ -5693,6 +5862,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BUILDING & LOAN - GEORGE'S OFFICE"
@@ -5706,6 +5876,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BUILDING & LOAN - OUTER OFFICE"
@@ -5719,6 +5890,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BUILDING & LOAN - UNCLE BILLY'S OFFICE"
@@ -5732,6 +5904,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BUILDING AND LOAN"
@@ -5745,6 +5918,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "CEMETERY"
@@ -5758,6 +5932,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "CHURCH"
@@ -5771,6 +5946,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "DOORWAY"
@@ -5784,6 +5960,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "DUMP"
@@ -5797,6 +5974,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "ERNIE'S CAB"
@@ -5810,6 +5988,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "FACTORY"
@@ -5823,6 +6002,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "FRONT PORCH OF HOUSE"
@@ -5836,6 +6016,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "FROZEN RIVER AND HILL"
@@ -5849,6 +6030,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE"
@@ -5862,6 +6044,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - BEDROOM"
@@ -5875,6 +6058,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - ENTRANCE HALL"
@@ -5888,6 +6072,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - FRONT HALL"
@@ -5901,6 +6086,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - HALL"
@@ -5914,6 +6100,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - HALLWAY"
@@ -5927,6 +6114,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - KITCHEN"
@@ -5940,6 +6128,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - LIVING ROOM"
@@ -5953,6 +6142,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - PARLOR"
@@ -5966,6 +6156,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - STAIRS"
@@ -5979,6 +6170,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - TOP OF STAIRS"
@@ -5992,6 +6184,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - UPPER HALLWAY"
@@ -6005,6 +6198,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GEORGE'S HOUSE - ZUZU'S BEDROOM"
@@ -6018,6 +6212,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GOWER'S DRUGSTORE"
@@ -6031,6 +6226,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "GOWER'S DRUGSTORE - BACK ROOM"
@@ -6044,6 +6240,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "HATCH HOME"
@@ -6057,6 +6254,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "HATCH HOME - BEDROOM WINDOW"
@@ -6070,6 +6268,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "HATCH HOME - HALL"
@@ -6083,6 +6282,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "HIGH SCHOOL GYM"
@@ -6096,6 +6296,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "HOSPITAL"
@@ -6109,6 +6310,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "HOUSE"
@@ -6122,6 +6324,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "LIBRARY"
@@ -6135,6 +6338,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "LUGGAGE SHOP"
@@ -6148,6 +6352,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MARTINI'S BAR"
@@ -6161,6 +6366,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MARTINI'S NEW HOUSE"
@@ -6174,6 +6380,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "NICK'S BAR"
@@ -6187,6 +6394,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "OCEAN FROM DECK OF CARRIER"
@@ -6200,6 +6408,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "OLD GRANVILLE HOUSE"
@@ -6213,6 +6422,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "OLD GRANVILLE HOUSE - SIDE"
@@ -6226,6 +6436,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "POTTER'S HOME - LIBRARY"
@@ -6239,6 +6450,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "RAILROAD STATION"
@@ -6252,6 +6464,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "RATION OFFICE"
@@ -6265,6 +6478,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "READY ROOM ON AIRCRAFT CARRIER"
@@ -6278,6 +6492,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "RECRUITING GROUNDS"
@@ -6291,6 +6506,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "RED CROSS WORKROOM"
@@ -6304,6 +6520,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "REMAGEN BRIDGE"
@@ -6317,6 +6534,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "RESIDENTIAL STREET"
@@ -6330,6 +6548,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "RIVER"
@@ -6343,6 +6562,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "SAM'S NEW YORK OFFICE"
@@ -6356,6 +6576,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "SITTING ROOM"
@@ -6369,6 +6590,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "SKY"
@@ -6382,6 +6604,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "TRAIN"
@@ -6395,6 +6618,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "TREE-LINED RESIDENTIAL STREET"
@@ -6408,6 +6632,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "UNCLE BILLY'S HOUSE - LIVING ROOM"
@@ -6421,6 +6646,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "VIOLET BICK'S BEAUTY SHOP"
@@ -6434,6 +6660,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "INT"
@@ -6447,6 +6674,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "EXT"
@@ -6460,6 +6688,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "INT/EXT"
@@ -6473,6 +6702,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "EXT/INT"
@@ -6486,6 +6716,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "I/E"
@@ -6499,6 +6730,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "E/I"
@@ -6512,6 +6744,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "DAY"
@@ -6525,6 +6758,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "NIGHT"
@@ -6538,6 +6772,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MORNING"
@@ -6551,6 +6786,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "AFTERNOON"
@@ -6564,6 +6800,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "EVENING"
@@ -6577,6 +6814,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "DUSK"
@@ -6590,6 +6828,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "DAWN"
@@ -6603,6 +6842,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "MAGIC HOUR"
@@ -6616,6 +6856,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "SPACE"
@@ -6629,6 +6870,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "LATER"
@@ -6642,6 +6884,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "D1"
@@ -6655,6 +6898,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "N1"
@@ -6668,6 +6912,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "First"
@@ -6681,6 +6926,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Second"
@@ -6694,6 +6940,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Splinter"
@@ -6707,6 +6954,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Stunt"
@@ -6720,6 +6968,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "VFX"
@@ -6733,6 +6982,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Stage 5"
@@ -6746,6 +6996,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Cane"
@@ -6759,6 +7010,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Glass of water"
@@ -6772,6 +7024,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "D12"
@@ -6785,6 +7038,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "BANK - POTTER'S SIDE OFFICE"
@@ -6798,6 +7052,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Umbrella"
@@ -6811,6 +7066,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Horse"
@@ -6824,6 +7080,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Nick's Pen"
@@ -6837,6 +7094,7 @@
         "isDrop" : true, 
         "doodDayCount" : 10, 
         "linkedElements" : [], 
+        "events": [],
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff" : [], 
         "name" : "Dog"

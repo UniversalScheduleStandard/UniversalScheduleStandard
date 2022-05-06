@@ -48,7 +48,7 @@ With all of the breakdown information available in the file, you may optionally 
 
 Individual schedule scenarios are represented by [stripboard objects](#stripboard-objects). Each stripboard object contains an array of child [board objects](#board-objects), which in turn contain ordered arrays of breakdown object IDs. There are traditionally no less than two board objects and they are commonly named 'stripboard' and 'boneyard'. Other boards can be added too for things like additional units. Cumulatively each stripboard's board objects contain references to all of the breakdown objects contained in the schedule. Multiple stripboards may exist in a schedule, representing different arrangements of the breakdowns and thus different scenarios for the shoot.
 
-Stripboard objects also reference one [calendar object](#calendar-objects). This calendar contains all of the date information about a particular scenario. Each date related piece of information is held in an array of [event objects](#event-objects). Each event object represents one type of event on the show. It could be a holiday, a company travel day, a rehearsal day, etc. These events will be used to reflect company days off and notable events in the final schedule. 
+Stripboard objects also reference one of potentially many [calendar objects](#calendar-objects). This calendar contains all of the date information about a particular scenario. Each date related piece of information is held in an array of [event objects](#event-objects). Each event object represents one type of event on the show. It could be a holiday, a company travel day, a rehearsal day, etc. These events will be used to reflect company days off and notable events in the final schedule. 
 
 <img src="../images/structure_schedules.png" alt="structure image" width="80%">
 
@@ -93,7 +93,7 @@ The complete USS object is constructed as:
 Please see the [/samples](../samples) folder for examples.
 
 ## **ID Values**
-Throughout the USS object, each sub-object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into a third party app, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
+Throughout the USS object, every object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into a third party app, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
 
 It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) but any UUID will suffice. An example ID would look like "6246e86c606cfc0016ed0a91".
 
@@ -101,13 +101,13 @@ It is considered best practice to use a 12 byte [BSON ObjectID](https://docs.mon
 All strings should be stored as plain text. Rich text is not supported in the standard. Note that some key/value pairs may seem like they would take a number instead of a string. Please store values only in their described format. Values like scene numbers or page numbers may initially seem like numbers until you consider that both commonly contain letters. 
 
 ## **Numbers**
-Numbers can be stored as integers or floats, as required. They should not be stored as strings. 
+Numbers can be stored as integers or decimal values, as required. They should not be stored as strings. 
 
 ## **Date Format**
 Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format "2022-06-24T08:00:00.000Z"
 
 ## **Include All Keys**
-You should include all keys in all objects, even if that key has no value. Skipping keys could throw errors in third party parsers. If you are not using a particular key, its value should be set to *null*. If values for a particular key are empty, for instance if a particular array is empty, you may use empty brackets ([]).
+You should include all keys in all objects, even if that key has no value. Skipping keys could throw errors in third party parsers. If you are not using a particular key, its value should be set to *null*. If the value for an array is empty you may use empty brackets ([]).
 
 ## **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (i.e., using a number where a string is expected) will throw an error during parsing. 
@@ -170,7 +170,7 @@ You would also include those element's id's in the `elements` array of correspon
 
 Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the breakdown object directly, but can be referenced by the inclusion of elements that are in those categories, as in the above slugline example.
 
-The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 60 * 1000)
+The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 60s * 1000)
 
 The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be *null*. 'Banner' types should store their text in the `description` value. 
 
@@ -225,7 +225,7 @@ Element objects are constructed like this:
 
 The `daysOff` array contains integers representing the days of the week in which this element cannot play. See the [calendar objects](#calendar-objects) section for a description of how this key works in that object, as the expected values and behavior is the same. 
 
-The `dropDayCount`, `isDood`, `isDrop`, `isHold` keys all refer to properties related to how and whether the element will appear in the [day out of days](https://en.wikipedia.org/wiki/Day_out_of_days_(filmmaking)). 
+The `dropDayCount`, `isDood`, `isDrop`, `isHold` keys all refer to properties related to how and whether the element will appear in the [day out of days](https://en.wikipedia.org/wiki/Day_out_of_days_(filmmaking)). When creating values for these keys, default to *true* if the data you're importing from doesn't contain these features. 
 
 The `elementId` stores an additional identifier for an element, traditionally referred to as a 'board ID'. This is primarily used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
 

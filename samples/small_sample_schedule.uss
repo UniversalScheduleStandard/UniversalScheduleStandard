@@ -128,6 +128,7 @@
         "elementId": "",
         "isIdLock": false,
         "linkedElements": [], 
+        "events": [],
         "name": "EXT"
       }, 
       {
@@ -141,6 +142,7 @@
         "elementId": "",
         "isIdLock": false,
         "linkedElements": [], 
+        "events": [],
         "name": "BEDFORD FALLS BRIDGE"
       }, 
       {
@@ -154,6 +156,7 @@
         "elementId": "",
         "isIdLock": false,
         "linkedElements": [], 
+        "events": [],
         "name": "NIGHT"
       }, 
       {
@@ -194,6 +197,7 @@
         "elementId": "",
         "isIdLock": false,
         "linkedElements": [], 
+        "events": [],
         "name": "Zuzu's Petals"
       },
       {
@@ -207,6 +211,7 @@
         "elementId": "2",
         "isIdLock": false,
         "linkedElements": [], 
+        "events": [],
         "name": "CLARENCE"
       }
     ],
