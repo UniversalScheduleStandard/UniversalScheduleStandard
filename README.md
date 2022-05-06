@@ -76,6 +76,7 @@ Here is an example of the entire standard object:
   "universalScheduleStandard": {
     "id": "5d9fc8cfc0efae0017a32a11",
     "author": "Jane Smith",
+    "company": "RKO Pictures",
     "created": "2020-10-07T00:12:06.000Z",
     "description": "This is a description of the schedule",
     "episode": "101",
