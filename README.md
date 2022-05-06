@@ -103,7 +103,7 @@ The last five items in this object are where the schedule and breakdown data are
 
 # Examples
 
-See the [small sample file](/samples/small_sample_schedule.uss) in the [/samples](samples/) folder for a brief example. To keep the sample file as readable as possible, it only contains one scene and a few elements. A full schedule would of course contain more data.
+See the [small sample file](/samples/small_sample_schedule.uss) in the [/samples](samples/) folder for a brief example. To keep the sample file as readable as possible, it only contains one scene and a few elements. A [full sample schedule](/samples/full_sample_schedule.uss) of course contains more data and illustrates a real world implementation of the standard on a full schedule.
 
 # Documentation
 

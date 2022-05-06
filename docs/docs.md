@@ -107,7 +107,7 @@ Numbers can be stored as integers or floats, as required. They should not be sto
 Dates should all be [ISO Date Format](https://www.iso.org/iso-8601-date-and-time-format.html) and should follow the format "2022-06-24T08:00:00.000Z"
 
 ## **Include All Keys**
-You should include all keys in all objects, even if that key has no value. Skipping keys could throw errors in third party parsers. If you are not using a particular key, its value should be set to *null*.
+You should include all keys in all objects, even if that key has no value. Skipping keys could throw errors in third party parsers. If you are not using a particular key, its value should be set to *null*. If values for a particular key are empty, for instance if a particular array is empty, you may use empty brackets ([]).
 
 ## **Maintaining Data Types**
 Please maintain the correct data type for each key. The use of incorrect data types (i.e., using a number where a string is expected) will throw an error during parsing. 
@@ -210,19 +210,22 @@ Element objects are constructed like this:
 {
   "id": string | ID value,
   "created": string | ISO Date of the creation date of this element,
-  "doodDropAllow": boolean | allow drop days on dood?,
-  "doodDropDays": number | integer of days between drop & pickup,
-  "doodHoldAllow": boolean | allow hold days on dood?,
-  "doodInclude": boolean | include this element on dood?,
+  "daysOff" : array of integers representing days of week,
+  "dropDayCount": number | integer of days between drop & pickup,
   "elementId": string | board identifier of element,
-  "elementIdLock": boolean | lock elementID value?,
   "events": array of event objects,
+  "isDood": boolean | include this element on day out of days?,
+  "isDrop": boolean | allow drop days on day out of days?,
+  "isHold": boolean | allow hold days on day out of days?,
+  "isIdLock": boolean | lock elementID value?,
   "linkedElements": array of element object ID string values, 
   "name": string | name of element,
 }
 ```
 
-The `doodDropAllow`, `doodDropDays`, `doodHoldAllow`, `doodInclude` keys all refer to properties related to how and whether the element will appear in the [day out of days](https://en.wikipedia.org/wiki/Day_out_of_days_(filmmaking)). 
+The `daysOff` array contains integers representing the days of the week in which this element cannot play. See the [calendar objects](#calendar-objects) section for a description of how this key works in that object, as the expected values and behavior is the same. 
+
+The `dropDayCount`, `isDood`, `isDrop`, `isHold` keys all refer to properties related to how and whether the element will appear in the [day out of days](https://en.wikipedia.org/wiki/Day_out_of_days_(filmmaking)). 
 
 The `elementId` stores an additional identifier for an element, traditionally referred to as a 'board ID'. This is primarily used for cast members, who are commonly referred to by a number. It is a string instead of a number to allow for the use of letters. 
 
