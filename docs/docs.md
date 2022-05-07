@@ -9,6 +9,7 @@ Before beginning to read the details of the standard you may find it helpful to 
 ## Table of Contents
 - [Data Overview](#data-overview)
 - [Structure and Format](#structure-and-format)
+    - [JSON Construction](#json-construction)
     - [ID Values](#id-values)
     - [Strings](#strings)
     - [Numbers](#numbers)
@@ -63,26 +64,26 @@ The complete USS object is constructed as:
 ```
 {
   "universalScheduleStandard": {
-    "id": string | ID value,
-    "author": string | name of individual creator,
-    "company": string | name of the company for which the schedule was created,
-    "created": string | ISO Date of the creation date of the schedule,
-    "episode": string | the series episode number
-    "episodeName": string | the title of the series episode
-    "description": string | description of the schedule, if any,
-    "name": string | name of the schedule,
-    "project": string | name of the feature, short, spot or series,
-    "schedColor": string | name of the schedule revision color,
-    "schedDate": string | ISO Date of the revision date of the schedule,
-    "scriptColor": string | name of the script revision color,
-    "scriptDate": string | ISO Date of the revision date of the script,
-    "season": string | the episodic series season number or identifier
-    "source": string | name of originating app or site,
-    "version": string | USS version number,
+    "id": string | UUID value | required,
+    "author": string | name of individual creator | can be null,
+    "company": string | name of the company for which the schedule was created | can be null,
+    "created": string | ISO Date of the creation date of the schedule | required,
+    "episode": string | the series episode number | can be null,
+    "episodeName": string | the title of the series episode | can be null,
+    "description": string | description of the schedule | can be null,
+    "name": string | name of the schedule | required,
+    "project": string | name of the feature, short, spot or series | can be null,
+    "schedColor": string | name of the schedule revision color | can be null,
+    "schedDate": string | ISO Date of the revision date of the schedule | can be null,
+    "scriptColor": string | name of the script revision color | can be null,
+    "scriptDate": string | ISO Date of the revision date of the script | can be null,
+    "season": string | the episodic series season number or identifier | can be null,
+    "source": string | name of originating app or site | required,
+    "version": string | USS version number | required,
 
-    "breakdowns": array of breakdown objects,
-    "categories": array of category objects,
-    "elements": array of element objects,
+    "breakdowns": array of breakdown objects | required,
+    "categories": array of category objects | required,
+    "elements": array of element objects | required,
 
     "stripboards": array of stripboard objects | required only for schedules,
     "calendars": array of calendar objects | required only for schedules
@@ -91,6 +92,13 @@ The complete USS object is constructed as:
 ```
 
 Please see the [/samples](../samples) folder for examples.
+
+## **JSON Construction**
+For general notes on the JSON standard, please refer to the following online sources:
+
+- [MDM Web Docs - JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+- [MDM Web Docs - Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+- [W3 Schools - JSON](https://www.w3schools.com/js/js_json.asp)
 
 ## **ID Values**
 Throughout the USS object, every object contains its own unique ID value. Unique values help in the identification of any data that may already exist in a system. For example, when importing a breakdown into a third party app, an importer can check to see if individual breakdowns or elements have been previously imported, thus potentially reducing the amount of duplicated data. 
@@ -135,22 +143,22 @@ The breakdown objects contain information about a scene (or scenes) in a script.
 
 ```
 {
-  "id": string | ID value,
-  "comments": string,
-  "created": string | ISO Date,
-  "description": string | description of scene,
-  "elements": array of element object ID string values,
-  "pages": number | decimal value of page eighths,
-  "scene": string | scene number,
-  "scriptPage": string | page number scene starts on,
-  "time": number | millisecond duration to shoot scene,
-  "type": string | one of 'scene|day|banner'
+  "id": string | UUID value | required,
+  "comments": string | can be null,
+  "created": string | ISO Date | required,
+  "description": string | description of scene | can be null,
+  "elements": array of element object ID string values | required,
+  "pages": number | decimal value of page eighths | can be null,
+  "scene": string | scene number | can be null,
+  "scriptPage": string | page number scene starts on | can be null,
+  "time": number | millisecond duration to shoot scene | can be null,
+  "type": string | one of 'scene|day|banner' | required
 }
 ```
 
 The `elements` array contains element ID strings that represent all of the elements in that breakdown. 
 
-The `pages` number is a decimal representation of the physical length of a breakdown (i.e., script scene) in eighths of pages. For example, if a breakdown represents 1/8 of of a script page, its `pages` value would be 0.125. A 5/8 page scene would be 0.625, and so on. 
+The `pages` number is a decimal representation of the physical length of a breakdown (i.e., script scene) in eighths of pages. For example, if a breakdown represents 1/8 of of a script page, its `pages` value would be .125. A 5/8 page scene would be .625, and so on. Do not use leading zeros in your decimal numbers. Do not attempt to directly store fractions (i.e. 7/8) in this value as it will throw an error. 
 
 The INT/EXT, Day/Night and Set properties of the breakdown are merely added as elements to that breakdown. For the slugline "EXT. BEDFORD FALLS BRIDGE - NIGHT" you would add three id's to the `elements` array of that breakdown object, such as:
 
@@ -186,11 +194,11 @@ Category objects are constructed like this:
 
 ```
 {
-  "id": string | ID value,
-  "created": string | ISO Date of the creation date of this category,
-  "elements": ordered array of element object ID string values,
-  "name": string | name of this category
-  "ucid": number | corresponding universal category ID number,
+  "id": string | UUID value | required,
+  "created": string | ISO Date of the creation date of this category | required,
+  "elements": ordered array of element object ID string values | required,
+  "name": string | name of this category | required,
+  "ucid": number | corresponding universal category ID number | required
 }
 ```
 
@@ -208,18 +216,18 @@ Element objects are constructed like this:
 
 ```
 {
-  "id": string | ID value,
-  "created": string | ISO Date of the creation date of this element,
-  "daysOff" : array of integers representing days of week,
-  "dropDayCount": number | integer of days between drop & pickup,
-  "elementId": string | board identifier of element,
-  "events": array of event objects,
-  "isDood": boolean | include this element on day out of days?,
-  "isDrop": boolean | allow drop days on day out of days?,
-  "isHold": boolean | allow hold days on day out of days?,
-  "isIdLock": boolean | lock elementID value?,
-  "linkedElements": array of element object ID string values, 
-  "name": string | name of element,
+  "id": string | UUID value | required,
+  "created": string | ISO Date of the creation date of this element | required,
+  "daysOff" : array of integers representing days of week | required,
+  "dropDayCount": number | integer of days between drop & pickup | required,
+  "elementId": string | board identifier of element | can be null,
+  "events": array of event objects | can be null,
+  "isDood": boolean | include this element on day out of days? | required,
+  "isDrop": boolean | allow drop days on day out of days? | required,
+  "isHold": boolean | allow hold days on day out of days? | required,
+  "isIdLock": boolean | lock elementID value? | required,
+  "linkedElements": array of element object ID string values | can be null, 
+  "name": string | name of element | required | required,
 }
 ```
 
@@ -245,10 +253,10 @@ The stripboard objects are constructed like this:
 
 ```
 {
-  "id" : string | ID value,
-  "boards" : array of board objects,
-  "calendar" : string | calendar object ID string value,
-  "name" : string | name of stripboard
+  "id" : string | UUID value | required,
+  "boards" : array of board objects | required,
+  "calendar" : string | calendar object ID string value | can be null,
+  "name" : string | name of stripboard | required
 }
 ```
 
@@ -262,9 +270,9 @@ The [stripboard object's](#stripboard-objects) `boards` array is made up of boar
 
 ```
 {
-  "id": string | ID value,
-  "name": string | name value of board,
-  "breakdownIds": ordered array of breakdown object ID string values
+  "id": string | UUID value | required,
+  "name": string | name value of board | required,
+  "breakdownIds": ordered array of breakdown object ID string values | required
 }
 ```
 
@@ -282,10 +290,10 @@ Multiple calendars may be included in the `calendars` array, representing differ
 
 ```
 {
-  "id" : string | ID value,
-  "daysOff" : array of integers representing days of week,
-  "events" : array of events objects,
-  "name" : string | name of calendar,
+  "id" : string | UUID value | required,
+  "daysOff" : array of integers representing days of week | required,
+  "events" : array of events objects | required,
+  "name" : string | name of calendar | required,
 }
 ```
 
@@ -313,10 +321,10 @@ Event objects are used in both [calendar objects](#calendar-objects) and [elemen
 
 ```
 {
-  "id" : string | ID value,
-  "date" : string | ISO Date for this event,
-  "type" : string | one of 'start|dayOff|event',
-  "name" : string | name of the event, see name section below
+  "id" : string | UUID value | required,
+  "date" : string | ISO Date for this event | required,
+  "type" : string | one of 'start|dayOff|event' | required,
+  "name" : string | name of the event, see name section below | can be null
 }
 ```
 
