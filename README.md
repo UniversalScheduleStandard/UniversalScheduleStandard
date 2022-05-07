@@ -2,7 +2,7 @@
   <img src="images/uss_logo-01.svg" alt="USS Logo" width="537" height="205">
 </p>
 
-<h3 align="center" style="margin-bottom: 16px">Proposal for a standardized format to store and transport <br /><a href="https://en.wikipedia.org/wiki/Shooting_schedule">production schedules</a> and <a href="https://en.wikipedia.org/wiki/Script_breakdown">breakdowns</a> across the entertainment industry.</h3>
+<h3 align="center" style="margin-bottom: 16px">Proposal for a standardized format to store and transport <br /><a href="https://en.wikipedia.org/wiki/Shooting_schedule">production schedules</a> and <a href="https://en.wikipedia.org/wiki/Script_breakdown">breakdowns</a> across the entertainment industry</h3>
 
 ---
 
