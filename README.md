@@ -6,13 +6,13 @@
 
 ---
 
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/thinkcrew/UniversalScheduleStandard)
-![GitHub issues](https://img.shields.io/github/issues/thinkcrew/UniversalScheduleStandard)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/thinkcrew/UniversalScheduleStandard)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/thinkcrew/UniversalScheduleStandard?color=yellow)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/thinkcrew/UniversalScheduleStandard?color=yellow)
-![GitHub Repo stars](https://img.shields.io/github/stars/thinkcrew/UniversalScheduleStandard?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/thinkcrew/UniversalScheduleStandard?style=social)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/universalschedulestandard/UniversalScheduleStandard)
+![GitHub issues](https://img.shields.io/github/issues/universalschedulestandard/UniversalScheduleStandard)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/universalschedulestandard/UniversalScheduleStandard)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/universalschedulestandard/UniversalScheduleStandard?color=yellow)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/universalschedulestandard/UniversalScheduleStandard?color=yellow)
+![GitHub Repo stars](https://img.shields.io/github/stars/universalschedulestandard/UniversalScheduleStandard?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/universalschedulestandard/UniversalScheduleStandard?style=social)
 
 # The Problem
 
