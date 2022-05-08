@@ -56,28 +56,6 @@
       }
     ],
 
-    "calendars": [
-      {
-        "id" : "5d01230c987033001725c908",
-        "events" : [ 
-            {
-              "id" : "5dcee721d3ebb20017bbeb6a",
-              "type" : "start",
-              "name" : null,
-              "date" : "2022-06-20T08:00:00.000Z"
-            },
-            {
-              "id" : "5d3b5c6d35bc890017e4eacb",
-              "type" : "event",
-              "name" : "travel",
-              "date" : "2022-06-15T08:00:00.000Z"
-            }
-        ],
-        "daysOff" : [0, 6],
-        "name" : "Start on 6/20"
-      }
-    ],
-
     "categories": [
       {
         "id": "5d9fc8cfc0efae0017a32d6a",
@@ -250,6 +228,28 @@
         ],
         "calendar" : "5d01230c987033001725c908",
         "name" : "First Pass"
+      }
+    ],
+
+    "calendars": [
+      {
+        "id" : "5d01230c987033001725c908",
+        "events" : [ 
+            {
+              "id" : "5dcee721d3ebb20017bbeb6a",
+              "type" : "start",
+              "name" : null,
+              "date" : "2022-06-20T08:00:00.000Z"
+            },
+            {
+              "id" : "5d3b5c6d35bc890017e4eacb",
+              "type" : "event",
+              "name" : "travel",
+              "date" : "2022-06-15T08:00:00.000Z"
+            }
+        ],
+        "daysOff" : [0, 6],
+        "name" : "Start on 6/20"
       }
     ]
   }

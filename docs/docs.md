@@ -158,7 +158,7 @@ The breakdown objects contain information about a scene (or scenes) in a script.
 
 The `elements` array contains element ID strings that represent all of the elements in that breakdown. 
 
-The `pages` number is a decimal representation of the physical length of a breakdown (i.e., script scene) in eighths of pages. For example, if a breakdown represents 1/8 of of a script page, its `pages` value would be .125. A 5/8 page scene would be .625, and so on. Do not use leading zeros in your decimal numbers. Do not attempt to directly store fractions (i.e. 7/8) in this value as it will throw an error. 
+The `pages` number is a decimal representation of the physical length of a breakdown (i.e., script scene) in eighths of pages. For example, if a breakdown represents 1/8 of of a script page, its `pages` value would be .125. A 5/8 page scene would be .625, and so on. Do not attempt to directly store fractions (i.e. 7/8) in this value as it will throw an error. 
 
 The INT/EXT, Day/Night and Set properties of the breakdown are merely added as elements to that breakdown. For the slugline "EXT. BEDFORD FALLS BRIDGE - NIGHT" you would add three id's to the `elements` array of that breakdown object, such as:
 
