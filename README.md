@@ -13,7 +13,7 @@
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/universalschedulestandard/UniversalScheduleStandard?color=yellow)
 ![GitHub Repo stars](https://img.shields.io/github/stars/universalschedulestandard/UniversalScheduleStandard?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/universalschedulestandard/UniversalScheduleStandard?style=social)
-[![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 # The Problem
 
