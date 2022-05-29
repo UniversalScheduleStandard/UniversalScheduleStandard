@@ -15,7 +15,7 @@
     "scriptDate": "2022-03-06T07:00:00.000Z",
     "season": null,
     "source": "Think Crew",
-    "version": "0.9.0",
+    "ussVersion": "0.9.1",
 
     "breakdowns": [
       {
@@ -27,7 +27,7 @@
         "pages":  null,
         "scene":  null,
         "scriptPage":  null,
-        "time": null,
+        "duration": null,
         "type": "banner"
       },
       {
@@ -39,7 +39,7 @@
         "pages": 0.25,
         "scene": "89PT1",
         "scriptPage": "112",
-        "time": 5700000,
+        "duration": 5700000,
         "type": "scene"
       },
       {
@@ -51,7 +51,7 @@
         "pages":  null,
         "scene":  null,
         "scriptPage":  null,
-        "time": null,
+        "duration": null,
         "type": "day"
       }
     ],
@@ -61,35 +61,30 @@
         "id": "5d9fc8cfc0efae0017a32d6a",
         "ucid": 0,
         "created": "2022-06-11T00:11:59.000Z",
-        "elements": ["5d9fc8cfc0efae0017a32de8"],
         "name": "Set"
       },
       {
         "id": "5d9fc8cfc0efae0017a32e12",
         "ucid": 1,
         "created": "2022-06-11T00:11:59.000Z",
-        "elements": ["5d9fc8cfc0efae0017a32e31"],
         "name": "INT/EXT"
       },
       {
         "id": "5d9fc8cfc0efae0017a32aab",
         "ucid": 2,
         "created": "2022-06-11T00:11:59.000Z",
-        "elements": ["5d9fc8d0c0efae0017a32e39"],
         "name": "Day/Night"
       },
       {
         "id": "5d9fc8cfc0efae0017a32d35",
         "ucid": 100,
         "created": "2022-06-11T00:11:59.000Z",
-        "elements": ["5d9fc8cfc0efae0017a32d46", "5d9fc8cfc0efae0017a32dfc"],
         "name": "Cast Members"
       },
       {
         "id": "5d9fc8cfc0efae0017a32e16",
         "ucid": 104,
         "created": "2022-06-11T00:11:59.000Z",
-        "elements": ["5d9fc8cfc0efae0017a3201a"],
         "name": "Props"
       }
     ],
@@ -97,6 +92,7 @@
     "elements": [
       {
         "id": "5d9fc8cfc0efae0017a32e31",
+        "category": "5d9fc8cfc0efae0017a32e12",
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff": [],
         "isDrop": true,
@@ -111,6 +107,7 @@
       }, 
       {
         "id": "5d9fc8cfc0efae0017a32de8",
+        "category": "5d9fc8cfc0efae0017a32d6a",
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff": [],
         "isDrop": true,
@@ -125,6 +122,7 @@
       }, 
       {
         "id": "5d9fc8d0c0efae0017a32e39",
+        "category": "5d9fc8cfc0efae0017a32aab",
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff": [],
         "isDrop": true,
@@ -139,6 +137,7 @@
       }, 
       {
         "id": "5d9fc8cfc0efae0017a32d46",
+        "category": "5d9fc8cfc0efae0017a32d35",
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff": [1,5],
         "isDrop": true,
@@ -166,6 +165,7 @@
       }, 
       {
         "id": "5d9fc8cfc0efae0017a3201a",
+        "category": "5d9fc8cfc0efae0017a32e16",
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff": [],
         "isDrop": true,
@@ -180,6 +180,7 @@
       },
       {
         "id": "5d9fc8cfc0efae0017a32dfc",
+        "category": "5d9fc8cfc0efae0017a32d35",
         "created": "2022-06-11T00:11:59.000Z",
         "daysOff": [],
         "isDrop": true,

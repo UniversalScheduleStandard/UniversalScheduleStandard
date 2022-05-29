@@ -41,7 +41,7 @@ When breaking down the content in a script, the information from each scene will
 
 Each breakdown is represented by a [breakdown object](#breakdown-objects), categories by [category objects](#category-objects) and elements by [element objects](#element-objects). The arrays that contain those objects are all root keys in the parent [universalScheduleStandard object](#structure-and-format). These three arrays of objects are required in every valid USS file. They represent the breakdown of the script. 
 
-<img src="../images/structure_breakdowns.png" alt="breakdowns image" width="60%">
+<img src="../images/structure_breakdowns_02.png" alt="breakdowns image" width="70%">
 
 ### Breakdowns + Schedules
 
@@ -51,7 +51,7 @@ Individual schedule scenarios are represented by [stripboard objects](#stripboar
 
 Stripboard objects also reference one of potentially many [calendar objects](#calendar-objects). This calendar contains all of the date information about a particular scenario. Each date related piece of information is held in an array of [event objects](#event-objects). Each event object represents one type of event on the show. It could be a holiday, a company travel day, a rehearsal day, etc. These events will be used to reflect company days off and notable events in the final schedule. 
 
-<img src="../images/structure_schedules.png" alt="structure image" width="80%">
+<img src="../images/structure_schedules_02.png" alt="structure image" width="80%">
 
 Now that we have an understanding of the general structure of the data, let's take a look at how to construct it.
 
@@ -79,7 +79,7 @@ The complete USS object is constructed as:
     "scriptDate": string | ISO Date of the revision date of the script | can be null,
     "season": string | the episodic series season number or identifier | can be null,
     "source": string | name of originating app or site | required,
-    "version": string | USS version number | required,
+    "ussVersion": string | USS version number | required,
 
     "breakdowns": array of breakdown objects | required,
     "categories": array of category objects | required,
@@ -127,9 +127,9 @@ When saving files please use the file extension '.uss', which is an acronym of U
 
 The header keys describe the overall USS object's contents. Please see the [/samples](../samples) folder for examples.
 
-The primary header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `version`. All keys are required but their value may be *null* if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
+The primary header keys are `id`, `author`, `created`, `description`, `episode`, `episodeName`, `name`, `project`, `schedColor`, `schedDate`, `scriptColor`, `scriptDate`, `season`, `source`, and `ussVersion`. All keys are required but their value may be *null* if no information is available or if the key doesn't apply (i.e., feature films don't have `episode`, `episodeName` or `season` data).
 
-Please note that the `version` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard as it evolves.
+Please note that the `ussVersion` refers to the USS version, not the version of the schedule. This is used to differentiate different versions of the USS standard as it evolves.
 
 The remaining keys are `breakdowns`, `categories`, `elements`, `stripboards` and `calendars`. Their values are arrays that store their related objects, described below.
 
@@ -151,7 +151,7 @@ The breakdown objects contain information about a scene (or scenes) in a script.
   "pages": number | decimal value of page eighths | can be null,
   "scene": string | scene number | can be null,
   "scriptPage": string | page number scene starts on | can be null,
-  "time": number | millisecond duration to shoot scene | can be null,
+  "duration": number | millisecond duration to shoot scene | can be null,
   "type": string | one of 'scene|day|banner' | required
 }
 ```
@@ -178,7 +178,7 @@ You would also include those element's id's in the `elements` array of correspon
 
 Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the breakdown object directly, but can be referenced by the inclusion of elements that are in those categories, as in the above slugline example.
 
-The `time` key refers to the estimated time it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 60s * 1000)
+The `duration` key refers to the estimated duration it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 60s * 1000)
 
 The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be *null*. 'Banner' types should store their text in the `description` value. 
 
@@ -196,13 +196,10 @@ Category objects are constructed like this:
 {
   "id": string | UUID value | required,
   "created": string | ISO Date of the creation date of this category | required,
-  "elements": ordered array of element object ID string values | required,
   "name": string | name of this category | required,
   "ucid": number | corresponding universal category ID number | required
 }
 ```
-
-The `elements` array is made up of element IDs and represent all of the elements that are in that category. This array is ordered, so remember that the order of each element object `id` will be the order those elements appear in their categories, once imported. 
 
 Category `name` may be any string value, but should follow the original intent of the category, as described in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification).
 
@@ -217,6 +214,7 @@ Element objects are constructed like this:
 ```
 {
   "id": string | UUID value | required,
+  "category": string | ID value of related category | required,
   "created": string | ISO Date of the creation date of this element | required,
   "daysOff" : array of integers representing days of week | required,
   "dropDayCount": number | integer of days between drop & pickup | required,
@@ -231,6 +229,8 @@ Element objects are constructed like this:
 }
 ```
 
+The `category` key is required and is an ID value to this particular element's category. Each element must belong to one category, although categories may exist that have no elements assigned to them. 
+
 The `daysOff` array contains integers representing the days of the week in which this element cannot play. See the [calendar objects](#calendar-objects) section for a description of how this key works in that object, as the expected values and behavior is the same. 
 
 The `dropDayCount`, `isDood`, `isDrop`, `isHold` keys all refer to properties related to how and whether the element will appear in the [day out of days](https://en.wikipedia.org/wiki/Day_out_of_days_(filmmaking)). When creating values for these keys, default to *true* if the data you're importing from doesn't contain these features. 
@@ -244,6 +244,10 @@ Events refers to specific calendar events for this element. If an individual act
 # Schedules
 
 If representing a schedule, the USS object must also contain arrays of [stripboard objects](#stripboard-objects) and [calendar objects](#calendar-objects). If both the `stripboards` and `calendars` keys are not present, their arrays have no length, or are *null* then the USS object is considered to be just a breakdown. 
+
+Each parent stripboard contains a number of child board objects, which each contain lists of breakdown IDs. The order of those breakdown ID numbers and their assignment to a particular board represents different scenarios for the shoot. 
+
+<img src="../images/structure_stripboards_01.png" alt="stripboards image" width="70%">
 
 ## **Stripboard Objects**
 
