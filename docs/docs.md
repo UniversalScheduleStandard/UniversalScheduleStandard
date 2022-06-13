@@ -144,6 +144,7 @@ The breakdown objects contain information about a scene (or scenes) in a script.
 ```
 {
   "id": string | UUID value | required,
+  "bannerText": string | text value for banners | can be null,
   "comments": string | can be null,
   "created": string | ISO Date | required,
   "description": string | description of scene | can be null,
@@ -152,7 +153,7 @@ The breakdown objects contain information about a scene (or scenes) in a script.
   "scene": string | scene number | can be null,
   "scriptPage": string | page number scene starts on | can be null,
   "duration": number | millisecond duration to shoot scene | can be null,
-  "type": string | one of 'scene|day|banner' | required
+  "type": string | one of 'scene|banner' | required
 }
 ```
 
@@ -174,17 +175,15 @@ The INT/EXT, Day/Night and Set properties of the breakdown are merely added as e
 { "id": "5d9fc8d0c0efae0017a32e39", ..., "name": "NIGHT" },
 ```
 
-You would also include those element's id's in the `elements` array of corresponding [category objects](#category-objects). You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
+You can look at the sample files for examples of how to structure this. It is best practice to only have one element for each of these breakdown properties present in the `elements` array. For instance, it would confuse parsers to have both "INT" and "EXT" elements in the same breakdown. 
 
 Some scheduling software includes categories as part of the breakdown itself. Examples of these keys are Unit, Location and Script Day. These are not included as keys in the breakdown object directly, but can be referenced by the inclusion of elements that are in those categories, as in the above slugline example.
 
 The `duration` key refers to the estimated duration it will take to shoot the scene. This is measured in milliseconds in order to easily conform to common coding practices. An example value would be 5700000 if the scene were estimated to take 1h 35m to shoot. (95m * 60s * 1000)
 
-The `type` key has only one of three values: 'scene', 'day' or 'banner'. 'Day' types only need to include an `id` and `created` and `type` keys, the remaining keys can be *null*. 'Banner' types should store their text in the `description` value. 
+The `type` key has only one of two values: 'scene', 'banner'. 'Scene' types are the standard type and represent all of the breakdown information for a one or more scenes. 'Banner' types are used for inline notes and headers in a stripboard and should store their text in the `bannerText` value. 
 
-Note that all three types can store values if needed. If you'd like to have 'day' types store `elements`, feel free. Likewise, 'banner' types can store as much information as a 'scene' type. Any breakdown object can store the full amount of information, regardless of its `type`.
-
-The shooting date of a particular 'day' breakdown strip is inferred from the [stripboard object](#stripboard-objects) / [calendar object](#calendar-objects) / [event object](#event-objects) where the event object's `type` is set to 'start'. This inference allows flexibility as multiple stripboards and calendars can be applied to a schedule, and directly storing dates would inherently lead to conflicts and errors. 
+Note that all three types can store values if needed. If you'd like to have 'banner' types store `elements`, feel free. Any breakdown object can store the full amount of information, regardless of its `type`.
 
 ## **Category Objects**
 
@@ -276,7 +275,7 @@ The [stripboard object's](#stripboard-objects) `boards` array is made up of boar
 {
   "id": string | UUID value | required,
   "name": string | name value of board | required,
-  "breakdownIds": ordered array of breakdown object ID string values | required
+  "breakdownIds": ordered array breakdown object ID values, or an array of arrays of those values | required
 }
 ```
 
@@ -284,7 +283,32 @@ The board object `name` is not the same as the `name` key in the [stripboard obj
 
 Important: the order of the `breakdownIds` is the order of the breakdowns in this stripboard, so ensure that you are storing the IDs in the intended order. 
 
-The length of the combined arrays of the `breakdownIds` across all boards within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array. [Breakdown objects](#breakdown-objects) that are not referenced in a `boards.breakdownIds` array will be ignored. 
+In any stripboard breakdowns can be grouped into shooting days. To represent shooting days, group the breakdown ids into sub-arrays inside `breakdownIds` array. The number of the shoot day and its date are inferred by its order in array and the start date in the calendar. If the stripboard does not have any day breaks, then the `breakdownIds` value would simply be a an array of breakdown ids without grouping them into sub-arrays. Note that this means that the items in the `breakdownIds` array can have a type of either `string` or `array`.
+
+```
+stripboards: {
+  ...
+  "boards" : [
+      { 
+        ...
+        "name": "Stripboard"
+        "breakdownIds" : [
+            [                              
+              "5d9fc8cfc0efae0017a32e31", ⎤
+              "5d9fc8cfc0efae0017a32de8", ⎥ This is Day 1
+              "5d9fc8d0c0efae0017a32e39"  ⎦
+            ],
+            [                              
+              "603c49bb9d67b45889ade2a7", ⎤ This is Day 2
+              "623c9a26aad4d876cc370bf0"  ⎦
+            ]
+        ]
+      }
+  ],
+}
+```
+
+The length of the combined arrays of the `breakdownIds` across all boards and sub-arrays within a stripboard object must be equal to the total number of breakdown objects in `breakdowns`. For example, say you have two boards -- 'stripboard' which cumulatively has 75 IDs and 'boneyard' which has 25 IDs -- you must have a total of 100 breakdown objects in your `breakdowns` array. [Breakdown objects](#breakdown-objects) that are not referenced in a `boards.breakdownIds` array will be ignored. 
 
 ## **Calendar Objects**
 
@@ -340,7 +364,7 @@ The `type` key sets the general type of the event and is limited to the below va
 
 | Value          | Description                                                                 |
 | :---           | :---                                                                        |
-| 'start'        | this event object will represent the date of the first day strip on a board |
+| 'start'        | this event object will represent the date of the first day array in a board |
 | 'dayOff'       | this event object will represent an individual date to skip on a board      |
 | 'event'        | denotes a variable type of event, such as rehearsals, travel, etc           |
 

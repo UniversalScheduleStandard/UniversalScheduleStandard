@@ -88,7 +88,7 @@ Here is an example of the entire standard object:
     "scriptDate": "2022-10-01T07:00:00.000Z",
     "season": "S03",
     "source": "Name of originating site or app",
-    "ussVersion": "0.9.1",
+    "ussVersion": "0.9.2",
 
     "breakdowns": [],
     "categories": [],
@@ -109,11 +109,19 @@ See the [small sample file](/samples/small_sample_schedule.uss) in the [/samples
 
 For detailed instructions about the structure and format of the standard object, please read the [detailed documentation](docs/docs.md) found in the [/docs](docs/) folder. 
 
-<!-- # Collaborators
+# Collaborators
 
-We are proud to have the following collaborators on this standard:
+The following collaborators proudly support the Universal Schedule Standard:
 
-- Think Crew -->
+- [Boom Interactive](https://boominteractive.io)
+- [Cinapse](https://cinapse.io)
+- [Croo](https://croo.tv)
+- [Everyset](https://everyset.com)
+- [FilmUStage](https://filmustage.com)
+- [Scriptation](https://scriptation.com)
+- [Set Hero](https://setheroapp.com)
+- [Think Crew](https://thinkcrew.com)
+- [Virtual Production Partners](https://virtualproductionpartners.com)
 
 # License
 
