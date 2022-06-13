@@ -209,7 +209,7 @@
           {
             "id": "5cff4bcb10c4330017ab6da1",
             "name": "stripboard",
-            "breakdownIds": [["5cfe7d2510c4330017ab5ed5"], ["5cfe7d2510c4330017ab5ed1"]]
+            "breakdownIds": [["5cfe7d2510c4330017ab5ed5","5cfe7d2510c4330017ab5ed1"]]
           }, 
           {
             "id": "5cff4bcb10c4330017ab6cab",
