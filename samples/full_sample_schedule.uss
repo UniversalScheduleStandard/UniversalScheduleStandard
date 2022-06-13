@@ -20,6 +20,7 @@
     "breakdowns": [
       {
         "id": "5e2dd860fb4b2900171967fc",
+        "bannerText": null,
         "type": "strip",
         "scene": "1",
         "description": "The town prays for George",
@@ -32,6 +33,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171967fe",
+        "bannerText": null,
         "type": "strip",
         "scene": "2",
         "description": "Harry falls through the ice and George saves his life",
@@ -43,6 +45,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196800",
+        "bannerText": null,
         "type": "strip",
         "scene": "3",
         "description": "George and the boys run to the drugstore, see Violet",
@@ -55,6 +58,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196802",
+        "bannerText": null,
         "type": "strip",
         "scene": "4",
         "description": "George chats with Mary about all the places he'll go",
@@ -67,6 +71,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196804",
+        "bannerText": null,
         "type": "strip",
         "scene": "5",
         "description": "Gower gives George poison pills",
@@ -79,6 +84,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196806",
+        "bannerText": null,
         "type": "strip",
         "scene": "6",
         "description": "George sees the sign \"Ask Dad\", runs out of store",
@@ -91,6 +97,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196808",
+        "bannerText": null,
         "type": "strip",
         "scene": "7",
         "description": "George runs down the street to the Building and Loan",
@@ -103,6 +110,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719680a",
+        "bannerText": null,
         "type": "strip",
         "scene": "8",
         "description": "George talks to Uncle Billy, goes into his father's office",
@@ -115,6 +123,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719680c",
+        "bannerText": null,
         "type": "strip",
         "scene": "9",
         "description": "Potter is cruel to Pop, George screams at him",
@@ -127,6 +136,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719680e",
+        "bannerText": null,
         "type": "strip",
         "scene": "10",
         "description": "George runs out of the office",
@@ -139,6 +149,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196810",
+        "bannerText": null,
         "type": "strip",
         "scene": "11",
         "description": "Gower boxes George's ears for not making the delivery",
@@ -151,6 +162,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196812",
+        "bannerText": null,
         "type": "strip",
         "scene": "12",
         "description": "Mary listens to Gower berating George",
@@ -163,6 +175,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196814",
+        "bannerText": null,
         "type": "strip",
         "scene": "13",
         "description": "George explains to Gower that the pills were poison",
@@ -175,6 +188,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196816",
+        "bannerText": null,
         "type": "strip",
         "scene": "14",
         "description": "George buys luggage for his travels",
@@ -186,6 +200,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196818",
+        "bannerText": null,
         "type": "strip",
         "scene": "15",
         "description": "Gower visits Gower, now an older man",
@@ -198,6 +213,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719681a",
+        "bannerText": null,
         "type": "strip",
         "scene": "16",
         "description": "Uncle Billy and Eustice call out to George in the street",
@@ -210,6 +226,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719681c",
+        "bannerText": null,
         "type": "strip",
         "scene": "17",
         "description": "George, Bert & Ernie check out Violet",
@@ -222,6 +239,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719681e",
+        "bannerText": null,
         "type": "strip",
         "scene": "18",
         "description": "George eats a home cooked meal, tells Pop he has to travel",
@@ -234,6 +252,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196820",
+        "bannerText": null,
         "type": "strip",
         "scene": "19",
         "description": "George attends the festivities, dances with Mary, they fall into the pool",
@@ -246,6 +265,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196822",
+        "bannerText": null,
         "type": "strip",
         "scene": "20",
         "description": "George and Mary sing as they walk home",
@@ -258,6 +278,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196824",
+        "bannerText": null,
         "type": "strip",
         "scene": "21",
         "description": "Old man sees George and Mary throwing rocks",
@@ -270,6 +291,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196826",
+        "bannerText": null,
         "type": "strip",
         "scene": "22",
         "description": "George asks Mary to make a wish, she loses her robe",
@@ -282,6 +304,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196828",
+        "bannerText": null,
         "type": "strip",
         "scene": "24",
         "description": "George battles with Potter at the board meeting",
@@ -294,6 +317,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719682a",
+        "bannerText": null,
         "type": "strip",
         "scene": "25",
         "description": "George finds out that he'll need to stay on at the Savings and Loan",
@@ -306,6 +330,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719682c",
+        "bannerText": null,
         "type": "strip",
         "scene": "26",
         "description": "Clarence wants to know what happened to George",
@@ -318,6 +343,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719682e",
+        "bannerText": null,
         "type": "strip",
         "scene": "27",
         "description": "George and Uncle Billy wait for the train",
@@ -330,6 +356,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196830",
+        "bannerText": null,
         "type": "strip",
         "scene": "28",
         "description": "Harry gets off and introduces his wife, has a new job",
@@ -342,6 +369,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196832",
+        "bannerText": null,
         "type": "strip",
         "scene": "29",
         "description": "The family takes a picture, Uncle Billy is drunk, George is melancholy",
@@ -354,6 +382,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196834",
+        "bannerText": null,
         "type": "strip",
         "scene": "30",
         "description": "Mrs. Bailey comforts his son, his dreams are dashed",
@@ -366,6 +395,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196836",
+        "bannerText": null,
         "type": "strip",
         "scene": "",
         "description": "George walks down the street, sees a girl",
@@ -378,6 +408,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196838",
+        "bannerText": null,
         "type": "strip",
         "scene": "32",
         "description": "George flirts with Violet in front of her shop",
@@ -390,6 +421,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719683a",
+        "bannerText": null,
         "type": "strip",
         "scene": "33",
         "description": "George paces outside of Mary's house, can't decide what to do",
@@ -402,6 +434,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719683c",
+        "bannerText": null,
         "type": "strip",
         "scene": "34",
         "description": "Mary calls down to George from her window, says she was expecting him",
@@ -414,6 +447,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719683e",
+        "bannerText": null,
         "type": "strip",
         "scene": "35",
         "description": "George tells Mary he was just out for a walk",
@@ -426,6 +460,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196840",
+        "bannerText": null,
         "type": "strip",
         "scene": "36",
         "description": "Mary runs down stairs, puts on a record",
@@ -438,6 +473,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196842",
+        "bannerText": null,
         "type": "strip",
         "scene": "37",
         "description": "Mary chats with George, but he's out of sorts",
@@ -450,6 +486,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196844",
+        "bannerText": null,
         "type": "strip",
         "scene": "38",
         "description": "Mrs. Hatch eavesdrops on George & Mary's conversation",
@@ -462,6 +499,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196846",
+        "bannerText": null,
         "type": "strip",
         "scene": "39",
         "description": "George doesn't know why he's there, Mary gets a call",
@@ -474,6 +512,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196848",
+        "bannerText": null,
         "type": "strip",
         "scene": "40",
         "description": "Mary chats with Sam on the phone, hands it to George",
@@ -486,6 +525,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719684a",
+        "bannerText": null,
         "type": "strip",
         "scene": "41",
         "description": "Sam chats with George from his office",
@@ -498,6 +538,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719684c",
+        "bannerText": null,
         "type": "strip",
         "scene": "42",
         "description": "George is defensive with Sam, hands phone back to Mary",
@@ -510,6 +551,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719684e",
+        "bannerText": null,
         "type": "strip",
         "scene": "43",
         "description": "Sam offers a chance of a lifeduration, George embraces Mary",
@@ -522,6 +564,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196850",
+        "bannerText": null,
         "type": "strip",
         "scene": "44",
         "description": "George and Mary are married, run to the car",
@@ -534,6 +577,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196852",
+        "bannerText": null,
         "type": "strip",
         "scene": "45",
         "description": "Establishing",
@@ -546,6 +590,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196854",
+        "bannerText": null,
         "type": "strip",
         "scene": "46",
         "description": "Mrs. Bailey feels like an old maid",
@@ -558,6 +603,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196856",
+        "bannerText": null,
         "type": "strip",
         "scene": "47",
         "description": "George & Mary drive to honeymoon, see people running",
@@ -570,6 +616,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196858",
+        "bannerText": null,
         "type": "strip",
         "scene": "48",
         "description": "George sees trouble at the bank, runs up the street",
@@ -582,6 +629,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719685a",
+        "bannerText": null,
         "type": "strip",
         "scene": "49",
         "description": "George opens the gates, lets the crowd in",
@@ -594,6 +642,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719685c",
+        "bannerText": null,
         "type": "strip",
         "scene": "50",
         "description": "The crowd enters, Uncle Billy wants to speak with George",
@@ -606,6 +655,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719685e",
+        "bannerText": null,
         "type": "strip",
         "scene": "51",
         "description": "George gets a call from Potter",
@@ -618,6 +668,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196860",
+        "bannerText": null,
         "type": "strip",
         "scene": "52",
         "description": "Potter asks if George is all right",
@@ -630,6 +681,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196862",
+        "bannerText": null,
         "type": "strip",
         "scene": "53",
         "description": "George asks why he's need police",
@@ -642,6 +694,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196864",
+        "bannerText": null,
         "type": "strip",
         "scene": "54",
         "description": "Potter tells George he just took over the bank",
@@ -654,6 +707,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196866",
+        "bannerText": null,
         "type": "strip",
         "scene": "55",
         "description": "George tells Uncle Billy that Potter just took over the bank",
@@ -666,6 +720,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196868",
+        "bannerText": null,
         "type": "strip",
         "scene": "56",
         "description": "Potter offer 50 cents on the dollar to George's customers",
@@ -678,6 +733,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719686a",
+        "bannerText": null,
         "type": "strip",
         "scene": "57",
         "description": "George refuses the offer, hands phone to Uncle Billy",
@@ -690,6 +746,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719686c",
+        "bannerText": null,
         "type": "strip",
         "scene": "58",
         "description": "Potter says if George closes his doors before six they'll never reopen",
@@ -702,6 +759,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719686e",
+        "bannerText": null,
         "type": "strip",
         "scene": "59",
         "description": "George hears the angry voices of the crowd",
@@ -714,6 +772,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196870",
+        "bannerText": null,
         "type": "strip",
         "scene": "60",
         "description": "George offers money to the crowd to tide them over",
@@ -726,6 +785,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196872",
+        "bannerText": null,
         "type": "strip",
         "scene": "61",
         "description": "They make it to six o'clock, George gets a call from Mary",
@@ -738,6 +798,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196874",
+        "bannerText": null,
         "type": "strip",
         "scene": "62",
         "description": "George chats with Mary on the phone, gets directions",
@@ -750,6 +811,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196876",
+        "bannerText": null,
         "type": "strip",
         "scene": "63",
         "description": "George hurries to his new home",
@@ -762,6 +824,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196878",
+        "bannerText": null,
         "type": "strip",
         "scene": "64",
         "description": "Ernie and Bert hang travel posters in the windows",
@@ -774,6 +837,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719687a",
+        "bannerText": null,
         "type": "strip",
         "scene": "65",
         "description": "The house is a mess, but George rushes to Mary's arms",
@@ -786,6 +850,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719687c",
+        "bannerText": null,
         "type": "strip",
         "scene": "66",
         "description": "Ernie and Bert serenade the couple",
@@ -798,6 +863,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719687e",
+        "bannerText": null,
         "type": "strip",
         "scene": "67",
         "description": "Mary tells George that this is what she wished for",
@@ -810,6 +876,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196880",
+        "bannerText": null,
         "type": "strip",
         "scene": "68",
         "description": "Ernie kisses Bert on the head",
@@ -822,6 +889,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196882",
+        "bannerText": null,
         "type": "strip",
         "scene": "69",
         "description": "George helps the Martini's move out of their house",
@@ -834,6 +902,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196884",
+        "bannerText": null,
         "type": "strip",
         "scene": "70",
         "description": "George's car pulls into Bailey Park",
@@ -846,6 +915,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196886",
+        "bannerText": null,
         "type": "strip",
         "scene": "71",
         "description": "George & Mary welcome the Martini's to their new house",
@@ -858,6 +928,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196888",
+        "bannerText": null,
         "type": "strip",
         "scene": "72",
         "description": "Sam stands in front of his car, says \"hee haw\"",
@@ -870,6 +941,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719688a",
+        "bannerText": null,
         "type": "strip",
         "scene": "73",
         "description": "The Bailey's bless the house",
@@ -882,6 +954,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719688c",
+        "bannerText": null,
         "type": "strip",
         "scene": "74",
         "description": "Reineman tells Potter about Bailey Park",
@@ -894,6 +967,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719688e",
+        "bannerText": null,
         "type": "strip",
         "scene": "75",
         "description": "George and Mary talk with Sam and Jane",
@@ -906,6 +980,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196890",
+        "bannerText": null,
         "type": "strip",
         "scene": "76",
         "description": "Potter tempts George with an offer",
@@ -918,6 +993,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196892",
+        "bannerText": null,
         "type": "strip",
         "scene": "77",
         "description": "George comes home sad, finds out Mary's pregnant",
@@ -930,6 +1006,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196894",
+        "bannerText": null,
         "type": "strip",
         "scene": "78",
         "description": "George crosses the street",
@@ -942,6 +1019,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196896",
+        "bannerText": null,
         "type": "strip",
         "scene": "79",
         "description": "Nurse holds baby next to Mary",
@@ -954,6 +1032,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196898",
+        "bannerText": null,
         "type": "strip",
         "scene": "80",
         "description": "Mary plays with baby, toddler in playpen",
@@ -966,6 +1045,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719689a",
+        "bannerText": null,
         "type": "strip",
         "scene": "81",
         "description": "Mary hangs wallpaper",
@@ -978,6 +1058,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719689c",
+        "bannerText": null,
         "type": "strip",
         "scene": "82",
         "description": "George comes home, bannister knob comes off",
@@ -990,6 +1071,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719689e",
+        "bannerText": null,
         "type": "strip",
         "scene": "83",
         "description": "Draftees march",
@@ -1002,6 +1084,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968a0",
+        "bannerText": null,
         "type": "strip",
         "scene": "84",
         "description": "Mrs. Bailey sews",
@@ -1014,6 +1097,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968a2",
+        "bannerText": null,
         "type": "strip",
         "scene": "85",
         "description": "Mary serves coffee to soldiers",
@@ -1026,6 +1110,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968a4",
+        "bannerText": null,
         "type": "strip",
         "scene": "86",
         "description": "Sam shows blueprint to officers",
@@ -1038,6 +1123,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968a6",
+        "bannerText": null,
         "type": "strip",
         "scene": "87",
         "description": "Potter is head of the draft board",
@@ -1050,6 +1136,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968a8",
+        "bannerText": null,
         "type": "strip",
         "scene": "88",
         "description": "Uncle Billy and Gower sell war bonds",
@@ -1062,6 +1149,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968aa",
+        "bannerText": null,
         "type": "strip",
         "scene": "89",
         "description": "Bert is in battle",
@@ -1074,6 +1162,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968ac",
+        "bannerText": null,
         "type": "strip",
         "scene": "90",
         "description": "STOCK SHOT: Planes overhead",
@@ -1086,6 +1175,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968ae",
+        "bannerText": null,
         "type": "strip",
         "scene": "91",
         "description": "Marty beckons to soldiers",
@@ -1098,6 +1188,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968b0",
+        "bannerText": null,
         "type": "strip",
         "scene": "92",
         "description": "Harry fastens his helmet, waves",
@@ -1110,6 +1201,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968b2",
+        "bannerText": null,
         "type": "strip",
         "scene": "93",
         "description": "STOCK SHOT: Plane almost crashes into ship",
@@ -1122,6 +1214,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968b4",
+        "bannerText": null,
         "type": "strip",
         "scene": "94",
         "description": "George calms a crowd looking for rations",
@@ -1134,6 +1227,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968b6",
+        "bannerText": null,
         "type": "strip",
         "scene": "95",
         "description": "George patrols as air raid warden",
@@ -1146,6 +1240,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968b8",
+        "bannerText": null,
         "type": "strip",
         "scene": "96",
         "description": "Man pulls down a window shade",
@@ -1158,6 +1253,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968ba",
+        "bannerText": null,
         "type": "strip",
         "scene": "97",
         "description": "George loads his car with paper",
@@ -1170,6 +1266,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968bc",
+        "bannerText": null,
         "type": "strip",
         "scene": "98",
         "description": "INSERT: Wheelbarrow full of junk",
@@ -1182,6 +1279,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968be",
+        "bannerText": null,
         "type": "strip",
         "scene": "99",
         "description": "Children wheel old tires",
@@ -1194,6 +1292,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968c0",
+        "bannerText": null,
         "type": "strip",
         "scene": "100",
         "description": "INSERT: People pray in church",
@@ -1206,6 +1305,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968c2",
+        "bannerText": null,
         "type": "strip",
         "scene": "101",
         "description": "INSERT: People go into church",
@@ -1218,6 +1318,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968c4",
+        "bannerText": null,
         "type": "strip",
         "scene": "102",
         "description": "George shows the papers to Ernie & Gower",
@@ -1230,6 +1331,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968c6",
+        "bannerText": null,
         "type": "strip",
         "scene": "103",
         "description": "Uncle Billy calls out to spell the name right",
@@ -1242,6 +1344,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968c8",
+        "bannerText": null,
         "type": "strip",
         "scene": "104",
         "description": "George enters, takes a call. Bank examiner is here.",
@@ -1254,6 +1357,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968ca",
+        "bannerText": null,
         "type": "strip",
         "scene": "105",
         "description": "Uncle Billy teases Potter, loses his money",
@@ -1266,6 +1370,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968cc",
+        "bannerText": null,
         "type": "strip",
         "scene": "106",
         "description": "Potter opens paper, finds money",
@@ -1278,6 +1383,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968ce",
+        "bannerText": null,
         "type": "strip",
         "scene": "107",
         "description": "Uncle Billy tries to find the money",
@@ -1290,6 +1396,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968d0",
+        "bannerText": null,
         "type": "strip",
         "scene": "108",
         "description": "Potter thinks about the money he found",
@@ -1302,6 +1409,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968d2",
+        "bannerText": null,
         "type": "strip",
         "scene": "109",
         "description": "Uncle Billy runs back to the Savings & Loan",
@@ -1314,6 +1422,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968d4",
+        "bannerText": null,
         "type": "strip",
         "scene": "110",
         "description": "George invites Violet in, Uncle Billy hangs up on Harry",
@@ -1326,6 +1435,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968d6",
+        "bannerText": null,
         "type": "strip",
         "scene": "111",
         "description": "George gives a loan to Violet",
@@ -1338,6 +1448,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968d8",
+        "bannerText": null,
         "type": "strip",
         "scene": "112",
         "description": "Violet wipes lipstick off George's cheek",
@@ -1350,6 +1461,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968da",
+        "bannerText": null,
         "type": "strip",
         "scene": "113",
         "description": "Uncle Billy is searching, tells George to close the door",
@@ -1362,6 +1474,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968dc",
+        "bannerText": null,
         "type": "strip",
         "scene": "114",
         "description": "George comes out and asks Eustace about the money",
@@ -1374,6 +1487,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968de",
+        "bannerText": null,
         "type": "strip",
         "scene": "115a",
         "description": "George and Uncle Billy searche outside for the money",
@@ -1386,6 +1500,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968e0",
+        "bannerText": null,
         "type": "strip",
         "scene": "116",
         "description": "Potter watches them search",
@@ -1397,6 +1512,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968e2",
+        "bannerText": null,
         "type": "strip",
         "scene": "117a",
         "description": "George and Uncle Billy continue to search",
@@ -1409,6 +1525,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968e4",
+        "bannerText": null,
         "type": "strip",
         "scene": "118",
         "description": "George questions Uncle Billy in a panic",
@@ -1421,6 +1538,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968e6",
+        "bannerText": null,
         "type": "strip",
         "scene": "119",
         "description": "George comes home to a chaotic family",
@@ -1433,6 +1551,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968e8",
+        "bannerText": null,
         "type": "strip",
         "scene": "120",
         "description": "The family says hello, George is distracted",
@@ -1445,6 +1564,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968ea",
+        "bannerText": null,
         "type": "strip",
         "scene": "121",
         "description": "George snaps and Janie, cries",
@@ -1457,6 +1577,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968ec",
+        "bannerText": null,
         "type": "strip",
         "scene": "122",
         "description": "George snaps at Pete",
@@ -1469,6 +1590,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968ee",
+        "bannerText": null,
         "type": "strip",
         "scene": "123",
         "description": "George is upset, finds out Zuzu is sick",
@@ -1481,6 +1603,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968f0",
+        "bannerText": null,
         "type": "strip",
         "scene": "124",
         "description": "The bannister knob comes off in George's hand again",
@@ -1493,6 +1616,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968f2",
+        "bannerText": null,
         "type": "strip",
         "scene": "125",
         "description": "George helps Zuzu with her flower",
@@ -1505,6 +1629,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968f4",
+        "bannerText": null,
         "type": "strip",
         "scene": "126",
         "description": "Janie plays piano, telephone rings",
@@ -1517,6 +1642,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968f6",
+        "bannerText": null,
         "type": "strip",
         "scene": "127",
         "description": "George grabs phone, screams at Zuzu's teacher",
@@ -1529,6 +1655,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968f8",
+        "bannerText": null,
         "type": "strip",
         "scene": "128",
         "description": "George apologizes, walks out front door",
@@ -1541,6 +1668,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968fa",
+        "bannerText": null,
         "type": "strip",
         "scene": "129",
         "description": "George asks for help, Potter offers none",
@@ -1553,6 +1681,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968fc",
+        "bannerText": null,
         "type": "strip",
         "scene": "130",
         "description": "George cant get his door open, drives off",
@@ -1565,6 +1694,7 @@
       },
       {
         "id": "5e2dd860fb4b2900171968fe",
+        "bannerText": null,
         "type": "strip",
         "scene": "131",
         "description": "ESTABLISHING",
@@ -1577,6 +1707,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196900",
+        "bannerText": null,
         "type": "strip",
         "scene": "132",
         "description": "George prays, gets punched out",
@@ -1589,6 +1720,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196902",
+        "bannerText": null,
         "type": "strip",
         "scene": "133",
         "description": "George crashes his car, owner screams",
@@ -1601,6 +1733,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196904",
+        "bannerText": null,
         "type": "strip",
         "scene": "134",
         "description": "George is almost hit by a truck, goes to center of bridge",
@@ -1613,6 +1746,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196906",
+        "bannerText": null,
         "type": "strip",
         "scene": "135",
         "description": "Shot of ice on water",
@@ -1625,6 +1759,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196908",
+        "bannerText": null,
         "type": "strip",
         "scene": "136",
         "description": "George sees Clarence fall into the water",
@@ -1637,6 +1772,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719690a",
+        "bannerText": null,
         "type": "strip",
         "scene": "137",
         "description": "Toll House keeper shines a flashlight",
@@ -1649,6 +1785,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719690c",
+        "bannerText": null,
         "type": "strip",
         "scene": "138",
         "description": "George grabs Clarence, swims for shore",
@@ -1661,6 +1798,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719690e",
+        "bannerText": null,
         "type": "strip",
         "scene": "139",
         "description": "Clarence tells George that he was never born",
@@ -1673,6 +1811,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196910",
+        "bannerText": null,
         "type": "strip",
         "scene": "140",
         "description": "George's car is missing, owner says there's no damage",
@@ -1685,6 +1824,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196912",
+        "bannerText": null,
         "type": "strip",
         "scene": "141",
         "description": "The bar has changed, they get thrown out",
@@ -1697,6 +1837,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196914",
+        "bannerText": null,
         "type": "strip",
         "scene": "142",
         "description": "George and Clarence land in the snow",
@@ -1709,6 +1850,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196916",
+        "bannerText": null,
         "type": "strip",
         "scene": "143",
         "description": "Nick hands out wings",
@@ -1721,6 +1863,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196918",
+        "bannerText": null,
         "type": "strip",
         "scene": "144",
         "description": "Clarence says George has been given a gift",
@@ -1733,6 +1876,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719691a",
+        "bannerText": null,
         "type": "strip",
         "scene": "145",
         "description": "George sees Potterville, cant find Building & Loan",
@@ -1745,6 +1889,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719691c",
+        "bannerText": null,
         "type": "strip",
         "scene": "146",
         "description": "George jumps into Ernie's cab, wants to go home",
@@ -1757,6 +1902,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719691e",
+        "bannerText": null,
         "type": "strip",
         "scene": "147",
         "description": "Ernie signals to Bert that he has a troublesome passenger",
@@ -1769,6 +1915,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196920",
+        "bannerText": null,
         "type": "strip",
         "scene": "148",
         "description": "The cab pulls up in front of empty house",
@@ -1781,6 +1928,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196922",
+        "bannerText": null,
         "type": "strip",
         "scene": "149",
         "description": "George approaches the empty house",
@@ -1793,6 +1941,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196924",
+        "bannerText": null,
         "type": "strip",
         "scene": "150",
         "description": "Bert pulls up, Ernie wants to keep an eye on George",
@@ -1805,6 +1954,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196926",
+        "bannerText": null,
         "type": "strip",
         "scene": "151",
         "description": "George calls out for his family, accuses Clarence",
@@ -1817,6 +1967,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196928",
+        "bannerText": null,
         "type": "strip",
         "scene": "152",
         "description": "Clarence distracts Bert, George runs away",
@@ -1829,6 +1980,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719692a",
+        "bannerText": null,
         "type": "strip",
         "scene": "153",
         "description": "George questions his mom, she doesn't know him",
@@ -1841,6 +1993,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719692c",
+        "bannerText": null,
         "type": "strip",
         "scene": "154",
         "description": "George wants to find Martini",
@@ -1853,6 +2006,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719692e",
+        "bannerText": null,
         "type": "strip",
         "scene": "155",
         "description": "George finds his brother's grave",
@@ -1865,6 +2019,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196930",
+        "bannerText": null,
         "type": "strip",
         "scene": "156",
         "description": "George grabs ahold of Mary, chases her",
@@ -1877,6 +2032,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196932",
+        "bannerText": null,
         "type": "strip",
         "scene": "157",
         "description": "George grabs Mary, crowd intervenes",
@@ -1889,6 +2045,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196934",
+        "bannerText": null,
         "type": "strip",
         "scene": "158a",
         "description": "Bert arrives and shoots at George who runs away",
@@ -1901,6 +2058,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196936",
+        "bannerText": null,
         "type": "strip",
         "scene": "159",
         "description": "George prays to Clarence, he wants to live again. He is.",
@@ -1913,6 +2071,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196938",
+        "bannerText": null,
         "type": "strip",
         "scene": "160",
         "description": "George sees his wrecked car, pats car",
@@ -1925,6 +2084,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719693a",
+        "bannerText": null,
         "type": "strip",
         "scene": "161",
         "description": "George runs town street, screams Merry Christmas",
@@ -1937,6 +2097,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719693c",
+        "bannerText": null,
         "type": "strip",
         "scene": "162",
         "description": "George screams to movie house",
@@ -1949,6 +2110,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719693e",
+        "bannerText": null,
         "type": "strip",
         "scene": "163",
         "description": "George screams to emporium",
@@ -1961,6 +2123,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196940",
+        "bannerText": null,
         "type": "strip",
         "scene": "164",
         "description": "George screams to Building & Loan",
@@ -1973,6 +2136,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196942",
+        "bannerText": null,
         "type": "strip",
         "scene": "165",
         "description": "George notices a light at the bank",
@@ -1985,6 +2149,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196944",
+        "bannerText": null,
         "type": "strip",
         "scene": "166",
         "description": "George wishes Potter a Merry Christmas",
@@ -1997,6 +2162,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196946",
+        "bannerText": null,
         "type": "strip",
         "scene": "167",
         "description": "The tree is fully decorated",
@@ -2009,6 +2175,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196948",
+        "bannerText": null,
         "type": "strip",
         "scene": "168",
         "description": "George comes in, everyone was waiting",
@@ -2021,6 +2188,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719694a",
+        "bannerText": null,
         "type": "strip",
         "scene": "169",
         "description": "George hugs his kids",
@@ -2033,6 +2201,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719694c",
+        "bannerText": null,
         "type": "strip",
         "scene": "170",
         "description": "George asks kids where Mary is",
@@ -2045,6 +2214,7 @@
       },
       {
         "id": "5e2dd860fb4b29001719694e",
+        "bannerText": null,
         "type": "strip",
         "scene": "171",
         "description": "Mary comes home",
@@ -2057,6 +2227,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196950",
+        "bannerText": null,
         "type": "strip",
         "scene": "172",
         "description": "George meets Mary with a fierce embrace",
@@ -2069,6 +2240,7 @@
       },
       {
         "id": "5e2dd860fb4b290017196952",
+        "bannerText": null,
         "type": "strip",
         "scene": "173",
         "description": "The town arrives, saves the day, a bell rings",
@@ -2080,896 +2252,9 @@
         "elements": ["5e2dd85ffb4b2900171966d6","5e2dd85ffb4b2900171966d7","5e2dd85ffb4b2900171966d9","5e2dd85ffb4b2900171966db","5e2dd85ffb4b2900171966dc","5e2dd85ffb4b2900171966dd","5e2dd85ffb4b2900171966e0","5e2dd85ffb4b2900171966e1","5e2dd85ffb4b2900171966e2","5e2dd85ffb4b2900171966e7","5e2dd85ffb4b2900171966e8","5e2dd85ffb4b2900171966e9","5e2dd85ffb4b2900171966ed","5e2dd85ffb4b2900171966f1","5e2dd85ffb4b290017196700","5e2dd85ffb4b290017196740","5e2dd85ffb4b2900171967b0","5e2dd860fb4b2900171967d8","5e2dd860fb4b2900171967e1"]
       },
       {
-        "id": "5e2dd89cfb4b290017196a57",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a58",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a59",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a5a",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a5b",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a5c",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a5d",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a5e",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a5f",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89cfb4b290017196a60",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a61",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a62",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a63",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a64",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a65",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a66",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a67",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a68",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a69",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a6a",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a6b",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a6c",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a6d",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a6e",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a6f",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a70",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a71",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a72",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a73",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a74",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a75",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a76",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5e2dd89dfb4b290017196a77",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5ee909583a9b5743177fba1f",
+        "id": "6009abb2fac8810c058d3076",
+        "bannerText": "It's A Wonderful Life",
         "type": "banner",
-        "scene": null,
-        "description": "It's A Wonderful Life",
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "5f78f74a014920922e20282d",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d304b",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d304c",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d304d",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d304e",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d304f",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3050",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3051",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3052",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3053",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3054",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3055",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3056",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3057",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3058",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d305a",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d305b",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d305c",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d305d",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d305e",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d305f",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3060",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3061",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3062",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3063",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3064",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3065",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3066",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3067",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3068",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3069",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d306b",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d306c",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d306d",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d306e",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3070",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3071",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3072",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3073",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3074",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "6009aa7efac8810c058d3075",
-        "type": "day",
         "scene": null,
         "description": null,
         "scriptPage": null,
@@ -2981,6 +2266,7 @@
       },
       {
         "id": "6009abb2fac8810c058d3077",
+        "bannerText": null,
         "type": "strip",
         "scene": "29",
         "description": "The family takes a picture, Uncle Billy is drunk, George is melancholy",
@@ -2990,535 +2276,7 @@
         "comments": null,
         "created": "2022-06-11T00:12:02.000Z",
         "elements": ["5e2dd85ffb4b2900171966d6","5e2dd85ffb4b2900171966d9","5e2dd85ffb4b290017196740","5e2dd85ffb4b290017196789","5e2dd860fb4b2900171967d9","5e2dd860fb4b2900171967e1"]
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1382",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1383",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1384",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1385",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1386",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1387",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1388",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1389",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb138b",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb138c",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb138d",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb138e",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb138f",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1390",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1391",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1392",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1393",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1394",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1395",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1396",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1397",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1398",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb1399",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb139a",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb139b",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb139c",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb139d",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb139e",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb139f",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a0",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a1",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a2",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a3",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a4",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a5",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a6",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a7",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a8",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13a9",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13ab",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13ac",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "609d7218c2f1bf6bbfbb13ad",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "613564dfe1dae1414d5b07f7",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-      },
-      {
-        "id": "613564e5e1dae1414d5b07f8",
-        "type": "day",
-        "scene": null,
-        "description": null,
-        "scriptPage": null,
-        "pages": null,
-        "duration": null,
-        "comments": null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "elements": []
-     }
+      }
     ],
     "categories": [
       { 
@@ -7345,7 +6103,7 @@
           {
             "id": "5cff4bcb10c4330017ab6da2",
             "name": "stripboard",
-            "breakdownArrays": [["5ee909583a9b5743177fba1f","5e2dd860fb4b290017196836"],["5e2dd860fb4b29001719681c","5e2dd89cfb4b290017196a5d","5e2dd860fb4b2900171968de","5e2dd860fb4b2900171968e2"],["5e2dd89cfb4b290017196a5e","5e2dd860fb4b2900171968ce"],["5e2dd860fb4b29001719681e","5e2dd860fb4b290017196894","5e2dd89cfb4b290017196a58","5e2dd860fb4b2900171968fc"],["5e2dd860fb4b29001719688c","5e2dd860fb4b290017196890","5e2dd860fb4b2900171968cc","5e2dd89cfb4b290017196a5a","5e2dd860fb4b290017196864"],["5e2dd860fb4b290017196868","5e2dd89cfb4b290017196a5f","5e2dd860fb4b29001719686c","5e2dd860fb4b29001719692a"],["5e2dd860fb4b290017196854","5e2dd89cfb4b290017196a57","5e2dd860fb4b29001719693a","5e2dd860fb4b290017196934","5e2dd860fb4b290017196882"],"5e2dd860fb4b290017196808",["5e2dd860fb4b2900171968a8","5f78f74a014920922e20282d","5e2dd860fb4b2900171968ba","5e2dd860fb4b2900171968be","5e2dd860fb4b2900171968c4"],["5e2dd860fb4b2900171968c6","5e2dd860fb4b2900171968d2","5e2dd860fb4b290017196826","5e2dd860fb4b29001719683e"],["5e2dd860fb4b2900171968b6","5e2dd860fb4b290017196910","5e2dd860fb4b29001719691a"],["5e2dd860fb4b29001719691c","5e2dd860fb4b29001719693c","5e2dd860fb4b290017196932","5e2dd860fb4b290017196904"],["5e2dd89cfb4b290017196a60","5e2dd860fb4b2900171968fa","5e2dd860fb4b2900171968d0"],["5e2dd860fb4b2900171968e0","5e2dd860fb4b290017196944","5e2dd89cfb4b290017196a5b","5e2dd860fb4b2900171967fc"],["5e2dd860fb4b29001719693e","5e2dd860fb4b290017196800"],["5e2dd860fb4b29001719681a","5e2dd89cfb4b290017196a5c","5e2dd860fb4b2900171968aa"],["5e2dd860fb4b290017196852","5e2dd860fb4b290017196884","5e2dd860fb4b290017196888","5e2dd860fb4b29001719688e","5e2dd860fb4b290017196942","5e2dd860fb4b2900171968ca"],["5e2dd89cfb4b290017196a59","5e2dd860fb4b290017196936","5e2dd860fb4b290017196908","5e2dd860fb4b29001719690a"],["5e2dd89dfb4b290017196a61","5e2dd860fb4b29001719690e","5e2dd89dfb4b290017196a62","5e2dd860fb4b29001719680c","5e2dd860fb4b29001719685e","5e2dd860fb4b290017196862"],["5e2dd860fb4b290017196866","5e2dd860fb4b29001719686a","5e2dd860fb4b29001719686e","5e2dd860fb4b2900171968d6"],["5e2dd860fb4b290017196874","5e2dd89dfb4b290017196a63","5e2dd860fb4b29001719680a"],["5e2dd860fb4b29001719680e","5e2dd860fb4b29001719682a"],["5e2dd860fb4b29001719685c","5e2dd89dfb4b290017196a64","5e2dd860fb4b290017196870"],["5e2dd89dfb4b290017196a65","5e2dd860fb4b2900171968c8","5e2dd860fb4b2900171968d4"],["5e2dd860fb4b2900171968d8","5e2dd860fb4b2900171968dc","5e2dd89dfb4b290017196a66","5e2dd860fb4b290017196872","5e2dd860fb4b2900171968da"],["5e2dd860fb4b29001719685a","5e2dd860fb4b290017196940","5e2dd89dfb4b290017196a67","5e2dd860fb4b290017196828","5e2dd860fb4b29001719692e"],["5e2dd860fb4b2900171968c2","5e2dd89dfb4b290017196a68","5e2dd860fb4b2900171968c0","5e2dd860fb4b290017196842"],["5e2dd860fb4b290017196928","5e2dd860fb4b2900171968bc","5e2dd860fb4b290017196924","5e2dd89dfb4b290017196a69","5e2dd860fb4b290017196856","5e2dd860fb4b290017196858"],["5e2dd860fb4b29001719691e","5e2dd860fb4b2900171968a4","5e2dd860fb4b2900171968a6","5e2dd860fb4b290017196824","5e2dd860fb4b2900171967fe"],["5e2dd860fb4b290017196920","5e2dd860fb4b290017196946","5e2dd89dfb4b290017196a6a"],["5e2dd860fb4b290017196892","5e2dd860fb4b290017196948"],["5e2dd860fb4b290017196850","5e2dd860fb4b290017196848","5e2dd860fb4b2900171968e8","5e2dd89dfb4b290017196a6b"],["5e2dd860fb4b2900171968ec","5e2dd860fb4b2900171968f0","5e2dd860fb4b29001719694e","5e2dd860fb4b290017196926","5e2dd860fb4b2900171968ee"],["5e2dd860fb4b2900171968e6","5e2dd860fb4b2900171968ea","5e2dd860fb4b2900171968f4"],["5e2dd89dfb4b290017196a6c","5e2dd860fb4b2900171968f6"],["5e2dd860fb4b2900171968f8","5e2dd89dfb4b290017196a6d"],["5e2dd860fb4b290017196952","5e2dd860fb4b290017196846","5e2dd860fb4b290017196844","5e2dd89dfb4b290017196a6e"],["5e2dd860fb4b29001719694a","5e2dd860fb4b290017196950","5e2dd860fb4b29001719694c"],["5e2dd860fb4b29001719684e","5e2dd860fb4b2900171968f2"],["5e2dd89dfb4b290017196a6f","5e2dd860fb4b290017196802","5e2dd860fb4b290017196806","5e2dd860fb4b290017196812"],["5e2dd860fb4b290017196818","5e2dd89dfb4b290017196a70","5e2dd860fb4b290017196804"],["5e2dd860fb4b290017196810","5e2dd860fb4b290017196814"],["5e2dd860fb4b290017196840","5e2dd860fb4b29001719683c","5e2dd860fb4b29001719684c"],["5e2dd89dfb4b290017196a71","5e2dd860fb4b290017196820"],["5e2dd89dfb4b290017196a72","5e2dd860fb4b290017196896","5e2dd860fb4b290017196834"],["5e2dd860fb4b2900171968b8","5e2dd860fb4b290017196922","5e2dd860fb4b29001719692c"],["5e2dd860fb4b29001719687e","5e2dd860fb4b290017196930","5e2dd89dfb4b290017196a73"],["5e2dd860fb4b290017196816","5e2dd860fb4b2900171968fe"],["5e2dd860fb4b290017196900","5e2dd860fb4b290017196886","5e2dd860fb4b29001719688a","5e2dd89dfb4b290017196a74","5e2dd860fb4b290017196914"],["5e2dd860fb4b290017196918","5e2dd89dfb4b290017196a75"],["5e2dd860fb4b290017196912","5e2dd860fb4b290017196916","5e2dd860fb4b2900171968b2"],["5e2dd860fb4b290017196876","5e2dd860fb4b29001719689a","5e2dd89dfb4b290017196a76","5e2dd860fb4b29001719687a","5e2dd860fb4b29001719689c"],["5e2dd860fb4b290017196878","5e2dd860fb4b29001719687c","5e2dd860fb4b290017196880","5e2dd860fb4b290017196860"],["5e2dd860fb4b2900171968a2","5e2dd860fb4b29001719682e","5e2dd860fb4b2900171968b4"],["5e2dd860fb4b2900171968b0","5e2dd860fb4b29001719689e"],["5e2dd860fb4b2900171968a0","5e2dd860fb4b2900171968ae","5e2dd860fb4b29001719683a"],["5e2dd860fb4b290017196902","5e2dd860fb4b290017196938","5e2dd860fb4b290017196906"],["5e2dd860fb4b29001719690c","5e2dd860fb4b29001719684a"],["5e2dd860fb4b290017196898","5e2dd860fb4b2900171968ac","5e2dd860fb4b29001719682c"],["5e2dd860fb4b290017196830","5e2dd860fb4b290017196822"],["5e2dd860fb4b2900171968e4","5e2dd860fb4b290017196838","5e2dd89dfb4b290017196a77"]]
+            "breakdownArrays": [["5e2dd860fb4b290017196836"],["5e2dd860fb4b29001719681c","5e2dd860fb4b2900171968de","5e2dd860fb4b2900171968e2"],["5e2dd860fb4b2900171968ce"],["5e2dd860fb4b29001719681e","5e2dd860fb4b290017196894","5e2dd860fb4b2900171968fc"],["5e2dd860fb4b29001719688c","5e2dd860fb4b290017196890","5e2dd860fb4b2900171968cc","5e2dd860fb4b290017196864"],["5e2dd860fb4b290017196868","5e2dd860fb4b29001719686c","5e2dd860fb4b29001719692a"],["5e2dd860fb4b290017196854","5e2dd860fb4b29001719693a","5e2dd860fb4b290017196934","5e2dd860fb4b290017196882"],"5e2dd860fb4b290017196808",["5e2dd860fb4b2900171968a8","5e2dd860fb4b2900171968ba","5e2dd860fb4b2900171968be","5e2dd860fb4b2900171968c4"],["5e2dd860fb4b2900171968c6","5e2dd860fb4b2900171968d2","5e2dd860fb4b290017196826","5e2dd860fb4b29001719683e"],["5e2dd860fb4b2900171968b6","5e2dd860fb4b290017196910","5e2dd860fb4b29001719691a"],["5e2dd860fb4b29001719691c","5e2dd860fb4b29001719693c","5e2dd860fb4b290017196932","5e2dd860fb4b290017196904"],["5e2dd860fb4b2900171968fa","5e2dd860fb4b2900171968d0"],["5e2dd860fb4b2900171968e0","5e2dd860fb4b290017196944","5e2dd860fb4b2900171967fc"],["5e2dd860fb4b29001719693e","5e2dd860fb4b290017196800"],["5e2dd860fb4b29001719681a","5e2dd860fb4b2900171968aa"],["5e2dd860fb4b290017196852","5e2dd860fb4b290017196884","5e2dd860fb4b290017196888","5e2dd860fb4b29001719688e","5e2dd860fb4b290017196942","5e2dd860fb4b2900171968ca"],["5e2dd860fb4b290017196936","5e2dd860fb4b290017196908","5e2dd860fb4b29001719690a"],["5e2dd860fb4b29001719690e","5e2dd860fb4b29001719680c","5e2dd860fb4b29001719685e","5e2dd860fb4b290017196862"],["5e2dd860fb4b290017196866","5e2dd860fb4b29001719686a","5e2dd860fb4b29001719686e","5e2dd860fb4b2900171968d6"],["5e2dd860fb4b290017196874","5e2dd860fb4b29001719680a"],["5e2dd860fb4b29001719680e","5e2dd860fb4b29001719682a"],["5e2dd860fb4b29001719685c","5e2dd860fb4b290017196870"],["5e2dd860fb4b2900171968c8","5e2dd860fb4b2900171968d4"],["5e2dd860fb4b2900171968d8","5e2dd860fb4b2900171968dc","5e2dd860fb4b290017196872","5e2dd860fb4b2900171968da"],["5e2dd860fb4b29001719685a","5e2dd860fb4b290017196940","5e2dd860fb4b290017196828","5e2dd860fb4b29001719692e"],["5e2dd860fb4b2900171968c2","5e2dd860fb4b2900171968c0","5e2dd860fb4b290017196842"],["5e2dd860fb4b290017196928","5e2dd860fb4b2900171968bc","5e2dd860fb4b290017196924","5e2dd860fb4b290017196856","5e2dd860fb4b290017196858"],["5e2dd860fb4b29001719691e","5e2dd860fb4b2900171968a4","5e2dd860fb4b2900171968a6","5e2dd860fb4b290017196824","5e2dd860fb4b2900171967fe"],["5e2dd860fb4b290017196920","5e2dd860fb4b290017196946"],["5e2dd860fb4b290017196892","5e2dd860fb4b290017196948"],["5e2dd860fb4b290017196850","5e2dd860fb4b290017196848","5e2dd860fb4b2900171968e8"],["5e2dd860fb4b2900171968ec","5e2dd860fb4b2900171968f0","5e2dd860fb4b29001719694e","5e2dd860fb4b290017196926","5e2dd860fb4b2900171968ee"],["5e2dd860fb4b2900171968e6","5e2dd860fb4b2900171968ea","5e2dd860fb4b2900171968f4"],["5e2dd860fb4b2900171968f6"],["5e2dd860fb4b2900171968f8"],["5e2dd860fb4b290017196952","5e2dd860fb4b290017196846","5e2dd860fb4b290017196844"],["5e2dd860fb4b29001719694a","5e2dd860fb4b290017196950","5e2dd860fb4b29001719694c"],["5e2dd860fb4b29001719684e","5e2dd860fb4b2900171968f2"],["5e2dd860fb4b290017196802","5e2dd860fb4b290017196806","5e2dd860fb4b290017196812"],["5e2dd860fb4b290017196818","5e2dd860fb4b290017196804"],["5e2dd860fb4b290017196810","5e2dd860fb4b290017196814"],["5e2dd860fb4b290017196840","5e2dd860fb4b29001719683c","5e2dd860fb4b29001719684c"],["5e2dd860fb4b290017196820"],["5e2dd860fb4b290017196896","5e2dd860fb4b290017196834"],["5e2dd860fb4b2900171968b8","5e2dd860fb4b290017196922","5e2dd860fb4b29001719692c"],["5e2dd860fb4b29001719687e","5e2dd860fb4b290017196930"],["5e2dd860fb4b290017196816","5e2dd860fb4b2900171968fe"],["5e2dd860fb4b290017196900","5e2dd860fb4b290017196886","5e2dd860fb4b29001719688a","5e2dd860fb4b290017196914"],["5e2dd860fb4b290017196918"],["5e2dd860fb4b290017196912","5e2dd860fb4b290017196916","5e2dd860fb4b2900171968b2"],["5e2dd860fb4b290017196876","5e2dd860fb4b29001719689a","5e2dd860fb4b29001719687a","5e2dd860fb4b29001719689c"],["5e2dd860fb4b290017196878","5e2dd860fb4b29001719687c","5e2dd860fb4b290017196880","5e2dd860fb4b290017196860"],["5e2dd860fb4b2900171968a2","5e2dd860fb4b29001719682e","5e2dd860fb4b2900171968b4"],["5e2dd860fb4b2900171968b0","5e2dd860fb4b29001719689e"],["5e2dd860fb4b2900171968a0","5e2dd860fb4b2900171968ae","5e2dd860fb4b29001719683a"],["5e2dd860fb4b290017196902","5e2dd860fb4b290017196938","5e2dd860fb4b290017196906"],["5e2dd860fb4b29001719690c","5e2dd860fb4b29001719684a"],["5e2dd860fb4b290017196898","5e2dd860fb4b2900171968ac","5e2dd860fb4b29001719682c"],["5e2dd860fb4b290017196830","5e2dd860fb4b290017196822"],["5e2dd860fb4b2900171968e4","5e2dd860fb4b290017196838"]]
           }, 
           {
             "id": "5cff4bcb10c4330017ab6cac",
@@ -7362,7 +6120,7 @@
           {
             "id": "5cff4bcb10c4330017ab6da3",
             "name": "stripboard",
-            "breakdownArrays": [["5e2dd860fb4b290017196832","6009abb2fac8810c058d3077","5e2dd860fb4b290017196884"],["5e2dd860fb4b290017196888","5e2dd860fb4b29001719688e"],["5e2dd860fb4b290017196942","6009aa7efac8810c058d304c","5e2dd860fb4b2900171968e2"],["5e2dd860fb4b290017196894","5e2dd860fb4b2900171968ca","5e2dd860fb4b29001719681c"],["5e2dd860fb4b290017196800","5e2dd860fb4b29001719693a"],["6009aa7efac8810c058d3051","5e2dd860fb4b2900171968fc","5e2dd860fb4b290017196836"],["5e2dd860fb4b290017196934","5e2dd860fb4b2900171968de","5e2dd860fb4b2900171968e4","6009aa7efac8810c058d304d","5e2dd860fb4b290017196868"],["5e2dd860fb4b29001719686c","5e2dd860fb4b2900171968ce"],["5e2dd860fb4b29001719688c","5e2dd860fb4b2900171968fa","5e2dd860fb4b290017196864"],["5e2dd860fb4b2900171968e0","5e2dd860fb4b2900171968aa","6009aa7efac8810c058d304f","5e2dd860fb4b29001719692a","5e2dd860fb4b29001719681e","6009aa7efac8810c058d304b"],["5e2dd860fb4b2900171968d0","5e2dd860fb4b2900171968cc"],["5e2dd860fb4b290017196890","5e2dd860fb4b290017196882","5e2dd860fb4b290017196944"],["6009aa7efac8810c058d304e","5e2dd860fb4b2900171967fc","5e2dd860fb4b29001719693e","5e2dd860fb4b29001719681a"],["6009aa7efac8810c058d3050","5e2dd860fb4b290017196808","5e2dd860fb4b2900171968a8","5e2dd860fb4b2900171968ba"],["5e2dd860fb4b2900171968be","5e2dd860fb4b2900171968c4","5e2dd860fb4b2900171968c6","5e2dd860fb4b2900171968d2","6009aa7efac8810c058d3052","5e2dd860fb4b290017196826"],["6009aa7efac8810c058d3053","5e2dd860fb4b29001719683e","5e2dd860fb4b2900171968b6","5e2dd860fb4b290017196910","5e2dd860fb4b29001719691a","5e2dd860fb4b29001719691c"],["5e2dd860fb4b29001719693c","6009aa7efac8810c058d3054","5e2dd860fb4b290017196932","5e2dd860fb4b290017196904","5e2dd860fb4b290017196936"],["5e2dd860fb4b290017196908","5e2dd860fb4b29001719690a","6009aa7efac8810c058d3055","5e2dd860fb4b29001719690e"],["6009aa7efac8810c058d3056","5e2dd860fb4b29001719680c","5e2dd860fb4b29001719685e","5e2dd860fb4b290017196862","5e2dd860fb4b290017196866"],["5e2dd860fb4b29001719686a","5e2dd860fb4b29001719686e","6009aa7efac8810c058d3057"],["5e2dd860fb4b2900171968d6","5e2dd860fb4b290017196874"],["5e2dd860fb4b29001719680a","5e2dd860fb4b29001719680e","6009aa7efac8810c058d3058","5e2dd860fb4b29001719682a"],["5e2dd860fb4b29001719685c","5e2dd860fb4b290017196870"],["6009aa7efac8810c058d305a","5e2dd860fb4b2900171968c8","5e2dd860fb4b2900171968d4","6009aa7efac8810c058d305b"],["5e2dd860fb4b2900171968d8","5e2dd860fb4b2900171968dc","5e2dd860fb4b290017196872"],["5e2dd860fb4b2900171968da","5e2dd860fb4b29001719685a"],["5e2dd860fb4b290017196940"],["6009aa7efac8810c058d305c","5e2dd860fb4b290017196828","6009aa7efac8810c058d305d"],["5e2dd860fb4b29001719692e","5e2dd860fb4b2900171968c2"],["5e2dd860fb4b2900171968c0","6009aa7efac8810c058d305e"],["5e2dd860fb4b290017196842","5e2dd860fb4b290017196928","5e2dd860fb4b2900171968bc"],["6009aa7efac8810c058d305f","5e2dd860fb4b290017196924","5e2dd860fb4b290017196856","5e2dd860fb4b290017196858","5e2dd860fb4b29001719691e"],["5e2dd860fb4b2900171968a4","5e2dd860fb4b2900171968a6","5e2dd860fb4b290017196824","6009aa7efac8810c058d3060"],["5e2dd860fb4b2900171967fe","5e2dd860fb4b290017196920"],["5e2dd860fb4b290017196946","5e2dd860fb4b290017196892","6009aa7efac8810c058d3061"],["5e2dd860fb4b290017196948","5e2dd860fb4b290017196850","5e2dd860fb4b290017196848"],["5e2dd860fb4b2900171968e8","5e2dd860fb4b2900171968ec"],["5e2dd860fb4b2900171968f0","6009aa7efac8810c058d3062","5e2dd860fb4b29001719694e","5e2dd860fb4b290017196926","5e2dd860fb4b2900171968ee"],["5e2dd860fb4b2900171968e6","5e2dd860fb4b2900171968ea"],["5e2dd860fb4b2900171968f4","6009aa7efac8810c058d3063"],["5e2dd860fb4b2900171968f6","5e2dd860fb4b2900171968f8","6009aa7efac8810c058d3064"],["5e2dd860fb4b290017196952","6009aa7efac8810c058d3065","5e2dd860fb4b290017196846"],["5e2dd860fb4b290017196844","5e2dd860fb4b29001719694a","5e2dd860fb4b290017196950"],["5e2dd860fb4b29001719694c","6009aa7efac8810c058d3066","5e2dd860fb4b29001719684e","5e2dd860fb4b2900171968f2","6009aa7efac8810c058d3067"],["5e2dd860fb4b290017196802","5e2dd860fb4b290017196806"],["5e2dd860fb4b290017196812","6009aa7efac8810c058d3068"],["5e2dd860fb4b290017196818","5e2dd860fb4b290017196804","5e2dd860fb4b290017196810"],["5e2dd860fb4b290017196814","6009aa7efac8810c058d3069","5e2dd860fb4b290017196840"],["5e2dd860fb4b29001719683c","5e2dd860fb4b29001719684c"],["5e2dd860fb4b290017196820","6009aa7efac8810c058d306b","5e2dd860fb4b290017196896"],["5e2dd860fb4b290017196834","5e2dd860fb4b2900171968b8"],["5e2dd860fb4b290017196922","5e2dd860fb4b29001719692c"],["5e2dd860fb4b29001719687e","6009aa7efac8810c058d306c","5e2dd860fb4b290017196930"],["5e2dd860fb4b290017196816","5e2dd860fb4b2900171968fe"],["6009aa7efac8810c058d306d","5e2dd860fb4b290017196900","5e2dd860fb4b290017196886"],["5e2dd860fb4b29001719688a","5e2dd860fb4b290017196914","6009aa7efac8810c058d306e"],["5e2dd860fb4b290017196918","5e2dd860fb4b290017196912"],["6009aa7efac8810c058d3070"],["5e2dd860fb4b290017196916","5e2dd860fb4b2900171968b2","5e2dd860fb4b290017196876","5e2dd860fb4b29001719689a"],["5e2dd860fb4b29001719687a","5e2dd860fb4b29001719689c"],["5e2dd860fb4b290017196878","5e2dd860fb4b29001719687c","5e2dd860fb4b290017196880"],["5e2dd860fb4b290017196860","5e2dd860fb4b2900171968a2"],["6009aa7efac8810c058d3071","5e2dd860fb4b29001719682e","5e2dd860fb4b2900171968b4","5e2dd860fb4b2900171968b0","5e2dd860fb4b29001719689e"],["5e2dd860fb4b2900171968a0","5e2dd860fb4b2900171968ae","5e2dd860fb4b29001719683a"],["5e2dd860fb4b290017196902","5e2dd860fb4b290017196938","5e2dd860fb4b290017196906","5e2dd860fb4b29001719690c","5e2dd860fb4b29001719684a","5e2dd860fb4b290017196898"],["5e2dd860fb4b2900171968ac","6009aa7efac8810c058d3072","5e2dd860fb4b29001719682c"],["5e2dd860fb4b290017196830","6009aa7efac8810c058d3073","5e2dd860fb4b290017196822"],["6009aa7efac8810c058d3074","5e2dd860fb4b290017196838","6009aa7efac8810c058d3075"]]
+            "breakdownArrays": [["5e2dd860fb4b290017196832","6009abb2fac8810c058d3077","5e2dd860fb4b290017196884"],["5e2dd860fb4b290017196888","5e2dd860fb4b29001719688e"],["5e2dd860fb4b290017196942","5e2dd860fb4b2900171968e2"],["5e2dd860fb4b290017196894","5e2dd860fb4b2900171968ca","5e2dd860fb4b29001719681c"],["5e2dd860fb4b290017196800","5e2dd860fb4b29001719693a"],["5e2dd860fb4b2900171968fc","5e2dd860fb4b290017196836"],["5e2dd860fb4b290017196934","5e2dd860fb4b2900171968de","5e2dd860fb4b2900171968e4","5e2dd860fb4b290017196868"],["5e2dd860fb4b29001719686c","5e2dd860fb4b2900171968ce"],["5e2dd860fb4b29001719688c","5e2dd860fb4b2900171968fa","5e2dd860fb4b290017196864"],["5e2dd860fb4b2900171968e0","5e2dd860fb4b2900171968aa","5e2dd860fb4b29001719692a","5e2dd860fb4b29001719681e"],["5e2dd860fb4b2900171968d0","5e2dd860fb4b2900171968cc"],["5e2dd860fb4b290017196890","5e2dd860fb4b290017196882","5e2dd860fb4b290017196944"],["5e2dd860fb4b2900171967fc","5e2dd860fb4b29001719693e","5e2dd860fb4b29001719681a"],["5e2dd860fb4b290017196808","5e2dd860fb4b2900171968a8","5e2dd860fb4b2900171968ba"],["5e2dd860fb4b2900171968be","5e2dd860fb4b2900171968c4","5e2dd860fb4b2900171968c6","5e2dd860fb4b2900171968d2","5e2dd860fb4b290017196826"],["5e2dd860fb4b29001719683e","5e2dd860fb4b2900171968b6","5e2dd860fb4b290017196910","5e2dd860fb4b29001719691a","5e2dd860fb4b29001719691c"],["5e2dd860fb4b29001719693c","5e2dd860fb4b290017196932","5e2dd860fb4b290017196904","5e2dd860fb4b290017196936"],["5e2dd860fb4b290017196908","5e2dd860fb4b29001719690a","5e2dd860fb4b29001719690e"],["5e2dd860fb4b29001719680c","5e2dd860fb4b29001719685e","5e2dd860fb4b290017196862","5e2dd860fb4b290017196866"],["5e2dd860fb4b29001719686a","5e2dd860fb4b29001719686e"],["5e2dd860fb4b2900171968d6","5e2dd860fb4b290017196874"],["5e2dd860fb4b29001719680a","5e2dd860fb4b29001719680e","5e2dd860fb4b29001719682a"],["5e2dd860fb4b29001719685c","5e2dd860fb4b290017196870"],["5e2dd860fb4b2900171968c8","5e2dd860fb4b2900171968d4"],["5e2dd860fb4b2900171968d8","5e2dd860fb4b2900171968dc","5e2dd860fb4b290017196872"],["5e2dd860fb4b2900171968da","5e2dd860fb4b29001719685a"],["5e2dd860fb4b290017196940"],["5e2dd860fb4b290017196828"],["5e2dd860fb4b29001719692e","5e2dd860fb4b2900171968c2"],["5e2dd860fb4b2900171968c0"],["5e2dd860fb4b290017196842","5e2dd860fb4b290017196928","5e2dd860fb4b2900171968bc"],["5e2dd860fb4b290017196924","5e2dd860fb4b290017196856","5e2dd860fb4b290017196858","5e2dd860fb4b29001719691e"],["5e2dd860fb4b2900171968a4","5e2dd860fb4b2900171968a6","5e2dd860fb4b290017196824"],["5e2dd860fb4b2900171967fe","5e2dd860fb4b290017196920"],["5e2dd860fb4b290017196946","5e2dd860fb4b290017196892"],["5e2dd860fb4b290017196948","5e2dd860fb4b290017196850","5e2dd860fb4b290017196848"],["5e2dd860fb4b2900171968e8","5e2dd860fb4b2900171968ec"],["5e2dd860fb4b2900171968f0","5e2dd860fb4b29001719694e","5e2dd860fb4b290017196926","5e2dd860fb4b2900171968ee"],["5e2dd860fb4b2900171968e6","5e2dd860fb4b2900171968ea"],["5e2dd860fb4b2900171968f4"],["5e2dd860fb4b2900171968f6","5e2dd860fb4b2900171968f8"],["5e2dd860fb4b290017196952","5e2dd860fb4b290017196846"],["5e2dd860fb4b290017196844","5e2dd860fb4b29001719694a","5e2dd860fb4b290017196950"],["5e2dd860fb4b29001719694c","5e2dd860fb4b29001719684e","5e2dd860fb4b2900171968f2"],["5e2dd860fb4b290017196802","5e2dd860fb4b290017196806"],["5e2dd860fb4b290017196812"],["5e2dd860fb4b290017196818","5e2dd860fb4b290017196804","5e2dd860fb4b290017196810"],["5e2dd860fb4b290017196814","5e2dd860fb4b290017196840"],["5e2dd860fb4b29001719683c","5e2dd860fb4b29001719684c"],["5e2dd860fb4b290017196820","5e2dd860fb4b290017196896"],["5e2dd860fb4b290017196834","5e2dd860fb4b2900171968b8"],["5e2dd860fb4b290017196922","5e2dd860fb4b29001719692c"],["5e2dd860fb4b29001719687e","5e2dd860fb4b290017196930"],["5e2dd860fb4b290017196816","5e2dd860fb4b2900171968fe"],["5e2dd860fb4b290017196900","5e2dd860fb4b290017196886"],["5e2dd860fb4b29001719688a","5e2dd860fb4b290017196914"],["5e2dd860fb4b290017196918","5e2dd860fb4b290017196912"],["5e2dd860fb4b290017196916","5e2dd860fb4b2900171968b2","5e2dd860fb4b290017196876","5e2dd860fb4b29001719689a"],["5e2dd860fb4b29001719687a","5e2dd860fb4b29001719689c"],["5e2dd860fb4b290017196878","5e2dd860fb4b29001719687c","5e2dd860fb4b290017196880"],["5e2dd860fb4b290017196860","5e2dd860fb4b2900171968a2"],["5e2dd860fb4b29001719682e","5e2dd860fb4b2900171968b4","5e2dd860fb4b2900171968b0","5e2dd860fb4b29001719689e"],["5e2dd860fb4b2900171968a0","5e2dd860fb4b2900171968ae","5e2dd860fb4b29001719683a"],["5e2dd860fb4b290017196902","5e2dd860fb4b290017196938","5e2dd860fb4b290017196906","5e2dd860fb4b29001719690c","5e2dd860fb4b29001719684a","5e2dd860fb4b290017196898"],["5e2dd860fb4b2900171968ac","5e2dd860fb4b29001719682c"],["5e2dd860fb4b290017196830","5e2dd860fb4b290017196822"],["5e2dd860fb4b290017196838"]]
           }, 
           {
             "id": "5cff4bcb10c4330017ab6cad",

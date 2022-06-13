@@ -20,9 +20,10 @@
     "breakdowns": [
       {
         "id": "5cfe7d2510c4330017ab5ed5",
+        "bannerText": "It's A Wonderful Life Production Schedule",
         "comments":  null,
         "created": "2022-06-11T00:12:02.000Z",
-        "description": "It's A Wonderful Life Production Schedule",
+        "description": null,
         "elements": [],
         "pages":  null,
         "scene":  null,
@@ -32,6 +33,7 @@
       },
       {
         "id": "5cfe7d2510c4330017ab5ed1",
+        "bannerText": null,
         "comments": "This scene must be shot at night",
         "created": "2022-06-11T00:12:02.000Z",
         "description": "George finds Zuzu's petals in his pocket",
@@ -41,18 +43,6 @@
         "scriptPage": "112",
         "duration": 5700000,
         "type": "scene"
-      },
-      {
-        "id": "5cfe7d2510c4330017ab5ed3",
-        "comments":  null,
-        "created": "2022-06-11T00:12:02.000Z",
-        "description": null,
-        "elements": [],
-        "pages":  null,
-        "scene":  null,
-        "scriptPage":  null,
-        "duration": null,
-        "type": "day"
       }
     ],
 
@@ -207,7 +197,7 @@
           {
             "id": "5cff4bcb10c4330017ab6fab",
             "name": "boneyard",
-            "breakdownIds": ["5cfe7d2510c4330017ab5ed5", "5cfe7d2510c4330017ab5ed3"]
+            "breakdownIds": ["5cfe7d2510c4330017ab5ed5"]
           }
         ],
         "calendar" : "5d01230c987033001725c908",
@@ -219,7 +209,7 @@
           {
             "id": "5cff4bcb10c4330017ab6da1",
             "name": "stripboard",
-            "breakdownIds": [["5cfe7d2510c4330017ab5ed5"], ["5cfe7d2510c4330017ab5ed1", "5cfe7d2510c4330017ab5ed3"]]
+            "breakdownIds": [["5cfe7d2510c4330017ab5ed5"], ["5cfe7d2510c4330017ab5ed1"]]
           }, 
           {
             "id": "5cff4bcb10c4330017ab6cab",
