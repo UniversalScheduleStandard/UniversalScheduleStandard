@@ -2,7 +2,7 @@
   <img src="images/uss_logo-01.svg" alt="USS Logo" width="537" height="205">
 </p>
 
-<h3 align="center" style="margin-bottom: 16px">Proposal for a standardized format to store and transport <br /><a href="https://en.wikipedia.org/wiki/Shooting_schedule">production schedules</a> and <a href="https://en.wikipedia.org/wiki/Script_breakdown">breakdowns</a> across the entertainment industry</h3>
+<h3 align="center" style="margin-bottom: 16px">A standardized format to store and transport <br /><a href="https://en.wikipedia.org/wiki/Shooting_schedule">production schedules</a> and <a href="https://en.wikipedia.org/wiki/Script_breakdown">breakdowns</a> across the entertainment industry</h3>
 
 ---
 
@@ -17,29 +17,29 @@
 
 <img src="images/no_communication.png" alt="No Communication" width="300" height="211" align="right"/>
 
-Production schedules are indispensible documents in the entertainment industry, containing the core information that is consumed both during prep and on set. 
+Production schedules are indispensable documents in the entertainment industry, containing the core information that is consumed both during prep and on set. 
 
-An increasing number of software tools have been created that either create or consume this schedule data. Unfortuately, the creators of these tools and their users are now finding that there is no easy way to transport this data from one application to another. 
+An increasing number of software tools have been created that either create or consume this schedule data. Unfortunately, the creators of these tools and their users found that there was no easy way to transport this data from one application to another. 
 
-When transportability problems like this have occurred in the past, creators have tended to generate their own custom import/export solutions. This inevitably results in a fractured landscape of multiple file formats that need to be maintained and supported.
+When transportability problems like this have occurred in the past, creators had tended to generate their own custom import/export solutions. This inevitably resulted in a fractured landscape of multiple file formats that needed to be maintained and supported.
 
-Additionally, unnecessary resources are placed on promoting file formats, which bring little value to their creators and only serve to ultimately annoy the end user. 
+Additionally, unnecessary resources were placed on promoting file formats, which bring little value to their creators and only served to ultimately annoy the end user. 
 
 # The Solution - **Universal Schedule Standard**
 
 <img src="images/communication.png" alt="Communication" width="300" height="211" align="right"/>
 
-The **Universal Schedule Standard** is a proposal for one common method to store and transport schedule and breakdown data across all existing and future platforms. 
+The **Universal Schedule Standard** is a method to store and transport schedule and breakdown data across all existing and future platforms. 
 
-Using one standard makes the user's data portable allowing them to create a schedule in one application and then transfer that information to another application that might create budgets, call sheets or other useful end products. 
+Using one standard makes the user's data portable, allowing them to create a schedule in one application and then transfer that information to another application that might create budgets, call sheets or other useful end products. 
 
-Each company using the standard will reduce their work load, as they can avoid supporting myriad competing formats. These various applications will be lighter and more easily managable with only one import/export format to support. 
+Each company using the standard has reduced their work load, as they avoid supporting myriad competing formats. These various applications are lighter and more easily manageable with only one import/export format to support. 
 
-And perhaps most importantly, end users will gain confidence in the entire sector and will more freely use multiple services, with the knowledge that their data is always portable and safe. 
+And perhaps most importantly, end users gain confidence in the entire sector and will more freely use multiple services, with the knowledge that their data is always portable and safe. 
 
 # Features
 
-The standard proposed here has been carefully crafted to serve all sectors of the entertainment industry. It allows for:
+The standard has been carefully crafted to serve all sectors of the entertainment industry. It allows for:
 
 - Transport - use it to easily move entire schedules or breakdowns between applications or services
 - Storage - provides a common format for legacy data
@@ -50,21 +50,11 @@ The standard proposed here has been carefully crafted to serve all sectors of th
 - Open standard - no licensing fees - free to use
 - Not reliant on any third party resources or services
 - Is extensible if you'd like to store additional data
-- Works interchangably as a file and as data in an API call
-
-# Final Feeback & Participation in the Proposal ⏰
-
-This standard proposal is in its final approval stages. This is the **LAST CALL** for any final notes or refinements to the standard. 
-
-Any creator can participate in the finalization of this proposed standard. Please post [pull requests](https://github.com/thinkcrew/UniversalScheduleStandard/pulls) or [issues](https://github.com/thinkcrew/UniversalScheduleStandard/issues) with update ideas, discussion or suggestions. 
-
-This proposal is intended to foster the communication of ideas and ultimately result in the completion of a universal standard that can be used by any creator in the industry. 
-
-We still suggest that you refrain from using the standard in production until the proposal is locked. 
+- Works interchangeably as a file and as data in an API call
 
 # Details
 
-This proposed standard has been designed as a conscise way to store as much schedule and breakdown data as possible in a format that is both human and machine readable.
+This standard has been designed as a concise way to store as much schedule and breakdown data as possible in a format that is both human and machine readable.
 
 The schedule and breakdown data are stored in JSON format, allowing for easily parsable import/export operations either in a saved file or through an API call. 
 
@@ -88,7 +78,7 @@ Here is an example of the entire standard object:
     "scriptDate": "2022-10-01T07:00:00.000Z",
     "season": "S03",
     "source": "Name of originating site or app",
-    "ussVersion": "0.9.2",
+    "ussVersion": "1.0.0",
 
     "breakdowns": [],
     "categories": [],
@@ -104,6 +94,14 @@ The last five items in this object are where the schedule and breakdown data are
 # Examples
 
 See the [small sample file](/samples/small_sample_schedule.uss) in the [/samples](samples/) folder for a brief example. To keep the sample file as readable as possible, it only contains one scene and a few elements. A [full sample schedule](/samples/full_sample_schedule.uss) of course contains more data and illustrates a real world implementation of the standard on a full schedule.
+
+# Validator
+
+We have created a simple validator function that takes a USS object and parses it for validity. See more about that project [here](https://github.com/UniversalScheduleStandard/uss-validator).
+
+# Web Site
+
+More information is available on the Universal Schedule Standard website, at [universalschedulestandar.org](https://universalschedulestandard.org).
 
 # Documentation
 
