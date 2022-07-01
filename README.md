@@ -101,7 +101,7 @@ We have created a simple validator function that takes a USS object and parses i
 
 # Web Site
 
-More information is available on the Universal Schedule Standard website, at [universalschedulestandar.org](https://universalschedulestandard.org).
+More information is available on the Universal Schedule Standard website, at [universalschedulestandard.org](https://universalschedulestandard.org).
 
 # Documentation
 
