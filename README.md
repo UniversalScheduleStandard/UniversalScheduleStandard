@@ -17,25 +17,25 @@
 
 <img src="images/no_communication.png" alt="No Communication" width="300" height="211" align="right"/>
 
-Production schedules are indispensable documents in the entertainment industry, containing the core information that is consumed both during prep and on set. 
+Production schedules are indispensable documents in the entertainment industry, containing the core information that is consumed both during prep and on set.
 
-An increasing number of software tools have been created that either create or consume this schedule data. Unfortunately, the creators of these tools and their users found that there was no easy way to transport this data from one application to another. 
+An increasing number of software tools have been created that either create or consume this schedule data. Unfortunately, the creators of these tools and their users found that there was no easy way to transport this data from one application to another.
 
 When transportability problems like this have occurred in the past, creators had tended to generate their own custom import/export solutions. This inevitably resulted in a fractured landscape of multiple file formats that needed to be maintained and supported.
 
-Additionally, unnecessary resources were placed on promoting file formats, which bring little value to their creators and only served to ultimately annoy the end user. 
+Additionally, unnecessary resources were placed on promoting file formats, which bring little value to their creators and only served to ultimately annoy the end user.
 
 # The Solution - **Universal Schedule Standard**
 
 <img src="images/communication.png" alt="Communication" width="300" height="211" align="right"/>
 
-The **Universal Schedule Standard** is a method to store and transport schedule and breakdown data across all existing and future platforms. 
+The **Universal Schedule Standard** is a method to store and transport schedule and breakdown data across all existing and future platforms.
 
-Using one standard makes the user's data portable, allowing them to create a schedule in one application and then transfer that information to another application that might create budgets, call sheets or other useful end products. 
+Using one standard makes the user's data portable, allowing them to create a schedule in one application and then transfer that information to another application that might create budgets, call sheets or other useful end products.
 
-Each company using the standard has reduced their work load, as they avoid supporting myriad competing formats. These various applications are lighter and more easily manageable with only one import/export format to support. 
+Each company using the standard has reduced their work load, as they avoid supporting myriad competing formats. These various applications are lighter and more easily manageable with only one import/export format to support.
 
-And perhaps most importantly, end users gain confidence in the entire sector and will more freely use multiple services, with the knowledge that their data is always portable and safe. 
+And perhaps most importantly, end users gain confidence in the entire sector and will more freely use multiple services, with the knowledge that their data is always portable and safe.
 
 # Features
 
@@ -56,7 +56,7 @@ The standard has been carefully crafted to serve all sectors of the entertainmen
 
 This standard has been designed as a concise way to store as much schedule and breakdown data as possible in a format that is both human and machine readable.
 
-The schedule and breakdown data are stored in JSON format, allowing for easily parsable import/export operations either in a saved file or through an API call. 
+The schedule and breakdown data are stored in JSON format, allowing for easily parsable import/export operations either in a saved file or through an API call.
 
 Here is an example of the entire standard object:
 
@@ -105,7 +105,7 @@ More information is available on the Universal Schedule Standard website, at [un
 
 # Documentation
 
-For detailed instructions about the structure and format of the standard object, please read the [detailed documentation](docs/docs.md) found in the [/docs](docs/) folder. 
+For detailed instructions about the structure and format of the standard object, please read the [detailed documentation](docs/docs.md) found in the [/docs](docs/) folder.
 
 # Collaborators
 
