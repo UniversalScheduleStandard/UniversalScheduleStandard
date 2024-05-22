@@ -200,9 +200,9 @@ Category objects are constructed like this:
 }
 ```
 
-Category `name` may be any string value, but should follow the original intent of the category, as described in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification).
+Category `name` may be any string value, but should follow the original intent of the category, as described in the [Category Identification Standard](https://github.com/universalschedulestandard/UniversalCategoryIdentification).
 
-The `ucid` refers to the corresponding category ID number in the [Category Identification Standard](https://github.com/thinkcrew/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
+The `ucid` refers to the corresponding category ID number in the [Category Identification Standard](https://github.com/universalschedulestandard/UniversalCategoryIdentification). All categories must conform to this standard by either using one of the existing category ID numbers or by using a custom number that is outside of the protected ranges, as described in that standard.
 
 ## **Element Objects**
 
@@ -395,4 +395,4 @@ All custom keys must:
 - Not interfere with or alter the existing structure of the USS object
 - Add values to the object that aren't already included in this standard (ie don't just add values to the object under your own custom name when a key already exists for that purpose)
 
-If you feel that your custom key is useful to the overall standard, you may submit a [pull request](https://github.com/thinkcrew/UniversalScheduleStandard/pulls) and your ideas will be considered for inclusion in the official standard.
+If you feel that your custom key is useful to the overall standard, you may submit a [pull request](https://github.com/universalschedulestandard/UniversalScheduleStandard/pulls) and your ideas will be considered for inclusion in the official standard.
