@@ -11,7 +11,7 @@
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/universalschedulestandard/UniversalScheduleStandard)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/universalschedulestandard/UniversalScheduleStandard?color=yellow)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/universalschedulestandard/UniversalScheduleStandard?color=yellow)
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
 
 # The Problem
 
