@@ -240,6 +240,35 @@ The `linkedElements` array is made up of element IDs and represent all of the el
 
 Events refers to specific calendar events for this element. If an individual actor has a fitting or cannot work on a particular day, events will be created for them to reflect this. The `events` array is made up of [event objects](#event-objects).
 
+### INT/EXT
+
+The following are the best practices when naming your interior/exterior elements.
+
+| Value  | Intent                           |
+| :---   | :---:                            |
+| INT    | interior scene                   |
+| EXT    | exterior scene                   |
+| I/E    | both interior and exterior scene |
+
+Of course there are many possible other combinations of the `INT` and `EXT` names - `INT/EXT`, `EXT/INT`, `E/I`, etc. Whenever possible those other contractions should be converted to `I/E` to help parsers understand the intent of the combination without having to interate over every imaginable combination. The use of those other combinations is acceptable. But where possible the use of the above best practice names are preferred. 
+
+It is possible that some schdeduling software may accept only `INT` or `EXT` as possible values. If your export is intended for such software the best practice is to map `I/E` → `EXT`.
+
+### Day/Night
+
+The following are the best practices when naming your Day/Night elements. `Day` and `Night` should be used in most circumstances as the intent of these elements is to dictate whether the shooting of the scene will occur in the daytime or as a night shoot. `Dawn` and `Dusk` are special subsets of `Day` and `Night` as those times will also dictate the timing of the actual shooting. 
+
+| Value  | Intent                     |
+| :---   | :---:                      |
+| Day    | standard daylight          |
+| Night  | standard night             |
+| Dawn   | sunrise window             |
+| Dusk   | sunset / magic-hour window |
+
+Any other names such as `Morning`, `Afternoon`, `Evening`, `Magic-Hour`, etc., are all acceptable. But where possible the use of the above best practice names are preferred.
+
+It is possible that some schdeduling software may accept only `Day` or `Night` as possible values. If your export is intended for such software the best practice is to map `Dawn` → `Day` and `Dusk → Night`.
+
 # Schedules
 
 If representing a schedule, the USS object must also contain arrays of [stripboard objects](#stripboard-objects) and [calendar objects](#calendar-objects). If both the `stripboards` and `calendars` keys are not present, their arrays have no length, or are *null* then the USS object is considered to be just a breakdown. 
